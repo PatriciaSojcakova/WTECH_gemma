@@ -1,4 +1,4 @@
-<!-- As a link ahoj komentar -->
+<!-- As a link -->
 <nav class="navbar bg-body-tertiary custom_white">
     <div class="container-fluid">
         <div class="row w-100 d-flex align-items-center">

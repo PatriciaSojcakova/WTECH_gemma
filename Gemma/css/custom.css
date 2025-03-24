@@ -1,18 +1,32 @@
-.custom_white{
-    background: #F6F7F9;
+.custom_white {
+    color: #F6F7F9;
 }
+
+.custom_pink {
+    color: #E2CBCB;
+}
+
+.custom_grey {
+    color: #D9D9D9;
+}
+
 
 .custom_italiana {
     font-family: 'Italiana', serif;
     text-transform: uppercase;
 }
 
-.custom_playfair {
-    font-family: 'Playfair';
+.custom_playfair_semi {
+    font-family: 'Playfair_semibold';
 }
 
+.custom_playfair_bold {
+    font-family: 'Playfair_bold';
+}
 
-
+.custom_playfair_medium {
+    font-family: 'Playfair_medium';
+}
 
 @font-face {
     font-family: 'Italiana';
@@ -23,8 +37,17 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+    font-family: 'Playfair_semibold';
+    src: url("../custom_files/Playfair_display/static/PlayfairDisplay-SemiBold.ttf");
+}
 
 @font-face {
-    font-family: 'Playfair';
-    src: url("../custom_files/Playfair_display/static/PlayfairDisplay-SemiBold.ttf");
+    font-family: 'Playfair_bold';
+    src: url("../custom_files/Playfair_display/static/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Playfair_medium';
+    src: url("../custom_files/Playfair_display/static/PlayfairDisplay-Medium.ttf");
 }

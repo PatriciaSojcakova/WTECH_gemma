@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
     <title>Bootstrap demo</title>
 </head>
 <body>
-    <h1>Hello, world!</h1>
+    <header>
+        <?php include "../html/header.php" ?>
+    </header>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

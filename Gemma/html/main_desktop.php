@@ -12,6 +12,10 @@
         <?php include "../html/header.php" ?>
     </header>
 
+    <footer>
+        <?php include "../html/footer.php"; ?>
+    </footer>
+
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

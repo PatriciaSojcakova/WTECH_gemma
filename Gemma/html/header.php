@@ -1,10 +1,10 @@
-<!-- As a link -->
+<!-- As a link ahoj komentar -->
 <nav class="navbar bg-body-tertiary custom_white">
     <div class="container-fluid">
         <div class="row w-100 d-flex align-items-center">
 
             <div class="col text-start">
-                <a class="navbar-brand custom_italiana" href="#">Gemmaaaaa</a>
+                <a class="navbar-brand custom_italiana" href="#">Gemma</a>
             </div>
 
             <div class="col text-center d-none d-sm-block">

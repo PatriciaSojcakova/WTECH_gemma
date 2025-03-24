@@ -1,4 +1,4 @@
-<footer class="bg-light py-3 mt-4">
+<footer class="bg-light py-3 mt-auto">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">

@@ -4,7 +4,7 @@
         <div class="row w-100 d-flex align-items-center">
 
             <div class="col text-start">
-                <a class="navbar-brand custom_italiana" href="#">Gemma</a>
+                <a class="navbar-brand custom_italiana" href="#">Gemmaaaaa</a>
             </div>
 
             <div class="col text-center d-none d-sm-block">

@@ -15,7 +15,7 @@
             </div>
 
             <div class="col text-end">
-                <a class="navbar-brand" href="#">tools</a>
+                <a class="navbar-brand custom_playfair" href="#">tools</a>
             </div>
 
         </div>

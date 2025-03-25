@@ -16,7 +16,7 @@
 </header>
 
 
-<main class="container mt-5" style="padding-top: 86px;">
+<main class="container mt-5 px-md-5 px-lg-6" style="padding-top: 86px;">
     <div class="row">
         <h2 class="text-center mb-4">Platba</h2>
 

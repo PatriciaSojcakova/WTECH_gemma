@@ -17,7 +17,7 @@
 </header>
 
 
-<main class="container" style="padding-top: 86px;">
+<main class="container px-md-5 px-lg-6" style="padding-top: 86px;">
     <div class="row">
         <h2 class="text-center mb-4">Reklamácie</h2>
 

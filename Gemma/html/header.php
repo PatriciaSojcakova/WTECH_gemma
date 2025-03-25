@@ -3,7 +3,7 @@
         <div class="row w-100 d-flex align-items-center">
 
             <div class="col text-center">
-                <a class="navbar-brand custom_italiana fs-1 fs-md-2 fs-lg-3" href="#">Gemma</a>
+                <a class="navbar-brand custom_italiana fs-1 fs-md-2 fs-lg-3" href="main_desktop.php">Gemma</a>
             </div>
 
             <div class="col text-center d-none d-md-block">

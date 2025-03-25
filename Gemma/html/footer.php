@@ -4,7 +4,7 @@
             <div class="col-12 text-center">
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item mx-5">
-                        <a href="Kontakt.php" class="text-dark text-decoration-none custom_playfair_semi">Kontakt</a>
+                        <a href="kontakt.php" class="text-dark text-decoration-none custom_playfair_semi">Kontakt</a>
                     </li>
                     <li class="list-inline-item mx-5">
                         <a href="#" class="text-dark text-decoration-none custom_playfair_semi">Obchodné podmienky</a>

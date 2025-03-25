@@ -52,14 +52,33 @@
     font-family: 'Playfair_bold';
 }
 
-.custom_playfair_medium {
+h2{
+    font-family: 'Playfair_medium';
+    font-size: 2rem;
+}
+
+h4 {
     font-family: 'Playfair_medium';
     font-size: 1.5rem;
+}
+
+h5{
+    margin-left: 20px;
+    font-family: 'Playfair_medium';
+    font-size: 1.25rem;
+}
+
+h5 + p{
+    margin-left: 20px;
 }
 
 p {
     font-family: 'Playfair_medium';
     font-size: 1rem;
+}
+
+.custom-h5 {
+    margin-left: 20px;
 }
 
 

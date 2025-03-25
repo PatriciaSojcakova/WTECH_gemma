@@ -78,8 +78,8 @@
 }
 
 .custom-form-control:focus {
-    border-color: #884545 !important ; /* Ak chceš aj červený okraj */
-    background-color: rgba(226, 203, 203, 0.7) !important; /* Pozadie ostane rovnaké */
-    outline: none !important; /* Zrušenie modrého obrysu */
-    box-shadow: 0 0 5px 2px rgba(196, 175, 175, 0.8) !important; /* Pridanie červenej žiary */
+    border-color: #884545 !important ;
+    background-color: rgba(226, 203, 203, 0.7) !important;
+    outline: none !important;
+    box-shadow: 0 0 5px 2px rgba(196, 175, 175, 0.8) !important;
 }

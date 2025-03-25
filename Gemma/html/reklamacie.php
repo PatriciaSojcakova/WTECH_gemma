@@ -19,6 +19,7 @@
 
 <main class="container" style="padding-top: 86px;">
     <div class="row">
+
         <h2 class="text-center mb-4">Reklamácie</h2>
 
         <div class="col-12">

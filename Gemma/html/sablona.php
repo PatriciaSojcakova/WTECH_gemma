@@ -14,13 +14,13 @@
         <?php include "../html/header.php" ?>
     </header>
 
+
     <main class="container" style="padding-top: 80px;">
-
-
     </main>
 
+
     <footer>
-        <?php include "../html/footer.php"; ?>
+        <?php include "../html/footer.php" ?>
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>

@@ -19,45 +19,42 @@
 </header>
 
 <main class="container mt-5" style="padding-top: 86px;">
-    <h2 class="mb-4 custom_playfair_medium">Kontakt</h2>
+    <h2>Kontakt</h2>
 
+    <div class="row d-flex justify-content-between">
 
-    <div class="row">
-
-        <div class = "col-md-6">
+        <div class = "col-12 col-md-4 custom-ms custom-me mb-0">
 
             <!-- Sekcia Telefón -->
-            <div class="card mb-4 border-0">
-                <div class="card-body">
-                    <h4 class="card-title custom_playfair_medium">Telefón</h4>
+            <div >
+                    <h4>Telefón</h4>
                     <p>+421 123 456 789</p>
-                </div>
             </div>
 
             <!-- Sekcia Adresa -->
-            <div class="card mb-4 border-0">
-                <div class="card-body">
-                    <h4 class="card-title custom_playfair_medium">Adresa</h4>
+            <div class="card mx-auto">
+
+                    <h4>Adresa</h4>
                     <p>Názov firmy<br>Ulica 123, Mesto, PSČ<br>Slovensko</p>
-                </div>
+
             </div>
 
         </div>
 
 
-        <div class="col-md-6">
+        <div class="col-12 col-md-4 custom-ms custom-me mb-0">
             <!-- Sekcia E-mail -->
-            <div class="card mb-4 border-0">
+            <div class="card border-1  mx-auto">
                 <div class="card-body">
-                    <h4 class="card-title custom_playfair_medium">E-mail</h4>
+                    <h4>E-mail</h4>
                     <p>info@gemma.sk</p>
                 </div>
             </div>
 
             <!-- Sekcia Sociálne siete -->
-            <div class="card mb-4 border-0">
+            <div class="card mb-4 border-1  mx-auto">
                 <div class="card-body">
-                    <h4 class="card-title custom_playfair_medium">Sociálne siete</h4>
+                    <h4>Sociálne siete</h4>
                     <p>
                         Facebook: GEMMA_jewelry<br>
                         Instagram: GEMMA_jewerly<br>
@@ -67,7 +64,6 @@
             </div>
 
         </div>
-
 
 
         <!-- Sekcia Otváracie hodiny na stred -->
@@ -84,7 +80,7 @@
 
 
 <footer>
-    <?php include "footer.php"; ?>  <!-- Import päty -->
+    <?php include "footer.php"; ?>
 </footer>
 
 <script src="../js/bootstrap.bundle.min.js"></script>

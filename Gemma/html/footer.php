@@ -7,7 +7,7 @@
                         <a href="kontakt.php" class="text-dark text-decoration-none custom_playfair_semi">Kontakt</a>
                     </li>
                     <li class="list-inline-item mx-5">
-                        <a href="Obchodne_podmienky.php" class="text-dark text-decoration-none custom_playfair_semi">Obchodné podmienky</a>
+                        <a href="obchodne_podmienky.php" class="text-dark text-decoration-none custom_playfair_semi">Obchodné podmienky</a>
                     </li>
                     <li class="list-inline-item mx-5">
                         <a href="#" class="text-dark text-decoration-none custom_playfair_semi">Doprava</a>

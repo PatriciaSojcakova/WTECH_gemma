@@ -18,7 +18,7 @@
     <?php include "../html/header.php" ?>
 </header>
 
-<main class="container mt-5">
+<main class="container mt-5" style="padding-top: 86px;">
     <h2 class="mb-4 custom_playfair_medium">Kontakt</h2>
 
 

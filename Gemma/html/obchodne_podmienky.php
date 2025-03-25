@@ -19,7 +19,7 @@
     <?php include "../html/header.php" ?>  <!-- Import hlavičky -->
 </header>
 
-<main class="container mt-5">
+<main class="container mt-5" style="padding-top: 86px;">
     <div class="row">
         <h2 class="text-center mb-4">Obchodné podmienky</h2>
         <div class="col-12">

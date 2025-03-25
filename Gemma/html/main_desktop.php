@@ -14,7 +14,7 @@
         <?php include "../html/header.php" ?>
     </header>
 
-    <main class="container" style="padding-top: 80px;">
+    <main class="container" style="padding-top: 86px;">
 
 
     </main>

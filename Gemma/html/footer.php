@@ -13,7 +13,7 @@
                         <a href="doprava.php" class="text-dark text-decoration-none custom_playfair_semi">Doprava</a>
                     </li>
                     <li class="list-inline-item mx-5">
-                        <a href="#" class="text-dark text-decoration-none custom_playfair_semi">Platba</a>
+                        <a href="platba.php" class="text-dark text-decoration-none custom_playfair_semi">Platba</a>
                     </li>
                     <li class="list-inline-item mx-5">
                         <a href="#" class="text-dark text-decoration-none custom_playfair_semi">Reklamácie</a>

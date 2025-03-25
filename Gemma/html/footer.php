@@ -16,7 +16,7 @@
                         <a href="platba.php" class="text-dark text-decoration-none custom_playfair_semi">Platba</a>
                     </li>
                     <li class="list-inline-item mx-5">
-                        <a href="#" class="text-dark text-decoration-none custom_playfair_semi">Reklamácie</a>
+                        <a href="reklamacie.php" class="text-dark text-decoration-none custom_playfair_semi">Reklamácie</a>
                     </li>
                 </ul>
             </div>

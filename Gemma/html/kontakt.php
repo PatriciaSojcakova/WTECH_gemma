@@ -30,7 +30,7 @@
             <div class="card mb-4 border-0">
                 <div class="card-body">
                     <h4 class="card-title custom_playfair_medium">Telefón</h4>
-                    <p class="custom_playfair_txt">+421 123 456 789</p>
+                    <p>+421 123 456 789</p>
                 </div>
             </div>
 
@@ -38,7 +38,7 @@
             <div class="card mb-4 border-0">
                 <div class="card-body">
                     <h4 class="card-title custom_playfair_medium">Adresa</h4>
-                    <p class="custom_playfair_txt">Názov firmy<br>Ulica 123, Mesto, PSČ<br>Slovensko</p>
+                    <p>Názov firmy<br>Ulica 123, Mesto, PSČ<br>Slovensko</p>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
             <div class="card mb-4 border-0">
                 <div class="card-body">
                     <h4 class="card-title custom_playfair_medium">E-mail</h4>
-                    <p class="custom_playfair_txt">info@gemma.sk</p>
+                    <p>info@gemma.sk</p>
                 </div>
             </div>
 
@@ -75,7 +75,7 @@
             <div class="card mb-4 border-0">
                 <div class="card-body text-center">
                     <h4 class="card-title custom_playfair_medium">Otváracie hodiny</h4>
-                    <p class="custom_playfair_txt">Pondelok - Piatok: 9:00 - 18:00<br>Sobota: 10:00 - 14:00<br>Nedeľa: Zatvorené</p>
+                    <p>Pondelok - Piatok: 9:00 - 18:00<br>Sobota: 10:00 - 14:00<br>Nedeľa: Zatvorené</p>
                 </div>
             </div>
         </div>

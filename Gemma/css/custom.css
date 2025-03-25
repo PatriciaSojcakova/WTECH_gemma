@@ -13,23 +13,6 @@
 
 
 <!-- FONTY -->
-.custom_playfair_semi {
-    font-family: 'Playfair_semibold';
-}
-
-.custom_playfair_bold {
-    font-family: 'Playfair_bold';
-}
-
-.custom_playfair_medium {
-    font-family: 'Playfair_medium';
-    font-size: 1.5rem;
-}
-.custom_playfair_txt {
-    font-family: 'Playfair_medium';
-    font-size: 1rem;
-}
-
 @font-face {
     font-family: 'Italiana';
     font-style: normal;
@@ -61,6 +44,21 @@
     src: url("../custom_files/Playfair_display/static/PlayfairDisplay-Medium.ttf");
 }
 
+.custom_playfair_semi {
+    font-family: 'Playfair_semibold';
+}
+
+.custom_playfair_bold {
+    font-family: 'Playfair_bold';
+}
+
+.custom_playfair_medium {
+    font-family: 'Playfair_medium';
+}
+
+
+
+
 
 
 
@@ -80,8 +78,8 @@
 }
 
 .custom-form-control:focus {
-    border-color: #884545 !important; /* Ak chceš aj červený okraj */
-    background-color: rgba(226, 203, 203, 0.7); /* Pozadie ostane rovnaké */
-    outline: none !important; /* Zrušenie modrého obrysu */
-    box-shadow: 0 0 5px 2px rgba(196, 175, 175, 0.8) !important; /* Pridanie červenej žiary */
+    border-color: #884545 !important ;
+    background-color: rgba(226, 203, 203, 0.7) !important;
+    outline: none !important;
+    box-shadow: 0 0 5px 2px rgba(196, 175, 175, 0.8) !important;
 }

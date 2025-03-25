@@ -1,4 +1,4 @@
-<nav class="navbar bg-body-tertiary custom_white">
+<nav class="navbar bg-body-tertiary custom_white fixed-top">
     <div class="container-fluid">
         <div class="row w-100 d-flex align-items-center">
 

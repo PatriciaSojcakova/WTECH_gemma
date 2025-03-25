@@ -1,6 +1,5 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +15,9 @@
 <body>
 
 <header>
-    <?php include "../html/header.php" ?>  <!-- Import hlavičky -->
+    <?php include "../html/header.php" ?>
 </header>
-<main class="container mt-5" style="padding-top: 86px;">
+<main class="container mt-5 px-md-5 px-lg-6" style="padding-top: 86px;">
     <div class="row">
         <h2 class="text-center mb-4">Obchodné podmienky</h2>
         <div class="col-12">

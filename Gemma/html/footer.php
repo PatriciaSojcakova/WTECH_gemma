@@ -1,4 +1,4 @@
-<footer class="bg-light py-3 mt-auto" style="border-top: 1.5px solid black;">
+<footer class="bg-light py-3 mt-auto" style="border-top: 1.5px solid black; background-color: #E2CBCB;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">

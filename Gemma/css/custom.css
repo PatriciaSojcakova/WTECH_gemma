@@ -79,9 +79,24 @@ p {
     font-size: 1rem;
 }
 
+body {
+    background-color: #F6F7F9 !important;
+}
+
+head {
+    background-color: #F6F7F9 !important;
+}
+
 .custom-h5 {
     margin-left: 20px;
 }
+
+
+
+
+
+
+
 
 
 /* HEADER */
@@ -104,4 +119,8 @@ p {
     background-color: rgba(226, 203, 203, 0.7) !important;
     outline: none !important;
     box-shadow: 0 0 5px 2px rgba(196, 175, 175, 0.8) !important;
+}
+
+.custom-navbar {
+    background-color: #F6F7F9 !important; /* Nastav vlastnú farbu */
 }

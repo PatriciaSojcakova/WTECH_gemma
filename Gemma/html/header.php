@@ -3,9 +3,8 @@
         <div class="row w-100 d-flex align-items-center">
 
             <div class="col text-center">
-                <a class="navbar-brand custom_italiana fs-2 fs-md-2 fs-lg-1" href="#">Gemma</a>
+                <a class="navbar-brand custom_italiana fs-1 fs-md-2 fs-lg-3" href="#">Gemma</a>
             </div>
-
 
             <div class="col text-center d-none d-md-block">
                 <div class="input-group mx-auto position-relative" style="max-width: 400px;">
@@ -18,9 +17,6 @@
                     </button>
                 </div>
             </div>
-
-
-
 
             <div class="col text-end d-flex justify-content-center gap-3 gap-sm-4 gap-md-4">
                 <span class="material-icons" style="color: #000000;">account_circle</span>

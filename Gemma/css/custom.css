@@ -13,32 +13,20 @@
 
 
 <!-- FONTY -->
-.custom_italiana {
-    font-family: 'Italiana', serif !important;
-    text-transform: uppercase !important;
-    text-shadow: 2px 0px 0px #E2CBCB;
-    display: inline-block;
-}
-
-.custom_playfair_semi {
-    font-family: 'Playfair_semibold';
-}
-
-.custom_playfair_bold {
-    font-family: 'Playfair_bold';
-}
-
-.custom_playfair_medium {
-    font-family: 'Playfair_medium';
-}
-
 @font-face {
     font-family: 'Italiana';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../custom_files/Italiana/Italiana-Regular.ttf") format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: url("../custom_files/Italiana/Italiana-Regular.ttf") format('truetype');
+    unicode-range: U+0000-00FF;
+}
+
+.custom_italiana {
+    font-family: 'Italiana', serif !important;
+    text-transform: uppercase !important;
+    text-shadow: 2px 0px 0px #E2CBCB !important;
+    display: inline-block;
 }
 
 @font-face {
@@ -55,6 +43,21 @@
     font-family: 'Playfair_medium';
     src: url("../custom_files/Playfair_display/static/PlayfairDisplay-Medium.ttf");
 }
+
+.custom_playfair_semi {
+    font-family: 'Playfair_semibold';
+}
+
+.custom_playfair_bold {
+    font-family: 'Playfair_bold';
+}
+
+.custom_playfair_medium {
+    font-family: 'Playfair_medium';
+}
+
+
+
 
 
 
@@ -75,8 +78,8 @@
 }
 
 .custom-form-control:focus {
-    border-color: #884545 !important; /* Ak chceš aj červený okraj */
+    border-color: #884545 ; /* Ak chceš aj červený okraj */
     background-color: rgba(226, 203, 203, 0.7); /* Pozadie ostane rovnaké */
-    outline: none !important; /* Zrušenie modrého obrysu */
-    box-shadow: 0 0 5px 2px rgba(196, 175, 175, 0.8) !important; /* Pridanie červenej žiary */
+    outline: none ; /* Zrušenie modrého obrysu */
+    box-shadow: 0 0 5px 2px rgba(196, 175, 175, 0.8) ; /* Pridanie červenej žiary */
 }

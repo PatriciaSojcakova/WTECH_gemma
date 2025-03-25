@@ -30,6 +30,11 @@
 
 .custom_playfair_medium {
     font-family: 'Playfair_medium';
+    font-size: 1.5rem;
+}
+.custom_playfair_txt {
+    font-family: 'Playfair_medium';
+    font-size: 1rem;
 }
 
 @font-face {

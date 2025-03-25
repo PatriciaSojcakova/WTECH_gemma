@@ -14,59 +14,39 @@
 </head>
 <body>
 
-<header>
-    <?php include "../html/header.php" ?>
-</header>
+    <header>
+        <?php include "../html/header.php" ?>
+    </header>
 
-<main class="container mt-5" style="padding-top: 86px;">
-    <h2>Kontakt</h2>
+    <main class="container mt-5 pb-5 " style="padding-top: 86px;">
+        <h2 class="text-center pb-5">Kontakt</h2>
 
-    <div class="row d-flex justify-content-between">
-
-        <div class = "col-12 col-md-4 custom-ms custom-me mb-0">
-
-            <!-- Sekcia Telefón -->
-            <div >
-                    <h4>Telefón</h4>
-                    <p>+421 123 456 789</p>
+        <div class="row pb-5 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-column align-items-center">
+                <h4>Telefón</h4>
+                <p>+421 123 456 789</p>
             </div>
 
-            <!-- Sekcia Adresa -->
-            <div class="card mx-auto">
-
-                    <h4>Adresa</h4>
-                    <p>Názov firmy<br>Ulica 123, Mesto, PSČ<br>Slovensko</p>
-
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-column align-items-center">
+                <h4>Adresa</h4>
+                <p>Názov firmy<br>Ulica 123, Mesto, PSČ<br>Slovensko</p>
             </div>
 
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-column align-items-center">
+                <h4>E-mail</h4>
+                <p>info@gemma.sk</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-column align-items-center">
+                <h4>Sociálne siete</h4>
+                <p>
+                    Facebook: GEMMA_jewelry<br>
+                    Instagram: GEMMA_jewerly<br>
+                    Twitter: GEMMA_jewerly
+                </p>
+            </div>
         </div>
 
-
-        <div class="col-12 col-md-4 custom-ms custom-me mb-0">
-            <!-- Sekcia E-mail -->
-            <div class="card border-1  mx-auto">
-                <div class="card-body">
-                    <h4>E-mail</h4>
-                    <p>info@gemma.sk</p>
-                </div>
-            </div>
-
-            <!-- Sekcia Sociálne siete -->
-            <div class="card mb-4 border-1  mx-auto">
-                <div class="card-body">
-                    <h4>Sociálne siete</h4>
-                    <p>
-                        Facebook: GEMMA_jewelry<br>
-                        Instagram: GEMMA_jewerly<br>
-                        Twitter: GEMMA_jewerly
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-
-        <!-- Sekcia Otváracie hodiny na stred -->
         <div class="col-md-12 d-flex justify-content-center">
             <div class="card mb-4 border-0">
                 <div class="card-body text-center">
@@ -75,14 +55,13 @@
                 </div>
             </div>
         </div>
-    </div>
-</main>
 
+    </main>
 
-<footer>
-    <?php include "footer.php"; ?>
-</footer>
+    <footer>
+        <?php include "footer.php"; ?>
+    </footer>
 
-<script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

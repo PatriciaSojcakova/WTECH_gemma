@@ -45,9 +45,9 @@
         </div>
 
         <div class="col-md-12 d-flex justify-content-center">
-            <div class="card mb-4 border-0">
-                <div class="card-body text-center">
-                    <h4 class="card-title custom_playfair_medium">Otváracie hodiny</h4>
+            <div class="mb-4 border-0">
+                <div class="text-center">
+                    <h4 class="card-title custom_playfair_medium pb-5">Otváracie hodiny</h4>
                     <p>Pondelok - Piatok: 9:00 - 18:00<br>Sobota: 10:00 - 14:00<br>Nedeľa: Zatvorené</p>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<!-- FARBY -->
+/* FARBY */
 .custom_white {
     color: #F6F7F9;
 }
@@ -12,7 +12,7 @@
 }
 
 
-<!-- FONTY -->
+/* FONTY */
 @font-face {
     font-family: 'Italiana';
     font-style: normal;
@@ -53,7 +53,7 @@
 }
 
 
-<!-- VSETKO -->
+/* VSETKO */
 h2{
     font-family: 'Playfair_medium';
     font-size: 2rem;
@@ -84,7 +84,7 @@ p {
 }
 
 
-<!-- HEADER -->
+/* HEADER */
 .custom-search-icon {
     color: #000;
     transition: color 0.3s ease;

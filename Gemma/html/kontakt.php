@@ -59,9 +59,9 @@
                 <div class="card-body">
                     <h4 class="card-title custom_playfair_medium">Sociálne siete</h4>
                     <p>
-                        Facebook - GEMMA_jewelry<br>
-                        Instagram - GEMMA_jewerly<br>
-                        Twitter - GEMMA_jewerly
+                        Facebook: GEMMA_jewelry<br>
+                        Instagram: GEMMA_jewerly<br>
+                        Twitter: GEMMA_jewerly
                     </p>
                 </div>
             </div>

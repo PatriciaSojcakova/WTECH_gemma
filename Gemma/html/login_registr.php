@@ -15,7 +15,7 @@
 </header>
 
 
-<main class="container" style="padding-top: 86px;padding-bottom: 100px;">
+<main class="container" style="padding-top: 100px;padding-bottom: 100px;">
      <div class="row justify-content-center">
             <!-- Prihlásenie -->
             <div class="col-md-5">

@@ -19,9 +19,16 @@
             </div>
 
             <div class="col text-end d-flex justify-content-center gap-3 gap-sm-4 gap-md-4">
-                <a href="login_registr.php">
-                    <span class="material-icons" style="color: #000000;">account_circle</span>
-                </a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-icons" style="color: #000000;">account_circle</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
+                        <li><a class="dropdown-item" href="login_registr.php">Prihlásiť sa</a></li>
+                        <li><a class="dropdown-item" href="personal_account.php">Osobný účet</a></li>
+                        <li><a class="dropdown-item" href="admin.php">Admin</a></li>
+                    </ul>
+                </div>
                 <span class="material-icons" style="color: #000000;">favorite</span>
                 <span class="material-icons" style="color: #000000;">shopping_cart</span>
             </div>

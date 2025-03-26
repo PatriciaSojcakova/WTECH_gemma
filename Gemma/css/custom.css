@@ -67,6 +67,11 @@ h2{
     font-size: 2rem;
 }
 
+h3{
+    font-family: 'Playfair_medium';
+    font-size: 1.8rem;
+}
+
 h4 {
     font-family: 'Playfair_medium';
     font-size: 1.5rem;
@@ -138,4 +143,11 @@ head {
     .custom-container {
         min-height: 20vh;
     }
+}
+
+
+/* LOGIN */
+
+#loginDropdown::after {
+    display: none !important;
 }

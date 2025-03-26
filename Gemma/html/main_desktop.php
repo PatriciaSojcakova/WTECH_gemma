@@ -36,7 +36,6 @@
 
         <div class="row d-flex flex-wrap justify-content-center">
 
-            <!-- Prvý obrázok -->
             <div class="col-md-3 col-sm-6 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
@@ -44,7 +43,6 @@
                 </div>
             </div>
 
-            <!-- Druhý obrázok -->
             <div class="col-md-3 col-sm-6 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
@@ -52,7 +50,6 @@
                 </div>
             </div>
 
-            <!-- Tretí obrázok -->
             <div class="col-md-3 col-sm-6 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
@@ -60,7 +57,6 @@
                 </div>
             </div>
 
-            <!-- Štvrtý obrázok -->
             <div class="col-md-3 col-sm-6 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
@@ -68,7 +64,6 @@
                 </div>
             </div>
 
-            <!-- Piaty obrázok -->
             <div class="col-md-3 col-sm-6 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
@@ -76,7 +71,6 @@
                 </div>
             </div>
 
-            <!-- Šiesty obrázok -->
             <div class="col-md-3 col-sm-6 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">

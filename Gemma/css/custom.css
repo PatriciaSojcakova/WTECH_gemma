@@ -218,7 +218,7 @@ head {
 
 
 
-
+/* CAROUSEL */
 .carousel-container {
     max-width: 900px; /* Omedzenie šírky */
     margin: auto; /* Vycentrovanie */
@@ -234,6 +234,26 @@ head {
     justify-content: center; /* Zabezpečí, že produkty sú vedľa seba */
 }
 
+.carousel-indicators {
+    position: relative; /* Zabezpečiť, aby boli pod obrázkami */
+    margin-top: 20px; /* Odsadenie indikátorov pod produkty */
+
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px; /* Skúste upraviť túto hodnotu */
+    transform: translateY(40px);/* Uprav hodnotu podľa potreby */
+    filter: invert(1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Prevráti farby na čiernu */
+}
+
+
+
+/* PRODKTY */
 .product {
     width: 200px;
     height: 200px;
@@ -245,13 +265,6 @@ head {
     font-weight: bold;
     font-size: 16px;
 }
-.carousel-indicators {
-    position: relative; /* Zabezpečiť, aby boli pod obrázkami */
-    margin-top: 20px; /* Odsadenie indikátorov pod produkty */
-
-}
-
-
 .product-container {
     width: 100%;
     max-width: 200px;

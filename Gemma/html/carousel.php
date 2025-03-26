@@ -1,5 +1,5 @@
-<div class="container text-center mt-5">
-    <h2 class="mb-4">POPULÁRNE</h2>
+<div class="container text-center mt-5 mb-5">
+    <h2 class="mb-5">POPULÁRNE</h2>
 
     <div class="carousel-container">
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">

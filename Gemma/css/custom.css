@@ -127,6 +127,34 @@ head {
     box-shadow: 0 0 5px 2px rgba(196, 175, 175, 0.8) !important;
 }
 
+
+.col-md-5 input.form-control:focus {
+    border-color: #884545 !important;
+    box-shadow: none !important;
+}
+
+.col-md-4 input.form-control:focus,
+.col-md-4 textarea.form-control:focus,
+.col-md-4 select.form-control:focus {
+    border-color: #884545 !important;
+    box-shadow: none !important;
+}
+
+.dropdown-item:focus, .dropdown-item:active {
+    outline: none !important;  /* Odstráni modrý obrys pri zaostrení */
+    box-shadow: none !important; /* Odstráni podsvietenie */
+    background-color: #D9D9D9 !important;
+
+}
+
+
+.custom-card-header-bg {
+    background-color: #D9D9D9 !important;
+    color: black;
+}
+
+
+
 .custom-navbar {
     background-color: #F6F7F9 !important; /* Nastav vlastnú farbu */
 }

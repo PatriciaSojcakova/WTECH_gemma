@@ -20,7 +20,7 @@
 <main class="container px-md-5 px-lg-6" style="padding-top: 86px;">
     <div class="row">
 
-        <h2 class="text-center mb-4">Reklamácie</h2>
+        <h2 class="text-center mb-4 mt-5">Reklamácie</h2>
 
         <div class="col-12">
             <h4 class="mb-3">Úvod</h4>

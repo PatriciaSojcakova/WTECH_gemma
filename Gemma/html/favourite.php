@@ -14,8 +14,10 @@
     <?php include "../html/header.php" ?>
 </header>
 
+<?php include "../html/nav_bar.php"; ?>
 
 <main class="container" style="padding-top: 86px;">
+
     <h2 class="text-center mb-5 mt-5">OBĽÚBENÉ</h2>
 
     <div class="row fw-bold border-bottom border-black pb-2 d-none d-md-flex justify-content-between">

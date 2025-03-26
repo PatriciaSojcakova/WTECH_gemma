@@ -14,6 +14,7 @@
     <?php include "../html/header.php" ?>
 </header>
 
+    <?php include "../html/nav_bar.php"; ?>
 
 <main class="container" style="padding-top: 100px;padding-bottom: 100px;">
      <div class="row justify-content-center">

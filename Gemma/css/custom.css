@@ -188,11 +188,29 @@ head {
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
-    display: block; /* Zobrazenie menu pri hover */
+    display: block;
 }
 
 .dropdown-menu {
     display: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
 }
 
+.custom-dropdown {
+    border: 2px solid #E2CBCB;
+    border-radius: 0 !important;
+    border: none !important;
+    background-color: #E2CBCB;
+}
+
+.custom-dropdown .dropdown-item {
+    background-color: #E2CBCB;
+    color: #333333;
+    font-family: 'Playfair_medium';
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: rgba(236, 227, 227, 0.7);
+    color: #000;
+    font-family: 'Playfair_bold';
+}

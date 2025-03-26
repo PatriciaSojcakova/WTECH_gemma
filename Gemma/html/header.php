@@ -29,8 +29,9 @@
                         <li><a class="dropdown-item" href="admin_account.php">Admin</a></li>
                     </ul>
                 </div>
-                <span class="material-icons" style="color: #000000;">favorite</span>
-                <span class="material-icons" style="color: #000000;">shopping_cart</span>
+                <a href="favourite.php">
+                    <span class="material-icons" style="color: #000000;">favorite</span>
+                </a>                <span class="material-icons" style="color: #000000;">shopping_cart</span>
             </div>
 
         </div>

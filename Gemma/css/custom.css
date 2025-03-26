@@ -141,8 +141,8 @@ head {
 }
 
 .dropdown-item:focus, .dropdown-item:active {
-    outline: none !important;  /* Odstráni modrý obrys pri zaostrení */
-    box-shadow: none !important; /* Odstráni podsvietenie */
+    outline: none !important;
+    box-shadow: none !important;
     background-color: #D9D9D9 !important;
 
 }

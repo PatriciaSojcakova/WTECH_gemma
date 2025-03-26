@@ -20,6 +20,10 @@
         </div>
     </main>
 
+    <?php include "../html/nav_bar.php"; ?>
+
+
+
 
     <footer>
         <?php include "../html/footer.php"; ?>

@@ -188,32 +188,29 @@ head {
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
-    display: block; /* Zobrazenie menu pri hover */
+    display: block;
 }
 
 .dropdown-menu {
     display: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
 }
 
 .custom-dropdown {
-    border: 2px solid #E2CBCB; /* Nastaví okraj s farbou (zmeň na požadovanú farbu) */
-    border-radius: 0 !important; /* Odstráni oblé rohy a nastaví hranaté okraje */
-    border: none !important; /* Tento riadok odstráni okraj */
-    background-color: #E2CBCB; /* Zmena pozadia na svetlo šedú, môžeš zmeniť na svoju vlastnú farbu */
-
+    border: 2px solid #E2CBCB;
+    border-radius: 0 !important;
+    border: none !important;
+    background-color: #E2CBCB;
 }
 
-/* Ak chceš upravit aj farbu položiek v menu */
 .custom-dropdown .dropdown-item {
-    background-color: #E2CBCB; /* Biele pozadie pre položky */
-    color: #333333; /* Farba textu */
+    background-color: #E2CBCB;
+    color: #333333;
     font-family: 'Playfair_medium';
 }
 
-/* Pri hover efektoch (keď užívateľ na položku prejde kurzorom) */
 .custom-dropdown .dropdown-item:hover {
-    background-color: #E2CBCB; /* Pozadie pri hover (modrá farba) */
-    color: #000; /* Zmena farby textu pri hover */
+    background-color: rgba(236, 227, 227, 0.7);
+    color: #000;
     font-family: 'Playfair_bold';
 }

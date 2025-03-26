@@ -124,3 +124,8 @@ head {
 .custom-navbar {
     background-color: #F6F7F9 !important; /* Nastav vlastnú farbu */
 }
+
+
+#loginDropdown::after {
+    display: none !important;
+}

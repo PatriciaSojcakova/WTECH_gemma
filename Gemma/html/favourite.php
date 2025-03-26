@@ -16,40 +16,88 @@
 
 
 <main class="container" style="padding-top: 86px;">
-    <h2 class="text-center mb-4">Obľúbené produkty</h2>
+    <h2 class="text-center mb-5 mt-5">OBĽÚBENÉ</h2>
 
-    <div class="row">
-        <div class="col-md-4">
-            <img src="path_to_image.jpg" class="card-img-top" alt="Obrázok produktu">
+    <div class="row fw-bold border-bottom border-black pb-2 d-none d-md-flex justify-content-between">
+        <div class="col-md-3 text-center">Detail produktu </div>
+        <div class="col-md-3 text-center">Názov & Parametre</div>
+        <div class="col-md-3 text-center">Dostupnosť</div>
+        <div class="col-md-3 text-center">Pridať do košíka</div>
+    </div>
+
+    <!-- Produkt 1 -->
+    <div class="row align-items-center py-3 border-bottom">
+        <!-- Obrázok + Srdiečko -->
+        <div class="col-md-3 text-center">
+            <div class="product-container">
+                <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+            </div>
+            <!-- Skrytý checkbox -->
+            <input type="checkbox" id="favorite1" class="favorite-checkbox">
+            <!-- Label ako srdiečko (nahrádza klikateľný button) -->
+            <label for="favorite1" class="favorite-icon material-icons">favorite</label>
         </div>
 
-        <div class="col-md-4">
-            <h5 class="card-title">Názov produktu</h5>
-
-            <p class="card-text">
+        <!-- Názov a Parametre -->
+        <div class="col-md-3 mt-3">
+            <p><strong>Názov</strong></p>
+            <hr>
+            <p>
                 <strong>Parametre:</strong><br>
-                Materiál: Bavlna<br>
-                Farba: Červená<br>
-                Určenie: Do domácnosti<br>
+                Materiál: ___________<br>
+                Farba: ___________<br>
+                Určenie: ___________
             </p>
         </div>
 
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-6">
-            <span class="text-success">
-                <i class="material-icons">check_circle</i> Dostupné
+        <!-- Dostupnosť -->
+        <div class="col-md-3 mt-3 text-center">
+            <span class="border rounded-circle p-2">
+                <i class="material-icons text-success">check</i>
             </span>
-                </div>
-                <div class="col-6 text-end">
-                    <button class="btn btn-success">
-                        <i class="material-icons">add_shopping_cart</i> Pridať do košíka
-                    </button>
-                </div>
-            </div>
         </div>
 
+        <!-- Ikonka košíka -->
+        <div class="col-md-3 mt-3 text-center">
+            <button class="btn">
+                <i class="material-icons" style="color: black;">shopping_cart</i>
+            </button>
+        </div>
     </div>
+    <!-- Produkt 2 -->
+    <div class="row align-items-center py-3 border-bottom">
+        <div class="col-md-3 text-center">
+            <div class="product-container">
+                <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+            </div>
+            <!-- Skrytý checkbox -->
+            <input type="checkbox" id="favorite2" class="favorite-checkbox">
+            <!-- Label ako srdiečko (nahrádza klikateľný button) -->
+            <label for="favorite2" class="favorite-icon material-icons">favorite</label>
+        </div>
+        <div class="col-md-3 mt-3">
+            <h6>Názov</h6>
+            <hr>
+            <p>
+                <strong>Parametre:</strong><br>
+                Materiál: ___________<br>
+                Farba: ___________<br>
+                Určenie: ___________
+            </p>
+        </div>
+        <div class="col-md-3 mt-3 text-center">
+            <span class="border rounded-circle p-2">
+                <i class="material-icons text-danger">close</i>
+            </span>
+        </div>
+        <div class="col-md-3 mt-3 text-center">
+            <button class="btn">
+                <i class="material-icons" style="color: black;">shopping_cart</i>
+            </button>
+        </div>
+    </div>
+
+
 
 </main>
 

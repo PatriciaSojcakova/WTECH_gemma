@@ -27,69 +27,65 @@
         <div class="col-md-3 text-center">Pridať do košíka</div>
     </div>
 
-    <!-- Produkt 1 -->
     <div class="row align-items-center py-3 border-bottom">
-        <!-- Obrázok + Srdiečko -->
         <div class="col-md-3 text-center">
             <div class="product-container">
                 <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
             </div>
-            <!-- Skrytý checkbox -->
             <input type="checkbox" id="favorite1" class="favorite-checkbox">
-            <!-- Label ako srdiečko (nahrádza klikateľný button) -->
             <label for="favorite1" class="favorite-icon material-icons">favorite</label>
         </div>
 
-        <!-- Názov a Parametre -->
         <div class="col-md-3 mt-3">
-            <p><strong>Názov</strong></p>
-            <hr>
+            <p><strong>Názov</strong><br>
+                Prsteň objatie
+            </p>
+
             <p>
                 <strong>Parametre:</strong><br>
-                Materiál: ___________<br>
-                Farba: ___________<br>
-                Určenie: ___________
+                Materiál:  zlato<br>
+                Farba:  rose gold<br>
+                Určenie:  dámsky
             </p>
         </div>
 
-        <!-- Dostupnosť -->
         <div class="col-md-3 mt-3 text-center">
-            <span class="border rounded-circle p-2">
-                <i class="material-icons text-success">check</i>
+            <span>
+                <i class="material-icons text-black">check</i>
             </span>
         </div>
 
-        <!-- Ikonka košíka -->
         <div class="col-md-3 mt-3 text-center">
             <button class="btn">
                 <i class="material-icons" style="color: black;">shopping_cart</i>
             </button>
         </div>
     </div>
-    <!-- Produkt 2 -->
+
+
+
     <div class="row align-items-center py-3 border-bottom">
         <div class="col-md-3 text-center">
             <div class="product-container">
                 <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
             </div>
-            <!-- Skrytý checkbox -->
             <input type="checkbox" id="favorite2" class="favorite-checkbox">
-            <!-- Label ako srdiečko (nahrádza klikateľný button) -->
             <label for="favorite2" class="favorite-icon material-icons">favorite</label>
         </div>
         <div class="col-md-3 mt-3">
-            <h6>Názov</h6>
-            <hr>
+            <p><strong>Názov</strong><br>
+                Prsteň objatie
+            </p>
             <p>
                 <strong>Parametre:</strong><br>
-                Materiál: ___________<br>
-                Farba: ___________<br>
-                Určenie: ___________
+                Materiál: zlato<br>
+                Farba: rose gold<br>
+                Určenie: dámsky
             </p>
         </div>
         <div class="col-md-3 mt-3 text-center">
-            <span class="border rounded-circle p-2">
-                <i class="material-icons text-danger">close</i>
+            <span>
+                <i class="material-icons text-black">close</i>
             </span>
         </div>
         <div class="col-md-3 mt-3 text-center">

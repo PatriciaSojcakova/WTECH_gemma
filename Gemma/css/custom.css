@@ -147,13 +147,10 @@ head {
 
 }
 
-
 .custom-card-header-bg {
     background-color: #D9D9D9 !important;
     color: black;
 }
-
-
 
 .custom-navbar {
     background-color: #F6F7F9 !important; /* Nastav vlastnú farbu */
@@ -213,6 +210,12 @@ head {
     background-color: rgba(236, 227, 227, 0.7);
     color: #000;
     font-family: 'Playfair_bold';
+}
+
+.navbar-bar {
+    position: sticky !important;
+    top: 86px; /* Nastaví vzdialenosť od vrchu */
+    z-index: 1020; /* Uistí sa, že navbar zostane nad ostatnými prvkami */
 }
 
 

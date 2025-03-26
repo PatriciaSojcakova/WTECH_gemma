@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm  p-1" style="background-color: #E2CBCB;">
+<nav class="navbar-bar navbar-expand-sm  p-1" style="background-color: #E2CBCB;">
     <div class="container-fluid">
 
         <button style="max-height: 25px;" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

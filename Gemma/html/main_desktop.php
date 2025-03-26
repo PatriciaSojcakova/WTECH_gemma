@@ -21,8 +21,13 @@
     </main>
 
     <?php include "../html/nav_bar.php"; ?>
+
     <div class="container-fluid d-flex justify-content-center align-items-center custom-container" style="background: linear-gradient(to bottom, #E2CBCB, #F6F7F9);">
         <?php include "../html/carousel.php"; ?>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center align-items-center custom-container">
+
     </div>
 
     <footer>

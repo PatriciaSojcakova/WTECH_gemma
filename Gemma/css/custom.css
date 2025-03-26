@@ -240,13 +240,26 @@ head {
     background-color: #ddd;
     border-radius: 10px;
 }
+
 .product-name {
     margin-top: 10px;
     font-weight: bold;
     font-size: 16px;
 }
+
 .carousel-indicators {
     position: relative; /* Zabezpečiť, aby boli pod obrázkami */
     margin-top: 20px; /* Odsadenie indikátorov pod produkty */
 
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px; /* Skúste upraviť túto hodnotu */
+    transform: translateY(40px);/* Uprav hodnotu podľa potreby */
+    filter: invert(1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Prevráti farby na čiernu */
 }

@@ -21,9 +21,9 @@
     </main>
 
     <?php include "../html/nav_bar.php"; ?>
-
-
-
+    <div class="container-fluid d-flex justify-content-center align-items-center custom-container">
+        <?php include "../html/carousel.php"; ?>
+    </div>
 
     <footer>
         <?php include "../html/footer.php"; ?>

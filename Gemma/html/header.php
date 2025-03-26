@@ -25,7 +25,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
                         <li><a class="dropdown-item" href="login_registr.php">Prihlásiť sa</a></li>
-                        <li><a class="dropdown-item" href="osobny_ucet.php">Osobný účet</a></li>
+                        <li><a class="dropdown-item" href="personal_account.php">Osobný účet</a></li>
                         <li><a class="dropdown-item" href="admin.php">Admin</a></li>
                     </ul>
                 </div>

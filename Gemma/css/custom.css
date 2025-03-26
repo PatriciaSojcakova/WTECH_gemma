@@ -59,6 +59,11 @@ h2{
     font-size: 2rem;
 }
 
+h3{
+    font-family: 'Playfair_medium';
+    font-size: 1.8rem;
+}
+
 h4 {
     font-family: 'Playfair_medium';
     font-size: 1.5rem;
@@ -124,7 +129,6 @@ head {
 .custom-navbar {
     background-color: #F6F7F9 !important; /* Nastav vlastnú farbu */
 }
-
 
 #loginDropdown::after {
     display: none !important;

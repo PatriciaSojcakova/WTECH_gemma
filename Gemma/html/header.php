@@ -1,4 +1,4 @@
-<nav class="navbar bg-#F6F7F9 custom-navbar fixed-top" >
+<nav class="navbar bg-#F6F7F9 custom-navbar fixed-top" style="height: 86px;">
     <div class="container-fluid">
         <div class="row w-100 d-flex align-items-center">
 

@@ -16,7 +16,7 @@
 
     <main class="container-fluid" style="padding-top: 86px;">
         <div class="container d-flex justify-content-center align-items-center custom-container">
-            <h1 class="custom_italiana_max" >GEMMA</h1>
+            <h1 class="custom_italiana_max">GEMMA</h1>
         </div>
     </main>
 
@@ -26,7 +26,65 @@
         <?php include "../html/carousel.php"; ?>
     </div>
 
-    <div class="container-fluid d-flex justify-content-center align-items-center custom-container">
+    <div class="container-fluid d-flex justify-content-center align-items-center custom-container" style="background: #D9D9D9">
+        <h1 class="custom_italiana">REKLAMA</h1>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center align-items-center custom-container ">
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div class="product-container">
+                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                </div>
+                <!-- Skrytý checkbox -->
+                <input type="checkbox" id="favorite1" class="favorite-checkbox">
+                <!-- Label ako srdiečko (nahrádza klikateľný button) -->
+                <label for="favorite1" class="favorite-icon material-icons">favorite</label>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div class="product-container">
+                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                </div>
+                <!-- Skrytý checkbox -->
+                <input type="checkbox" id="favorite1" class="favorite-checkbox">
+                <!-- Label ako srdiečko (nahrádza klikateľný button) -->
+                <label for="favorite1" class="favorite-icon material-icons">favorite</label>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div class="product-container">
+                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                </div>
+                <!-- Skrytý checkbox -->
+                <input type="checkbox" id="favorite1" class="favorite-checkbox">
+                <!-- Label ako srdiečko (nahrádza klikateľný button) -->
+                <label for="favorite1" class="favorite-icon material-icons">favorite</label>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div class="product-container">
+                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                </div>
+                <!-- Skrytý checkbox -->
+                <input type="checkbox" id="favorite1" class="favorite-checkbox">
+                <!-- Label ako srdiečko (nahrádza klikateľný button) -->
+                <label for="favorite1" class="favorite-icon material-icons">favorite</label>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-3 text-center">
+                <div class="product-container">
+                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                </div>
+                <!-- Skrytý checkbox -->
+                <input type="checkbox" id="favorite1" class="favorite-checkbox">
+                <!-- Label ako srdiečko (nahrádza klikateľný button) -->
+                <label for="favorite1" class="favorite-icon material-icons">favorite</label>
+            </div>
+        </div>
+
+
 
     </div>
 

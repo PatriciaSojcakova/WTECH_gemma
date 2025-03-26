@@ -19,7 +19,9 @@
             </div>
 
             <div class="col text-end d-flex justify-content-center gap-3 gap-sm-4 gap-md-4">
-                <span class="material-icons" style="color: #000000;">account_circle</span>
+                <a href="login_registr.php">
+                    <span class="material-icons" style="color: #000000;">account_circle</span>
+                </a>
                 <span class="material-icons" style="color: #000000;">favorite</span>
                 <span class="material-icons" style="color: #000000;">shopping_cart</span>
             </div>

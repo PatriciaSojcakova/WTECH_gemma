@@ -14,10 +14,12 @@
         <?php include "../html/header.php" ?>
     </header>
 
-    <main class="container" style="padding-top: 86px;">
-
-
+    <main class="container-fluid" style="padding-top: 86px;">
+        <div class="container border border-danger d-flex justify-content-center align-items-center custom-container">
+            <h1 class="custom_italiana_max" >GEMMA</h1>
+        </div>
     </main>
+
 
     <footer>
         <?php include "../html/footer.php"; ?>

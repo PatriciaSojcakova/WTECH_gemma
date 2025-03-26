@@ -39,7 +39,7 @@
 
             <!-- Registrácia -->
             <div class="col-md-5">
-                <h2 class="text-center mb-4 mt-4">Vytvoriť konto</h2>
+                <h2 class="text-center mb-4 mt-5">Vytvoriť konto</h2>
                 <form>
                     <div class="mb-3">
                         <label for="registerFirstName" class="form-label">Meno</label>

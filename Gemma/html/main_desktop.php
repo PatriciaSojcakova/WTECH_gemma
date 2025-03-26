@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"/>
     <title>Bootstrap demo</title>
 </head>
-<body>
+<body class="main-page">
     <header>
         <?php include "../html/header.php" ?>
     </header>
@@ -36,60 +36,76 @@
 
         <div class="row d-flex flex-wrap justify-content-center">
 
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                     <p class="product-name">Prsteň Elegant</p>
                 </div>
+                <input type="checkbox" id="favorite-main1" class="favorite-checkbox">
+                <label for="favorite-main1" class="favorite-icon material-icons">favorite</label>
             </div>
 
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                     <p class="product-name">Prsteň Luxus</p>
                 </div>
+                <input type="checkbox" id="favorite-main2" class="favorite-checkbox">
+                <label for="favorite-main2" class="favorite-icon material-icons">favorite</label>
             </div>
 
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                     <p class="product-name">Prsteň Moderný</p>
                 </div>
+                <input type="checkbox" id="favorite-main3" class="favorite-checkbox">
+                <label for="favorite-main3" class="favorite-icon material-icons">favorite</label>
             </div>
 
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                     <p class="product-name">Prsteň Klasik</p>
                 </div>
+                <input type="checkbox" id="favorite-main4" class="favorite-checkbox">
+                <label for="favorite-main4" class="favorite-icon material-icons">favorite</label>
             </div>
 
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                     <p class="product-name">Prsteň Romantický</p>
                 </div>
+                <input type="checkbox" id="favorite-main5" class="favorite-checkbox">
+                <label for="favorite-main5" class="favorite-icon material-icons">favorite</label>
             </div>
 
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                     <p class="product-name">Prsteň Vintage</p>
                 </div>
+                <input type="checkbox" id="favorite-main6" class="favorite-checkbox">
+                <label for="favorite-main6" class="favorite-icon material-icons">favorite</label>
             </div>
 
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                     <p class="product-name">Prsteň Diamant</p>
                 </div>
+                <input type="checkbox" id="favorite-main7" class="favorite-checkbox">
+                <label for="favorite-main7" class="favorite-icon material-icons">favorite</label>
             </div>
 
-            <div class="col-md-3 col-sm-6 text-center">
+            <div class="col-md-3 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                     <p class="product-name">Prsteň Zlato</p>
                 </div>
+                <input type="checkbox" id="favorite-main8" class="favorite-checkbox">
+                <label for="favorite-main8" class="favorite-icon material-icons">favorite</label>
             </div>
 
         </div>

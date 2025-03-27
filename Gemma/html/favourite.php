@@ -20,11 +20,11 @@
 
     <h2 class="text-center mb-5 mt-5">OBĽÚBENÉ</h2>
 
-    <div class="row fw-bold border-bottom border-black pb-2 d-none d-md-flex justify-content-between custom-basket-fav-font">
-        <div class="col-md-3 text-center">Detail produktu </div>
-        <div class="col-md-3 text-center">Názov a Parametre</div>
-        <div class="col-md-3 text-center">Dostupnosť</div>
-        <div class="col-md-3 text-center">Pridať do košíka</div>
+    <div class="row title-bar fw-bold border-bottom border-black pb-2 d-none d-md-flex justify-content-between custom-basket-fav-font" style="background: #F6F7F9">
+        <div class="col-md-3 text-center mt-2">Detail produktu </div>
+        <div class="col-md-3 text-center mt-2">Názov & Parametre</div>
+        <div class="col-md-3 text-center mt-2">Dostupnosť</div>
+        <div class="col-md-3 text-center mt-2">Pridať do košíka</div>
     </div>
 
     <div class="row align-items-center py-3 border-bottom">

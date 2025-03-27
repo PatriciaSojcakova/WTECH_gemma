@@ -195,7 +195,7 @@ head {
 
 .dropdown-menu {
     display: none;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .custom-dropdown {
@@ -228,8 +228,8 @@ head {
 
 /* CAROUSEL */
 .carousel-container {
-    max-width: 900px; /* Omedzenie šírky */
-    margin: auto; /* Vycentrovanie */
+    max-width: 900px;
+    margin: auto;
 }
 .carousel-inner .row {
     display: flex;

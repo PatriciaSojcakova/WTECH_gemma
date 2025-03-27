@@ -12,11 +12,11 @@
                             <div class="product"></div>
                             <div class="product-name">Produkt 1</div>
                         </div>
-                        <div>
+                        <div class="d-none d-md-block">
                             <div class="product"></div>
                             <div class="product-name">Produkt 2</div>
                         </div>
-                        <div>
+                        <div class="d-none d-md-block">
                             <div class="product"></div>
                             <div class="product-name">Produkt 3</div>
                         </div>
@@ -30,11 +30,11 @@
                             <div class="product"></div>
                             <div class="product-name">Produkt 4</div>
                         </div>
-                        <div>
+                        <div class="d-none d-md-block">
                             <div class="product"></div>
                             <div class="product-name">Produkt 5</div>
                         </div>
-                        <div>
+                        <div class="d-none d-md-block">
                             <div class="product"></div>
                             <div class="product-name">Produkt 6</div>
                         </div>
@@ -48,11 +48,11 @@
                             <div class="product"></div>
                             <div class="product-name">Produkt 7</div>
                         </div>
-                        <div>
+                        <div class="d-none d-md-block">
                             <div class="product"></div>
                             <div class="product-name">Produkt 8</div>
                         </div>
-                        <div>
+                        <div class="d-none d-md-block">
                             <div class="product"></div>
                             <div class="product-name">Produkt 9</div>
                         </div>

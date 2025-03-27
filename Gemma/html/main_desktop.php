@@ -113,6 +113,11 @@
 
     </div>
 
+    <div class="container-fluid d-flex justify-content-center align-items-center mt-5 mb-5">
+        <button class="btn btn-dark ">Pokračovať ďalej ...</button>
+    </div>
+
+
     <footer>
         <?php include "../html/footer.php"; ?>
     </footer>

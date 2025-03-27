@@ -340,7 +340,7 @@ head {
 .filter-btn {
     width: 100%;
     text-align: center;
-    background-color: #ccc;
+    background: linear-gradient(to bottom,  #bbb , #ccc);
     border-radius: 8px;
     padding: 15px;
     border: none;
@@ -354,7 +354,7 @@ head {
 
 /* Štýl filtračného boxu */
 .filter-container {
-    background-color: #ddd;
+    background: linear-gradient(to bottom,  #ccc , #F6F7F9);
     padding: 30px;
     border-radius: 10px;
 }
@@ -371,4 +371,9 @@ head {
 }
 .filter-btn[aria-expanded="true"]::after {
     content: " ▲";
+}
+.filter-form-check {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Zmenší medzeru medzi checkboxom a textom */
 }

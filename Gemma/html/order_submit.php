@@ -24,32 +24,32 @@
             <h2 class="text-center mb-4 mt-4">Doručovacie údaje</h2>
             <form id="checkoutForm" method="post">
                 <div class="mb-3">
-                    <label class="form-label">Krstné meno</label>
-                    <input type="text" class="form-control" name="firstName" required>
+                    <label for="firstName" class="form-label">Krstné meno</label>
+                    <input type="text" class="form-control" id="firstName" required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Priezvisko</label>
-                    <input type="text" class="form-control" name="lastName" required>
+                    <label for="lastName" class="form-label">Priezvisko</label>
+                    <input type="text" class="form-control" id="lastName" required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Adresa</label>
-                    <input type="text" class="form-control" name="address" required>
+                    <label for="address" class="form-label">Adresa</label>
+                    <input type="text" class="form-control" id="address" required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Mesto/Obec</label>
-                    <input type="text" class="form-control" name="city" required>
+                    <label for="city" class="form-label">Mesto/Obec</label>
+                    <input type="text" class="form-control" id="city" required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">PSČ</label>
-                    <input type="text" class="form-control" name="postalCode" required pattern="^\d{5}$" title="PSČ musí mať 5 číslic.">
+                    <label for="postalCode" class="form-label">PSČ</label>
+                    <input type="text" class="form-control" id="postalCode" required pattern="^\d{5}$" title="PSČ musí mať 5 číslic.">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Telefónne číslo</label>
-                    <input type="tel" class="form-control" name="phone" required pattern="^\+421\d{9}$" title="Telefónne číslo musí začínať s +421 a obsahovať 9 číslic.">
+                    <label for="phone" class="form-label">Telefónne číslo</label>
+                    <input type="tel" class="form-control" id="phone" required pattern="^\+421\d{9}$" title="Telefónne číslo musí začínať s +421 a obsahovať 9 číslic.">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">E-mail</label>
-                    <input type="email" class="form-control" name="email" required>
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
                 </div>
         </div>
 
@@ -125,7 +125,15 @@
             </div>
         </div>
     </div>
-    </form>
+    <script>
+        document.getElementById('dobierka').addEventListener('click', function () {
+            let openedElements = document.querySelectorAll('.collapse.show');
+            openedElements.forEach(el => {
+                let bsCollapse = new bootstrap.Collapse(el, { toggle: false });
+                bsCollapse.hide();
+            });
+        });
+    </script>
 </main>
 
 

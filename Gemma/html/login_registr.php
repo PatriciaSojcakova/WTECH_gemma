@@ -18,7 +18,6 @@
 
 <main class="container" style="padding-top: 100px;padding-bottom: 100px;">
      <div class="row justify-content-center">
-            <!-- Prihlásenie -->
             <div class="col-md-5">
                 <h2 class="text-center mb-4 mt-4">Prihlásiť sa</h2>
                 <form>
@@ -38,7 +37,6 @@
                 </form>
             </div>
 
-            <!-- Registrácia -->
             <div class="col-md-5">
                 <h2 class="text-center mb-4 mt-4">Vytvoriť konto</h2>
                 <form>

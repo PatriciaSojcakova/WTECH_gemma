@@ -32,7 +32,11 @@
                 <a href="favourite.php">
                     <span class="material-icons" style="color: #000000;">favorite</span>
                 </a>
-                <span class="material-icons" style="color: #000000;">shopping_cart</span>
+
+                <a href="basket.php">
+                    <span class="material-icons" style="color: #000000;">shopping_cart</span>
+                </a>
+
             </div>
 
         </div>

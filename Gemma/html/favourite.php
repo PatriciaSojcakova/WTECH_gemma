@@ -36,12 +36,10 @@
             <label for="favorite1" class="favorite-icon material-icons">favorite</label>
         </div>
 
-        <div class="col-md-3 mt-3">
-            <p><strong>Názov</strong><br>
-                Prsteň objatie
-            </p>
+        <div class="col-md-3 mt-3 d-flex flex-column align-items-center text-start justify-content-center ">
 
-            <p>
+            <p><strong>Názov</strong><br>
+                Prsteň objatie <br><br>
                 <strong>Parametre:</strong><br>
                 Materiál:  zlato<br>
                 Farba:  rose gold<br>
@@ -72,11 +70,10 @@
             <input type="checkbox" id="favorite2" class="favorite-checkbox">
             <label for="favorite2" class="favorite-icon material-icons">favorite</label>
         </div>
-        <div class="col-md-3 mt-3">
-            <p><strong>Názov</strong><br>
-                Prsteň objatie
-            </p>
-            <p>
+        <div class="col-md-3 mt-3 d-flex flex-column align-items-center text-start justify-content-center">
+
+            <p> <strong>Názov</strong><br>
+                Prsteň objatie <br><br>
                 <strong>Parametre:</strong><br>
                 Materiál: zlato<br>
                 Farba: rose gold<br>

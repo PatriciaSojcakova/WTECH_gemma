@@ -10,11 +10,9 @@
 
                 <li class="nav-item dropdown">
                     <a id="loginDropdown" class="nav-link active custom_playfair_bold dropdown-toggle m-0 p-0"
-                       href="products_desktop.php"
                        role="button"
                        data-bs-toggle="dropdown"
-                       aria-expanded="false"
-                       onclick="window.location.href='products_desktop.php'">
+                       aria-expanded="false">
                         PRSTENE
                     </a>
                     <ul class="dropdown-menu custom-dropdown" style="background-color: #E2CBCB;margin-top: 3px;" aria-labelledby="navbarDropdown">
@@ -22,16 +20,15 @@
                         <li><a class="dropdown-item" href="products_desktop.php">Vrstviteľné</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">Obrúčky</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">S kamienkom</a></li>
+                        <li><a class="dropdown-item" href="products_desktop.php">Všetky</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a id="loginDropdown" class="nav-link active custom_playfair_bold dropdown-toggle m-0 p-0"
-                       href="products_desktop.php"
                        role="button"
                        data-bs-toggle="dropdown"
-                       aria-expanded="false"
-                       onclick="window.location.href='products_desktop.php'">
+                       aria-expanded="false">
                         NÁUŠNICE
                     </a>
                     <ul class="dropdown-menu custom-dropdown" style="background-color: #E2CBCB;margin-top: 3px;" aria-labelledby="navbarDropdown">
@@ -40,16 +37,15 @@
                         <li><a class="dropdown-item" href="products_desktop.php">Perlové náušnice</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">Visiace náušnice</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">Retiazkové náušnice</a></li>
+                        <li><a class="dropdown-item" href="products_desktop.php">Všetky</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a id="loginDropdown" class="nav-link active custom_playfair_bold dropdown-toggle m-0 p-0"
-                       href="products_desktop.php"
                        role="button"
                        data-bs-toggle="dropdown"
-                       aria-expanded="false"
-                       onclick="window.location.href='products_desktop.php'">
+                       aria-expanded="false">
                        NÁHRDELNÍKY
                     </a>
                     <ul class="dropdown-menu custom-dropdown" style="background-color: #E2CBCB;margin-top: 3px;" aria-labelledby="navbarDropdown">
@@ -58,16 +54,15 @@
                         <li><a class="dropdown-item" href="products_desktop.php">Perlové náhrdelníky</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">Tenisové náhrdelníky</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">Chokers</a></li>
+                        <li><a class="dropdown-item" href="products_desktop.php">Všetky</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a id="loginDropdown" class="nav-link active custom_playfair_bold dropdown-toggle m-0 p-0"
-                       href="products_desktop.php"
                        role="button"
                        data-bs-toggle="dropdown"
-                       aria-expanded="false"
-                       onclick="window.location.href='products_desktop.php'">
+                       aria-expanded="false">
                         NÁRAMKY
                     </a>
                     <ul class="dropdown-menu custom-dropdown" style="background-color: #E2CBCB;margin-top: 3px;" aria-labelledby="navbarDropdown">
@@ -76,16 +71,15 @@
                         <li><a class="dropdown-item" href="products_desktop.php">Tenisové náramky</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">Bezpríveskové</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">Perlové náramky</a></li>
+                        <li><a class="dropdown-item" href="products_desktop.php">Všetky</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a id="loginDropdown" class="nav-link active custom_playfair_bold dropdown-toggle m-0 p-0"
-                       href="products_desktop.php"
                        role="button"
                        data-bs-toggle="dropdown"
-                       aria-expanded="false"
-                       onclick="window.location.href='products_desktop.php'">
+                       aria-expanded="false">
                        KOLEKCIE
                     </a>
                     <ul class="dropdown-menu custom-dropdown" style="background-color: #E2CBCB;margin-top: 3px;" aria-labelledby="navbarDropdown">
@@ -94,6 +88,7 @@
                         <li><a class="dropdown-item" href="products_desktop.php">GEMMA moments</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">GEMMA x Oasis</a></li>
                         <li><a class="dropdown-item" href="products_desktop.php">Signature of love</a></li>
+                        <li><a class="dropdown-item" href="products_desktop.php">Všetky</a></li>
                     </ul>
                 </li>
 

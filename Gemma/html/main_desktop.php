@@ -27,7 +27,7 @@
     </div>
 
     <div class="container-fluid d-flex justify-content-center align-items-center custom-container" style="background: #D9D9D9">
-        <h1 class="custom_italiana">REKLAMA</h1>
+        <h1 class="custom_italiana">REKLAMA NA TICHO</h1>
     </div>
 
 

@@ -20,9 +20,9 @@
 
     <h2 class="text-center mb-5 mt-5">NÁKUPNÝ KOŠÍK</h2>
 
-    <div class="row fw-bold border-bottom border-black pb-2 d-none d-md-flex justify-content-between">
+    <div class="row fw-bold border-bottom border-black pb-2 d-none d-md-flex justify-content-between custom-basket-fav-font">
         <div class="col-md-3 text-center">Detail produktu </div>
-        <div class="col-md-3 text-center">Názov & Parametre</div>
+        <div class="col-md-3 text-center">Názov a Parametre</div>
         <div class="col-md-3 text-center">Počet kusov</div>
         <div class="col-md-3 text-center">Cena</div>
     </div>
@@ -45,16 +45,12 @@
             </p>
         </div>
 
-        <div class="col-md-3 mt-3 text-center">
-            <span>
-                <i class="material-icons text-black">check</i>
-            </span>
+        <div class="col-md-3 text-center">
+            <input type="number" class="form-control text-center w-50 mx-auto" value="1" min="1" max="10">
         </div>
 
-        <div class="col-md-3 mt-3 text-center">
-            <button class="btn">
-                <i class="material-icons" style="color: black;">shopping_cart</i>
-            </button>
+        <div class="col-md-3 text-center">
+            <span class="fw-bold">99,90 €</span>
         </div>
     </div>
 
@@ -76,16 +72,20 @@
                 Určenie: dámsky
             </p>
         </div>
-        <div class="col-md-3 mt-3 text-center">
-            <span>
-                <i class="material-icons text-black">close</i>
-            </span>
+        <div class="col-md-3 text-center">
+            <input type="number" class="form-control text-center w-50 mx-auto" value="1" min="1" max="10">
         </div>
-        <div class="col-md-3 mt-3 text-center">
-            <button class="btn">
-                <i class="material-icons" style="color: black;">shopping_cart</i>
-            </button>
+
+        <div class="col-md-3 text-center">
+            <span class="fw-bold">99,90 €</span>
         </div>
+    </div>
+
+    <div class="text-center mt-5 mb-5">
+        <a href="order_submit.php">
+            <button class="btn btn-dark w-20 mb-4">Dokončiť nákup</button>
+        </a>
+
     </div>
 
 

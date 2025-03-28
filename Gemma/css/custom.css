@@ -277,6 +277,7 @@ head {
     width: 100%;
     max-width: 200px;
     margin: auto;
+
 }
 
 
@@ -285,6 +286,7 @@ head {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    /* background-color: #D3D3D3; */
 }
 
 .product-container-single {

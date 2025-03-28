@@ -11,7 +11,7 @@
 
                             <div class="product-container">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <img src="../custom_files/Obrazky/ring/woman/simple_gold_3-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>

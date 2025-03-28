@@ -61,7 +61,6 @@
             <div class="col-md-7 mb-5">
                 <h2 class="fw-bold">Názov</h2>
                 <p class="fw-bold">Popis produktu</p>
-                <hr>
                 <p class="text-muted">------------------------------------</p>
                 <p class="text-muted">------------------------------------</p>
                 <p class="text-muted">------------------------------------</p>

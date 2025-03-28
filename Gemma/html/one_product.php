@@ -60,7 +60,7 @@
             </div>
 
             <div class="col-md-7 mb-5">
-                <h2 class="fw-bold">Názov</h2>
+                <h2 class="fw-bold">Prsteň Elegant</h2>
                 <p class="fw-bold">Popis produktu</p>
                 <p class="text-muted">------------------------------------</p>
                 <p class="text-muted">------------------------------------</p>
@@ -68,9 +68,9 @@
 
                 <h5 class="fw-bold mt-3">Špecifikácie</h5>
                 <p class="mb-1">
-                    <strong>Materiál:</strong> ------- <br>
-                    <strong>Farba:</strong> ------- <br>
-                    <strong>Určenie:</strong> -------
+                    <strong>Materiál:</strong> zlato <br>
+                    <strong>Farba kameňa:</strong> - <br>
+                    <strong>Určenie:</strong> dámsky
                 </p>
 
                 <div class="d-flex justify-content-between align-items-center mt-5">

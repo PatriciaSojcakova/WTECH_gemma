@@ -56,27 +56,27 @@
             <div class="col-md-5">
                 <h2 class="text-center mb-5 mt-4">Spôsob doručenia</h2>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="doprava" id="kurier" required>
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="doprava" id="kurier" required>
                     <label class="form-check-label" for="kurier">Kuriér na adresu (3,50 €)</label>
                 </div>
                 <div class="form-check mb-4">
-                    <input class="form-check-input" type="radio" name="doprava" id="posta" required>
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="doprava" id="posta" required>
                     <label class="form-check-label" for="posta">Doručenie na poštu (2,50 €)</label>
                 </div>
 
                 <h2 class="text-center mb-4 mt-5">Spôsob platby</h2>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="platba" id="dobierka" required>
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="dobierka" required>
                     <label class="form-check-label" for="dobierka">Dobierka pri prevzatí (1,00 €)</label>
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="platba" id="prevod" data-bs-toggle="collapse" data-bs-target="#bankInfo">
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="prevod" data-bs-toggle="collapse" data-bs-target="#bankInfo">
                     <label class="form-check-label" for="prevod">Bankový prevod (0,00 €)</label>
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="platba" id="karta" data-bs-toggle="collapse" data-bs-target="#cardForm">
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="karta" data-bs-toggle="collapse" data-bs-target="#cardForm">
                     <label class="form-check-label" for="karta">Kartou online (0,00 €)</label>
                 </div>
 
@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="form-check mb-4 mt-5">
-                    <input class="form-check-input" type="checkbox" id="suhlas" required>
+                    <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="suhlas" required>
                     <label class="form-check-label" for="suhlas">
                         Prečítal/a som si a súhlasím so Všeobecnými obchodnými podmienkami webovej stránky.
                     </label>

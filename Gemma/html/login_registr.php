@@ -30,10 +30,10 @@
                         <input type="password" class="form-control" id="loginPassword" placeholder="Zadajte heslo" required>
                     </div>
                     <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <input type="checkbox" class="form-check-input focus-ring focus-ring-dark" id="rememberMe">
                         <label class="form-check-label" for="rememberMe">Zapamätať si ma</label>
                     </div>
-                    <button type="submit" class="btn btn-dark w-100 mb-4">Prihlásiť sa</button>
+                    <button type="submit" class="btn btn-dark w-100 mb-4 ">Prihlásiť sa</button>
                 </form>
             </div>
 
@@ -57,11 +57,11 @@
                         <input type="password" class="form-control" id="registerPassword" placeholder="Zadajte heslo" required>
                     </div>
                     <div class="form-check mb-2">
-                        <input type="checkbox" class="form-check-input" id="terms">
+                        <input type="checkbox" class="form-check-input focus-ring focus-ring-dark" id="terms">
                         <label class="form-check-label" for="terms">Prečítal/a som si a súhlasím so Všeobecnými obchodnými podmienkami webovet stránky.</label>
                     </div>
                     <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" id="newsletter">
+                        <input type="checkbox" class="form-check-input focus-ring focus-ring-dark" id="newsletter">
                         <label class="form-check-label" for="newsletter">Chcem dostávať e-mailom  informácie o produktoch a exkluzívnych ponukách spoločnosti Gemma.</label>
                     </div>
                     <button type="submit" class="btn btn-dark w-100">Registrovať</button>

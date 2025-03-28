@@ -272,11 +272,13 @@ head {
     font-weight: bold;
     font-size: 16px;
 }
+
 .product-container {
     width: 100%;
     max-width: 200px;
     margin: auto;
 }
+
 
 .product-image {
     width: 100%;
@@ -284,6 +286,21 @@ head {
     object-fit: cover;
     border-radius: 10px;
 }
+
+.product-container-single {
+    width: 100%;
+    max-width: 300px; /* Väčší kontajner */
+    margin: auto;
+}
+
+.product-image-single {
+    width: 100%;
+    height: 300px; /* Väčšia výška */
+    object-fit: cover; /* Zachová pomer strán */
+    border-radius: 10px;
+}
+
+
 
 .favorites-page .favorite-checkbox {
     display: none;

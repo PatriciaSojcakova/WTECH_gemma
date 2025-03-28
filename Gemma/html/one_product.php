@@ -21,33 +21,31 @@
 
     <div class="container mt-5">
         <div class="row">
-            <!-- Karusel na obrázky produktu -->
             <div class="col-md-5">
                 <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="product-container">
+                            <div class="product-container-single">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image-single" alt="Obrázok produktu">
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="product-container">
+                            <div class="product-container-single">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image-single" alt="Obrázok produktu">
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="product-container">
+                            <div class="product-container-single">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image-single" alt="Obrázok produktu">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <!-- Ovládacie tlačidlá -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>

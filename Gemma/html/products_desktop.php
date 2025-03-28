@@ -178,7 +178,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/woman/simple_gold_3-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Wildlife</p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod2" class="favorite-checkbox">
@@ -189,7 +189,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/woman/simple_gold_dia_1-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Enchantix </p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod3" class="favorite-checkbox">
@@ -200,7 +200,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/woman/simple_golden_5-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Asperitas </p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod4" class="favorite-checkbox">
@@ -211,7 +211,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/woman/stone_gold_dia-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Eterna</p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod5" class="favorite-checkbox">
@@ -222,7 +222,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/woman/stone_gold_dia_-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Harmony</p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod6" class="favorite-checkbox">
@@ -233,7 +233,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/woman/stone_gold_dia_1-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Eccentricitas</p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod7" class="favorite-checkbox">
@@ -244,7 +244,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/woman/stone_gold_dia_3-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Vintage</p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod8" class="favorite-checkbox">
@@ -255,7 +255,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/other/simple_gold_3-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Laurel</p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod9" class="favorite-checkbox">
@@ -266,7 +266,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/other/simple_gold-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Amicitia</p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod10" class="favorite-checkbox">
@@ -277,7 +277,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/other/simple_gold_2-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Sirenix</p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod11" class="favorite-checkbox">
@@ -288,7 +288,7 @@
                     <div class="product-container">
                         <a href="one_product.php" class="text-decoration-none text-reset d-block">
                             <img src="../custom_files/Obrazky/ring/man/simple_gold_2-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
+                            <p class="product-name">Prsteň Virilitas</p>
                         </a>
                     </div>
                     <input type="checkbox" id="favorite-prod12" class="favorite-checkbox">

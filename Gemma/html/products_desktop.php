@@ -24,6 +24,7 @@
                 FILTRE
             </button>
 
+
             <!-- Filter sekcia -->
             <div id="filterCollapse" class="collapse mt-2">
                 <div class="filter-container">
@@ -149,7 +150,6 @@
                 </div>
             </div>
         </div>
-
 
 
 

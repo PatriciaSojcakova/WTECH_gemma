@@ -121,11 +121,21 @@
         </div>
     </form>
     <script>
-        document.getElementById('dobierka').addEventListener('click', function () {
-            let openedElements = document.querySelectorAll('.collapse.show');
-            openedElements.forEach(el => {
-                let bsCollapse = new bootstrap.Collapse(el, { toggle: false });
-                bsCollapse.hide();
+        document.querySelectorAll('input[name="platba"]').forEach((radio) => {
+            radio.addEventListener('change', function () {
+                document.querySelectorAll('.collapse.show').forEach(el => {
+                    let bsCollapse = new bootstrap.Collapse(el, { toggle: false });
+                    bsCollapse.hide();
+                });
+
+                let target = this.getAttribute('data-bs-target');
+                if (target) {
+                    let targetEl = document.querySelector(target);
+                    if (targetEl) {
+                        let bsCollapse = new bootstrap.Collapse(targetEl);
+                        bsCollapse.show();
+                    }
+                }
             });
         });
     </script>

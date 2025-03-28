@@ -24,7 +24,9 @@
         <div class="col-md-3 text-center mt-2">Detail produktu </div>
         <div class="col-md-3 text-center mt-2">Názov & Parametre</div>
         <div class="col-md-3 text-center mt-2">Počet kusov</div>
-        <div class="col-md-3 text-center mt-2">Cena</div>
+        <div class="col-md-2 text-center mt-2">Cena</div>
+        <div class="col-md-1 text-center mt-2">Odstrániť</div>
+
     </div>
 
     <div class="row align-items-center py-3 border-bottom">
@@ -48,11 +50,17 @@
         </div>
 
         <div class="col-md-3 text-center">
-            <input type="number" class="form-control text-center w-50 mx-auto" value="1" min="1" max="10">
+            <input type="number" class="form-control text-center w-50 mx-auto" value="1" min="0" max="10">
         </div>
 
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
             <span class="fw-bold">99,90 €</span>
+        </div>
+
+        <div class="col-md-1 text-center">
+            <button class="btn btn-black btn-sm delete-item">
+                <i class="material-icons">delete</i>
+            </button>
         </div>
     </div>
 
@@ -77,11 +85,17 @@
             </p>
         </div>
         <div class="col-md-3 text-center">
-            <input type="number" class="form-control text-center w-50 mx-auto" value="1" min="1" max="10">
+            <input type="number" class="form-control text-center w-50 mx-auto" value="1" min="0" max="10">
         </div>
 
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
             <span class="fw-bold">99,90 €</span>
+        </div>
+
+        <div class="col-md-1 text-center">
+            <button class="btn btn-black btn-sm delete-item">
+                <i class="material-icons">delete</i>
+            </button>
         </div>
     </div>
 

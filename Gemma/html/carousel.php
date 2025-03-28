@@ -8,90 +8,88 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center gap-4">
-                        <div>
+
                             <div class="product-container">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
                                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>
-                        </div>
-                        <div class="d-none d-md-block">
-                            <div class="product-container">
+
+
+                            <div class="product-container d-none d-md-block">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
                                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>
-                        </div>
-                        <div class="d-none d-md-block">
-                            <div class="product-container">
+
+
+                            <div class="product-container d-none d-md-block">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
                                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>
-                        </div>
+
                     </div>
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center gap-4">
-                        <div>
+
                             <div class="product-container">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
                                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>
-                        </div>
-                        <div class="d-none d-md-block">
-                            <div class="product-container">
+
+
+                            <div class="product-container d-none d-md-block">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
                                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>
-                        </div>
-                        <div class="d-none d-md-block">
-                            <div class="product-container">
+
+
+                            <div class="product-container d-none d-md-block">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
                                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>
-                        </div>
+
                     </div>
                 </div>
 
                 <!-- Slide 3 -->
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center gap-4">
-                        <div>
+
                             <div class="product-container">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
                                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>
-                        </div>
-                        <div class="d-none d-md-block">
-                            <div class="product-container">
+
+                            <div class="product-container d-none d-md-block">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
                                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>
-                        </div>
-                        <div class="d-none d-md-block">
-                            <div class="product-container">
+
+                            <div class="product-container d-none d-md-block">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
                                     <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
                                     <p class="product-name">Prsteň Elegant</p>
                                 </a>
                             </div>
-                        </div>
+
                     </div>
                 </div>
             </div>

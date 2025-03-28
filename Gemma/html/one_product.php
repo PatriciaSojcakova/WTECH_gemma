@@ -27,21 +27,21 @@
                         <div class="carousel-item active">
                             <div class="product-container-single">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image-single" alt="Obrázok produktu">
+                                    <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image-single" alt="Obrázok produktu">
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="product-container-single">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image-single" alt="Obrázok produktu">
+                                    <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image-single" alt="Obrázok produktu">
                                 </a>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="product-container-single">
                                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image-single" alt="Obrázok produktu">
+                                    <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image-single" alt="Obrázok produktu">
                                 </a>
                             </div>
                         </div>
@@ -60,11 +60,8 @@
             </div>
 
             <div class="col-md-7 mb-5">
-                <h2 class="fw-bold">Prsteň Elegant</h2>
-                <p class="fw-bold">Popis produktu</p>
-                <p class="text-muted">------------------------------------</p>
-                <p class="text-muted">------------------------------------</p>
-                <p class="text-muted">------------------------------------</p>
+                <h2 class="fw-bold mb-3">Prsteň Elegant</h2>
+                <p class="text-muted">Jemný zlatý prsteň, vytvorený z prepletených vlákien, ktoré pôsobia ľahko a étericky. Jeho elegantný dizajn pripomína nežnú sieť zlatých nitiek, ktoré sa jemne ovíjajú okolo prsta.</p>
 
                 <h5 class="fw-bold mt-3">Špecifikácie</h5>
                 <p class="mb-1">
@@ -102,7 +99,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                        <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                        <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                         <p class="product-name">Prsteň Elegant</p>
                     </a>
                 </div>
@@ -113,7 +110,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                        <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                        <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                         <p class="product-name">Prsteň Elegant</p>
                     </a>
                 </div>
@@ -124,7 +121,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                        <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                        <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                         <p class="product-name">Prsteň Elegant</p>
                     </a>
                 </div>
@@ -135,7 +132,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                        <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                        <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                         <p class="product-name">Prsteň Elegant</p>
                     </a>
                 </div>
@@ -146,7 +143,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                        <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                        <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                         <p class="product-name">Prsteň Elegant</p>
                     </a>
                 </div>
@@ -157,7 +154,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                        <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                        <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                         <p class="product-name">Prsteň Elegant</p>
                     </a>
                 </div>
@@ -168,7 +165,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                        <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                        <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                         <p class="product-name">Prsteň Elegant</p>
                     </a>
                 </div>
@@ -179,7 +176,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
                 <div class="product-container">
                     <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                        <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                        <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                         <p class="product-name">Prsteň Elegant</p>
                     </a>
                 </div>

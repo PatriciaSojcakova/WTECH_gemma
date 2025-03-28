@@ -9,16 +9,28 @@
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center gap-4">
                         <div>
-                            <div class="product"></div>
-                            <div class="product-name">Produkt 1</div>
+                            <div class="product-container">
+                                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <p class="product-name">Prsteň Elegant</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="d-none d-md-block">
-                            <div class="product"></div>
-                            <div class="product-name">Produkt 2</div>
+                            <div class="product-container">
+                                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <p class="product-name">Prsteň Elegant</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="d-none d-md-block">
-                            <div class="product"></div>
-                            <div class="product-name">Produkt 3</div>
+                            <div class="product-container">
+                                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <p class="product-name">Prsteň Elegant</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -27,16 +39,28 @@
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center gap-4">
                         <div>
-                            <div class="product"></div>
-                            <div class="product-name">Produkt 4</div>
+                            <div class="product-container">
+                                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <p class="product-name">Prsteň Elegant</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="d-none d-md-block">
-                            <div class="product"></div>
-                            <div class="product-name">Produkt 5</div>
+                            <div class="product-container">
+                                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <p class="product-name">Prsteň Elegant</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="d-none d-md-block">
-                            <div class="product"></div>
-                            <div class="product-name">Produkt 6</div>
+                            <div class="product-container">
+                                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <p class="product-name">Prsteň Elegant</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,16 +69,28 @@
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center gap-4">
                         <div>
-                            <div class="product"></div>
-                            <div class="product-name">Produkt 7</div>
+                            <div class="product-container">
+                                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <p class="product-name">Prsteň Elegant</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="d-none d-md-block">
-                            <div class="product"></div>
-                            <div class="product-name">Produkt 8</div>
+                            <div class="product-container">
+                                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <p class="product-name">Prsteň Elegant</p>
+                                </a>
+                            </div>
                         </div>
                         <div class="d-none d-md-block">
-                            <div class="product"></div>
-                            <div class="product-name">Produkt 9</div>
+                            <div class="product-container">
+                                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                                    <p class="product-name">Prsteň Elegant</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

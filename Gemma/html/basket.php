@@ -33,7 +33,7 @@
         <div class="col-md-3 text-center">
             <div class="product-container">
                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                    <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                 </a>
             </div>
         </div>
@@ -41,10 +41,10 @@
         <div class="col-md-3 mt-3 d-flex flex-column align-items-center text-start justify-content-center">
 
             <p> <strong>Názov</strong><br>
-                Prsteň objatie <br><br>
+                Prsteň elegant <br><br>
                 <strong>Parametre:</strong><br>
                 Materiál: zlato<br>
-                Farba: rose gold<br>
+                Farba kameňa: -<br>
                 Určenie: dámsky
             </p>
         </div>
@@ -70,17 +70,17 @@
         <div class="col-md-3 text-center">
             <div class="product-container">
                 <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                    <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
                 </a>
             </div>
         </div>
         <div class="col-md-3 mt-3 d-flex flex-column align-items-center text-start justify-content-center">
 
             <p> <strong>Názov</strong><br>
-                Prsteň objatie <br><br>
+                Prsteň elegant <br><br>
                 <strong>Parametre:</strong><br>
                 Materiál: zlato<br>
-                Farba: rose gold<br>
+                Farba kameňa: -<br>
                 Určenie: dámsky
             </p>
         </div>

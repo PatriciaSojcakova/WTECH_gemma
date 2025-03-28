@@ -30,7 +30,9 @@
     <div class="row align-items-center py-3 border-bottom">
         <div class="col-md-3 text-center">
             <div class="product-container">
-                <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                </a>
             </div>
             <input type="checkbox" id="favorite1" class="favorite-checkbox">
             <label for="favorite1" class="favorite-icon material-icons">favorite</label>
@@ -65,7 +67,9 @@
     <div class="row align-items-center py-3 border-bottom">
         <div class="col-md-3 text-center">
             <div class="product-container">
-                <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                </a>
             </div>
             <input type="checkbox" id="favorite2" class="favorite-checkbox">
             <label for="favorite2" class="favorite-icon material-icons">favorite</label>

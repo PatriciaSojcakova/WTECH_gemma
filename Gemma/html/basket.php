@@ -30,7 +30,9 @@
     <div class="row align-items-center py-3 border-bottom">
         <div class="col-md-3 text-center">
             <div class="product-container">
-                <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                </a>
             </div>
         </div>
 
@@ -59,7 +61,9 @@
     <div class="row align-items-center py-3 border-bottom">
         <div class="col-md-3 text-center">
             <div class="product-container">
-                <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                <a href="one_product.php" class="text-decoration-none text-reset d-block">
+                    <img src="../custom_files/Obrazky/ring.webp" class="product-image" alt="Obrázok produktu">
+                </a>
             </div>
         </div>
         <div class="col-md-3 mt-3 d-flex flex-column align-items-center text-start justify-content-center">

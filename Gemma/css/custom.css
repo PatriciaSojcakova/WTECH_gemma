@@ -158,7 +158,7 @@ head {
 }
 
 .custom-navbar {
-    background-color: #F6F7F9 !important; /* Nastav vlastnú farbu */
+    background-color: #F6F7F9 !important;
 }
 
 
@@ -219,8 +219,8 @@ head {
 
 .navbar-bar {
     position: sticky !important;
-    top: 86px; /* Nastaví vzdialenosť od vrchu */
-    z-index: 1020; /* Uistí sa, že navbar zostane nad ostatnými prvkami */
+    top: 86px;
+    z-index: 1020;
 }
 
 
@@ -239,24 +239,24 @@ head {
 
 .carousel-item {
     display: flex;
-    justify-content: center; /* Zabezpečí, že produkty sú vedľa seba */
+    justify-content: center;
 }
 
 .carousel-indicators {
-    position: relative; /* Zabezpečiť, aby boli pod obrázkami */
-    margin-top: 20px; /* Odsadenie indikátorov pod produkty */
+    position: relative;
+    margin-top: 20px;
 
 }
 .carousel-indicators {
     position: absolute;
-    bottom: 10px; /* Skúste upraviť túto hodnotu */
-    transform: translateY(40px);/* Uprav hodnotu podľa potreby */
+    bottom: 10px;
+    transform: translateY(40px);
     filter: invert(1);
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(1); /* Prevráti farby na čiernu */
+    filter: invert(1);
 }
 
 
@@ -328,15 +328,14 @@ head {
 
 .title-bar {
     position: sticky !important;
-    top: 118px; /* Nastaví vzdialenosť od vrchu */
-    z-index: 1020; /* Uistí sa, že navbar zostane nad ostatnými prvkami */
+    top: 118px;
+    z-index: 1000;
 }
 
 
 
 
 /* PRODUCTS */
-    /* Štýl tlačidla Filtre */
 .filter-btn {
     width: 100%;
     text-align: center;
@@ -352,7 +351,6 @@ head {
     background-color: #bbb;
 }
 
-/* Štýl filtračného boxu */
 .filter-container {
     background: linear-gradient(to bottom,  #ccc , #F6F7F9);
     padding: 30px;
@@ -365,7 +363,6 @@ head {
     font-size: 16px;
 }
 
-/* Trojuholník mení tvar podľa stavu */
 .filter-btn::after {
     content: " ▼";
 }
@@ -375,5 +372,5 @@ head {
 .filter-form-check {
     display: flex;
     align-items: center;
-    gap: 5px; /* Zmenší medzeru medzi checkboxom a textom */
+    gap: 5px;
 }

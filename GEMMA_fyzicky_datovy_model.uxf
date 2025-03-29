@@ -1,0 +1,88 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>390</x><y>350</y><w>210</w><h>150</h></coordinates><panel_attributes>_Produkt_
+--
+PK		 id_produktu: INT
+							názov: VARCHAR (255)
+							opis: VARCHAR (255)
+							materiál: VARCHAR (255)
+							farba_kameňa: VARCHAR (255)
+							určenie: VARCHAR (255)
+							počet_kusov_na_sklade: INT
+							cena: FLOAT
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>380</y><w>210</w><h>120</h></coordinates><panel_attributes>_Používateľ_
+--
+PK		id_používateľa: INT
+							rola: VARCHAR (255)
+							meno: VARCHAR (255)
+							priezvisko: VARCHAR (255)
+							email: VARCHAR (255)
+							heslo: VARCHAR (255)
+					
+							</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>110</y><w>210</w><h>100</h></coordinates><panel_attributes>_Položka objednávky_
+--
+FK		id_objednávky: INT
+FK		id_produktu: INT
+						počet_kusov: INT</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>620</y><w>270</w><h>80</h></coordinates><panel_attributes>_Obrázok produktu_
+--
+PK			id_obrázku: INT
+							cesta_k_obrázku: VARCHAR (255)
+FK			id_produktu: INT</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>350</y><w>220</w><h>140</h></coordinates><panel_attributes>_Zmena produktu_
+--
+FK			id_produktu: INT
+								dátum_pridania_produktu: DATE
+FK			id_admin_pridania: INT
+								dátum_odstránenia: DATE
+FK			id_admin_odstránenia: INT
+								posledná_úprava: DATE
+FK			id_admin_úprava: INT
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>70</y><w>210</w><h>180</h></coordinates><panel_attributes>_Objednávka_
+--
+PK		id_objednávky: INT
+FK 		id_zákazníka: INT
+								adresa: VARCHAR (255)
+								mesto/obec: VARCHAR (255)
+								psč: INT
+								tel_číslo: VARCHAR (15)
+								spôsob_doručenia: VARCHAR (255)
+								spôsob platby: VARCHAR (255)
+								suma: FLOAT
+								dátum_vytvorenia: DATE</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>620</y><w>270</w><h>80</h></coordinates><panel_attributes>_Košík_
+--
+FK			id_používateľa: INT
+FK			id_produktu: INT
+								počet_kusov: INT</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>620</y><w>270</w><h>80</h></coordinates><panel_attributes>_Obľúbené produkty_
+--
+FK			id_používateľa: INT
+FK			id_produktu: INT</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>150</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+obsahuje </panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>200</y><w>70</w><h>170</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+sa stáva</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>240</y><w>70</w><h>160</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..*
+vytvára</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>430</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=0..*
+prehľadáva</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>410</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+podlieha</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>490</y><w>100</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=3..*
+m2=1
+dopĺňa</panel_attributes><additional_attributes>10;130;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>490</y><w>170</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1
+obsahuje</panel_attributes><additional_attributes>10;10;150;130</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>490</y><w>80</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=1
+obsahuje</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>490</y><w>130</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+napĺňa</panel_attributes><additional_attributes>10;130;110;10</additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>490</y><w>70</w><h>150</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+napĺňa</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element></diagram>

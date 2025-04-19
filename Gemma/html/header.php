@@ -1,6 +1,6 @@
 <nav class="navbar bg-#F6F7F9 custom-navbar fixed-top" style="height: 86px;">
     <div class="container-fluid">
-        <div class="row w-100 d-flex align-items-center">
+        <div class="row w-100 d-flex align-items-center">com
 
             <div class="col text-center">
                 <a class="navbar-brand custom_italiana fs-1 fs-md-2 fs-lg-3" href="main_desktop.php">Gemma</a>

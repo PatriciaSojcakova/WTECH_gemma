@@ -5,6 +5,7 @@
       <laravel_pint_by_interpreter asDefaultInterpreter="true" interpreter_id="e7bbbd68-83ab-4c5f-82b7-88df8b8f8495">
         <option name="timeout" value="30000" />
       </laravel_pint_by_interpreter>
+      <LaravelPintConfiguration tool_path="$PROJECT_DIR$/GemmaLaravel/vendor/bin/pint" />
     </laravel_pint_settings>
   </component>
   <component name="MessDetectorOptionsConfiguration">

@@ -19,16 +19,15 @@
             </div>
 
             <div class="col text-end d-flex justify-content-center gap-3 gap-sm-4 gap-md-4">
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                @guest
+                    <a href="{{ url('/login_registration') }}">
                         <span class="material-icons" style="color: #000000;">account_circle</span>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
-                        <li><a class="dropdown-item" href="{{ url('/login_registration') }}">Prihlásiť sa</a></li>
-                        <li><a class="dropdown-item" href="{{ url('/personal_account') }}">Osobný účet</a></li>
-                        <li><a class="dropdown-item" href="{{ url('/admin_account') }}">Admin</a></li>
-                    </ul>
-                </div>
+                @else
+                    <a href="{{ url('/personal_account') }}">
+                        <span class="material-icons" style="color: #000000;">account_circle</span>
+                    </a>
+                @endguest
                 <a href="{{ url('/favorite') }}">
                     <span class="material-icons" style="color: #000000;">favorite</span>
                 </a>

@@ -35,9 +35,12 @@
             <p>Posledná objednávka: #2024001 (12.3.2024)</p>
             <p>Stav: Odoslaná</p>
 
-            <div class="d-flex justify-content-center mt-5 d-sm-flex justify-content-sm-center d-md-block">
-                <button class="btn btn-dark w-40">Odhlásiť sa</button>
-            </div>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <div class="d-flex justify-content-center mt-5 d-sm-flex justify-content-sm-center d-md-block">
+                    <button class="btn btn-dark w-40">Odhlásiť sa</button>
+                </div>
+            </form>
         </div>
 
     </div>

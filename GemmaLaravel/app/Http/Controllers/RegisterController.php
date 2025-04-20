@@ -34,10 +34,11 @@ class RegisterController extends Controller
             'surname' => $request->surname,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'terms_accepted' => $request->has('terms_accepted'),
+            'newsletter_subscribed' => $request->has('newsletter_subscribed'),
         ]);
 
         Auth::login($user);
-
         return redirect('/personal_account');
     }
 }

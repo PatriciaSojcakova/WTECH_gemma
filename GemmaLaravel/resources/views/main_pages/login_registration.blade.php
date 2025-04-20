@@ -21,6 +21,7 @@
         <div class="row justify-content-center">
             <div class="col-md-5">
                 <h2 class="text-center mb-4 mt-4">Prihlásiť sa</h2>
+
                 <form action="{{ route('login.submit') }}" method="POST">
                     @csrf
                     <div class="mb-3">
@@ -32,17 +33,26 @@
                         <input type="password" name="password" class="form-control" id="loginPassword" placeholder="Zadajte heslo" required>
                     </div>
                     <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input focus-ring focus-ring-dark" id="rememberMe">
+                        <input type="checkbox" name="remember" class="form-check-input focus-ring focus-ring-dark" id="rememberMe">
                         <label class="form-check-label" for="rememberMe">Zapamätať si ma</label>
                     </div>
+
+                    @if ($errors->login->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->login->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <button type="submit" class="btn btn-dark w-100 mb-4 ">Prihlásiť sa</button>
                 </form>
             </div>
 
             <div class="col-md-5">
                 <h2 class="text-center mb-4 mt-4">Vytvoriť konto</h2>
-
-
 
                 <form action="{{ route('register.submit') }}" method="POST">
                     @csrf
@@ -82,7 +92,6 @@
                     @endif
 
                     <button type="submit" class="btn btn-dark w-100">Registrovať</button>
-
                 </form>
             </div>
         </div>

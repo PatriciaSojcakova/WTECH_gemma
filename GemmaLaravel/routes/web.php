@@ -26,7 +26,7 @@ Route::get('/login_registration', function () {
 });
 
 Route::get('/personal_account', function () {
-    return view('main_pages.personal_account');
+    return view('main_pages.personal_account');  //->middleware('auth');
 });
 
 Route::get('/admin_account', function () {

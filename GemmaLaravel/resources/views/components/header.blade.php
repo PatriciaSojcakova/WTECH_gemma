@@ -24,9 +24,15 @@
                         <span class="material-icons" style="color: #000000;">account_circle</span>
                     </a>
                 @else
-                    <a href="{{ url('/personal_account') }}">
-                        <span class="material-icons" style="color: #000000;">account_circle</span>
-                    </a>
+                    @if((bool) Auth::user()->admin)
+                        <a href="{{ url('/admin_account') }}">
+                            <span class="material-icons" style="color: #000000;">account_circle</span>
+                        </a>
+                    @else
+                        <a href="{{ url('/personal_account') }}">
+                            <span class="material-icons" style="color: #000000;">account_circle</span>
+                        </a>
+                    @endif
                 @endguest
                 <a href="{{ url('/favorite') }}">
                     <span class="material-icons" style="color: #000000;">favorite</span>

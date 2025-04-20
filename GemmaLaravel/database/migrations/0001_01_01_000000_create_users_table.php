@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->boolean('terms_accepted')->default(false);
             $table->boolean('newsletter_subscribed')->default(false);
+            $table->boolean('admin')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

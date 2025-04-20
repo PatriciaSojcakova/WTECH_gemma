@@ -128,9 +128,12 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mt-5 mb-2">
-            <button class="btn btn-dark w-50">Odhlásiť sa</button>
-        </div>
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <div class="text-center mt-5 mb-2">
+                <button class="btn btn-dark w-50">Odhlásiť sa</button>
+            </div>
+        </form>
     </div>
 </main>
 

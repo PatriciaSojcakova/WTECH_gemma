@@ -40,6 +40,9 @@ class RegisterController extends Controller
         ]);
 
         Auth::login($user);
-        return redirect('/personal_account');
-    }
+        if ($user->admin) {
+            return redirect('/admin_account');
+        } else {
+            return redirect('/personal_account');
+        }    }
 }

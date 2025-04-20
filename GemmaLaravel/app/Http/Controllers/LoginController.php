@@ -20,7 +20,14 @@ class LoginController extends Controller
 
         if (Auth::attempt($request->only('email', 'password'))) {
             $request->session()->regenerate();
-            return redirect()->intended('/personal_account');
+
+            $user = Auth::user();
+
+            if ($user->admin) {
+                return redirect()->intended('/admin_account');
+            } else {
+                return redirect()->intended('/personal_account');
+            }
         }
 
         return back()->withErrors([

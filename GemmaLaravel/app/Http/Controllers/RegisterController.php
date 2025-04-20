@@ -10,10 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
 {
-    public function register(Request $request)
-    {
-
-
+    public function register(Request $request){
         $request->validate([
             'name' => 'required|string|max:255',
             'surname' => 'required|string|max:255',
@@ -21,14 +18,23 @@ class RegisterController extends Controller
             'password' => 'required|min:6',
             'terms_accepted' => 'required|accepted',
             'newsletter_subscribed' => 'nullable',
+        ],[
+            'name.required' => 'Prosím, zadajte meno.',
+            'surname.required' => 'Prosím, zadajte priezvisko.',
+            'email.required' => 'E-mail je povinný.',
+            'email.email' => 'Zadajte platnú e-mailovú adresu.',
+            'email.unique' => 'Tento e-mail sa už používa.',
+            'password.required' => 'Prosím, zadajte heslo.',
+            'password.min' => 'Heslo musí mať aspoň 6 znakov.',
+            'terms_accepted.required' => 'Musíte súhlasiť s obchodnými podmienkami.',
         ]);
 
-        $user = new User();
-        $user->name = $request->first_name;
-        $user->surname = $request->last_name;
-        $user->email = $request->email;
-        $user->password = Hash::make($request->password);
-        $user->save();
+        $user = User::create([
+            'name' => $request->name,
+            'surname' => $request->surname,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
 
         Auth::login($user);
 

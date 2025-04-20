@@ -41,6 +41,9 @@
 
             <div class="col-md-5">
                 <h2 class="text-center mb-4 mt-4">Vytvoriť konto</h2>
+
+
+
                 <form action="{{ route('register.submit') }}" method="POST">
                     @csrf
                     <div class="mb-3">
@@ -67,7 +70,19 @@
                         <input type="checkbox" name="newsletter_subscribed" class="form-check-input focus-ring focus-ring-dark" id="newsletter">
                         <label class="form-check-label" for="newsletter">Chcem dostávať e-mailom  informácie o produktoch a exkluzívnych ponukách spoločnosti Gemma.</label>
                     </div>
+
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <button type="submit" class="btn btn-dark w-100">Registrovať</button>
+
                 </form>
             </div>
         </div>

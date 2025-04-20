@@ -54,3 +54,11 @@ Route::get('/payment', function () {
 Route::get('/complaints', function () {
     return view('side_pages.complaints');
 });
+
+
+
+/* PRODUCTS */
+
+Route::get('/all_products_page', function () {
+    return view('main_pages.all_products_page');
+});

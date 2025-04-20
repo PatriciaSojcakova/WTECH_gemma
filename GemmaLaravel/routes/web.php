@@ -66,11 +66,6 @@ Route::get('/all_products_page', function () {
 
 
 /* LOGIN */
-// Registrácia
 Route::post('/register', [RegisterController::class, 'register'])->name('register.submit');
-
-// Prihlásenie
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
-
-// Odhlásenie
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');

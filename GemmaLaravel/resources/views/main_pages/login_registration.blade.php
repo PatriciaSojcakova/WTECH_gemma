@@ -21,7 +21,6 @@
         <div class="row justify-content-center">
             <div class="col-md-5">
                 <h2 class="text-center mb-4 mt-4">Prihlásiť sa</h2>
-
                 <form action="{{ route('login.submit') }}" method="POST">
                     @csrf
                     <div class="mb-3">

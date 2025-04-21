@@ -21,15 +21,13 @@
     <div class="row">
         <div class="col-md-6 d-flex flex-column align-items-center">
             <span class="material-icons" style="font-size: 130px; color: #000;">account_circle</span>
-            <h3 class="mt-2 mb-5">Verný Zákazník</h3>
-
+            <h3 class="mt-2 mb-5">{{ Auth::user()->name }} {{ Auth::user()->surname }}</h3>
         </div>
 
         <div class="col-md-6">
             <h3>Osobné údaje</h3>
-            <p><strong>Email:</strong> vernyzakaznik@gmail.com </p>
-            <p><strong>Telefón:</strong> +421 111 111 111</p>
-            <p><strong>Adresa:</strong> Hlavná 123, 01001 Bratislava</p>
+            <p><strong>Email:</strong> {{ Auth::user()->email }} </p>
+            <p><strong>Odoberanie katalógu:</strong> {{ Auth::user()->newsletter_subscribed ? 'Odoberá' : 'Neodoberá' }}</p>
 
             <h3 class="mt-5">Objednávky</h3>
             <p>Posledná objednávka: #2024001 (12.3.2024)</p>

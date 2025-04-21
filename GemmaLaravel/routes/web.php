@@ -14,6 +14,10 @@ Route::get('/basket', function () {
     return view('main_pages.basket');
 });
 
+Route::get('/order_submit', function () {
+    return view('main_pages.order_submit');
+});
+
 
 
 /* HEADER */

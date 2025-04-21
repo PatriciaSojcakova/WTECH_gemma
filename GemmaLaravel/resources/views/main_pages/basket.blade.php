@@ -100,7 +100,7 @@
         </div>
 
         <div class="text-center mt-5 mb-5">
-            <a href="order_submit.php">
+            <a href="{{ url('/order_submit') }}">
                 <button class="btn btn-dark w-20 mb-4">Dokončiť nákup</button>
             </a>
 

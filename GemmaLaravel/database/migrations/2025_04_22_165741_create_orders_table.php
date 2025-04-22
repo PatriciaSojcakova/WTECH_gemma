@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('address');
             $table->string('city');
             $table->string('zipcode');
-            $table->string('state');
             $table->string('phone');
             $table->enum('shipping', ['courier', 'post']);
             $table->enum('payment', ['cash on delivery', 'transfer', 'online']);

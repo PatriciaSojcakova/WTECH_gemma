@@ -27,6 +27,23 @@ class User extends Authenticatable
         'admin',
     ];
 
+
+    public function favorites()
+    {
+        return $this->hasMany(Order::class,'id_user');
+    }
+
+    public function cart()
+    {
+        return $this->hasMany(Cart::class, 'id_user');
+    }
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class, 'id_user');
+    }
+
+
     /**
      * The attributes that should be hidden for serialization.
      *

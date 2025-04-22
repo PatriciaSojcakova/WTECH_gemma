@@ -19,13 +19,13 @@ class Order extends Model
         'sum',
     ];
 
-    public function user()
-    {
+
+
+    public function user(){
         return $this->belongsTo(User::class, 'id_user');
     }
 
-    public function items()
-    {
+    public function items(){
         return $this->hasMany(OrderItem::class, 'id_order');
     }
 }

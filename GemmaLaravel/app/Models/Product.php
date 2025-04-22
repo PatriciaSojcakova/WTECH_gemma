@@ -20,28 +20,23 @@ class Product extends Model
 
 
 
-    public function image()
-    {
+    public function image(){
         return $this->hasMany(ProductImage::class, 'id_product');
     }
 
-    public function change()
-    {
+    public function change(){
         return $this->hasMany(ProductChange::class, 'id_product');
     }
 
-    public function favorites()
-    {
+    public function favorites(){
         return $this->hasMany(Favorite::class, 'id_product');
     }
 
-    public function cart()
-    {
+    public function cart(){
         return $this->hasMany(Cart::class, 'id_product');
     }
 
-    public function order()
-    {
+    public function order(){
         return $this->hasMany(OrderItem::class, 'id_product');
     }
 }

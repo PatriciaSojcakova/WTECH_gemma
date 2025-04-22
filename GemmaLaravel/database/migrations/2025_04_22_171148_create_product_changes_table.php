@@ -17,10 +17,10 @@ return new class extends Migration
             $table->date('deletion_date')->nullable();
             $table->date('last_change')->nullable();
 
-            $table->foreignId('id_product')->constrained('product')->onDelete('cascade');
-            $table->foreignId('id_admin_add')->constrained('user');
-            $table->foreignId('id_admin_deletion')->constrained('user');
-            $table->foreignId('id_admin_change')->constrained('user');
+            $table->foreignId('id_product')->constrained('products')->onDelete('cascade');
+            $table->foreignId('id_admin_add')->constrained('users');
+            $table->foreignId('id_admin_deletion')->constrained('users');
+            $table->foreignId('id_admin_change')->constrained('users');
             $table->timestamps();
         });
     }

@@ -14,11 +14,11 @@ class ProductSeeder extends Seeder
     public function run(): void
     {
         Product::create([
-            'name' => 'Test User',
+            'name' => 'testovaci subjekt',
             'description' => 'this is the description of test product',
-            'material' => 'diamond',
-            'stone_color' => 'none',
-            'purpose' => 'woman',
+            'material' => 'zlato',
+            'stone_color' => 'diamant',
+            'purpose' => 'zeny',
             'quantity' => 5,
             'price' => 500,
         ]);

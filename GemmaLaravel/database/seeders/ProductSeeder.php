@@ -13,9 +13,14 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        Product::factory()->create([
+        Product::create([
             'name' => 'Test User',
-            'email' => 'test@example.com',
+            'description' => 'this is the description of test product',
+            'material' => 'diamond',
+            'stone_color' => 'none',
+            'purpose' => 'woman',
+            'quantity' => 5,
+            'price' => 500,
         ]);
     }
 }

@@ -4,22 +4,23 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProductChange extends Model
+class Cart extends Model
 {
-    protected $table = 'product_changes';
+    protected $table = 'carts';
 
     protected $fillable = [
-        'add_date',
-        'deletion_date',
-        'last_change',
+        'id_user',
         'id_product',
-        'id_admin_add',
-        'id_admin_deletion',
-        'id_admin_change'
+        'quantity'
     ];
 
     public function product()
     {
         return $this->belongsTo(Product::class, 'id_product');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'id_user');
     }
 }

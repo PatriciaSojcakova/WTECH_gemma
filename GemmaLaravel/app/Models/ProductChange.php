@@ -18,8 +18,9 @@ class ProductChange extends Model
         'id_admin_change'
     ];
 
-    public function product()
-    {
+
+
+    public function product(){
         return $this->belongsTo(Product::class, 'id_product');
     }
 }

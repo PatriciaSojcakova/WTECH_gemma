@@ -14,13 +14,13 @@ class Cart extends Model
         'quantity'
     ];
 
-    public function product()
-    {
+
+
+    public function product(){
         return $this->belongsTo(Product::class, 'id_product');
     }
 
-    public function user()
-    {
+    public function user(){
         return $this->belongsTo(User::class, 'id_user');
     }
 }

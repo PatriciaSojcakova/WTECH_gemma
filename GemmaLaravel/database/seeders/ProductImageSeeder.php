@@ -17,6 +17,6 @@ class ProductImageSeeder extends Seeder
         ProductImage::create([
             'path' => 'images/products/product-1.jpg',
             'id_product' => Product::where('name','nazov')->first()->id,
-        ])
+        ]);
     }
 }

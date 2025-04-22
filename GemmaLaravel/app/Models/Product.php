@@ -30,17 +30,17 @@ class Product extends Model
         return $this->hasMany(ProductChange::class, 'id_product');
     }
 
-    public function favoriteByUsers()
+    public function favorites()
     {
         return $this->belongsToMany(User::class, 'favorites', 'id_product', 'id_user');
     }
 
-    public function inCarts()
+    public function carts()
     {
         return $this->hasMany(Cart::class, 'id_product');
     }
 
-    public function orderItems()
+    public function orders()
     {
         return $this->hasMany(OrderItem::class, 'id_product');
     }

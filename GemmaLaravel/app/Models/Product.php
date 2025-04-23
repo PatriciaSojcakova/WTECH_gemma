@@ -15,7 +15,8 @@ class Product extends Model
         'stone_color',
         'purpose',
         'quantity',
-        'price'
+        'price',
+        'subcategory_id'
     ];
 
 
@@ -38,5 +39,10 @@ class Product extends Model
 
     public function order(){
         return $this->hasMany(OrderItem::class, 'id_product');
+    }
+
+    public function subcategory()
+    {
+        return $this->belongsTo(Subcategory::class);
     }
 }

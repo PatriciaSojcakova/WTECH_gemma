@@ -64,9 +64,7 @@ Route::get('/complaints', function () {
 
 
 /* PRODUCTS */
-Route::get('/all_products_page', function () {
-    return view('main_pages.all_products_page');
-});
+
 
 
 
@@ -83,3 +81,6 @@ Route::get('/all_products_page', [ProductController::class, 'index'])->name('pro
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('product.show');
 */
+
+
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');

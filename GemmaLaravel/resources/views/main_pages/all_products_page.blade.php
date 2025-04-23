@@ -131,9 +131,9 @@
                                 $firstImage = $product->image->first();
                             @endphp
                             @if ($firstImage)
-                                <img src="{{ asset('storage/' . $firstImage->path) }}" class="product-image" alt="{{ $product->name }}">
+                            <img src="{{ asset('image/' . $firstImage->path) }}" class="product-image" alt="{{ $product->name }}">
                             @else
-                                <img src="{{ asset('images/default.png') }}" class="product-image" alt="Bez obrázku">
+                                <img src="{{ asset('image/default-image.png') }}" class="product-image" alt="{{ $product->name }}">  <!-- Default obrázok -->
                             @endif
                             <p class="product-name">{{ $product->name }}</p>
                         </a>

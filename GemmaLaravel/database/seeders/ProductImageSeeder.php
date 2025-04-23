@@ -16,98 +16,70 @@ class ProductImageSeeder extends Seeder
     {
         $productImages = [
             // Jednoduché
-            'Aurora Shine'    => '/image/prsten/jednoduche/01_zeny_zlato.png',
-            'Ruby Blossom'    => '/image/prsten/jednoduche/02_zeny_zlato.png',
-            'Sapphire Grace'  => '/image/prsten/jednoduche/03_zeny_zlato.png',
-            'Pearl Whisper'   => '/image/prsten/jednoduche/04_zeny_zlato.png',
-            'Golden Noble'    => '/image/prsten/jednoduche/101_muzi_zlato.png',
-            'Rubin Lord'      => '/image/prsten/jednoduche/102_muzi_zlato.png',
-            'Ocean Crown'     => '/image/prsten/jednoduche/103_muzi_zlato.png',
-            'Silver Titan'    => '/image/prsten/jednoduche/104_muzi_striebro.png',
-            'Crimson Edge'    => '/image/prsten/jednoduche/105_muzi_titanium.png',
-            'Midnight Star'   => '/image/prsten/jednoduche/106_muzi_titanium.png',
-            'Pearl Touch'     => '/image/prsten/jednoduche/1001_unisex_striebro.png',
-            'Ruby Zen'        => '/image/prsten/jednoduche/1002_unisex_striebro.png',
-            'Steel Moon'      => '/image/prsten/jednoduche/1003_unisex_titanium.png',
-            'Diamond Pulse'   => '/image/prsten/jednoduche/1004_unisex_titanium.png',
-/*
-            // Vrstviteľné – Ženy
-            'Golden Layers'   => 'layer_gold_1.png',
-            'Delicate Glow'   => 'layer_gold_2.png',
-            'Soft Glimmer'    => 'layer_gold_3.png',
-            'Silver Line'     => 'layer_silver_1.png',
-            'Moonlight Band'  => 'layer_silver_2.png',
-            'Frosted Touch'   => 'layer_silver_3.png',
-            'Titan Mist'      => 'layer_titanium_1.png',
+            'Aurora Shine'    => 'prsten/jednoduche/01_zeny_zlato.png',
+            'Ruby Blossom'    => 'prsten/jednoduche/02_zeny_zlato.png',
+            'Sapphire Grace'  => 'prsten/jednoduche/03_zeny_zlato.png',
+            'Pearl Whisper'   => 'prsten/jednoduche/04_zeny_zlato.png',
+            'Golden Noble'    => 'prsten/jednoduche/101_muzi_zlato.png',
+            'Rubin Lord'      => 'prsten/jednoduche/102_muzi_zlato.png',
+            'Ocean Crown'     => 'prsten/jednoduche/103_muzi_zlato.png',
+            'Silver Titan'    => 'prsten/jednoduche/104_muzi_striebro.png',
+            'Crimson Edge'    => 'prsten/jednoduche/105_muzi_titanium.png',
+            'Midnight Star'   => 'prsten/jednoduche/106_muzi_titanium.png',
+            'Pearl Touch'     => 'prsten/jednoduche/1001_unisex_striebro.png',
+            'Ruby Zen'        => 'prsten/jednoduche/1002_unisex_striebro.png',
+            'Steel Moon'      => 'prsten/jednoduche/1003_unisex_titanium.png',
+            'Diamond Pulse'   => 'prsten/jednoduche/1004_unisex_titanium.png',
 
-            // Vrstviteľné – Muži
-            'Iron Layer'      => 'layer_titanium_2.png',
-            'Steel Shadow'    => 'layer_titanium_3.png',
+            // Vrstviteľné
+            'Golden Layers'   => 'prsten/vrstvitelne/01_zeny_zlato.png',
+            'Delicate Glow'   => 'prsten/vrstvitelne/02_zeny_zlato.png',
+            'Soft Glimmer'    => 'prsten/vrstvitelne/03_zeny_zlato.png',
+            'Silver Line'     => 'prsten/vrstvitelne/04_zeny_striebro.png',
+            'Moonlight Band'  => 'prsten/vrstvitelne/05_zeny_striebro.png',
+            'Frosted Touch'   => 'prsten/vrstvitelne/06_zeny_striebro.png',
+            'Titan Mist'      => 'prsten/vrstvitelne/07_zeny_titanium.png',
+            'Iron Layer'      => 'prsten/vrstvitelne/101_muzi_titanium.png',
+            'Steel Shadow'    => 'prsten/vrstvitelne/102_muzi_titanium.png',
+            'Golden Flow'     => 'prsten/vrstvitelne/1001_unisex_zlato.png',
+            'Layer Beam'      => 'prsten/vrstvitelne/1002_unisex_zlato.png',
+            'Silver Loop'     => 'prsten/vrstvitelne/1003_unisex_striebro.png',
 
-            // Vrstviteľné – Unisex
-            'Golden Flow'     => 'layer_gold_4.png',
-            'Layer Beam'      => 'layer_gold_5.png',
-            'Silver Loop'     => 'layer_silver_4.png',
+            // Obrúčky
+            'Eternal Bond'    => 'prsten/obrucky/01_zeny_zlato.png',
+            'Golden Unity'    => 'prsten/obrucky/02_zeny_zlato.png',
+            'Silver Harmony'  => 'prsten/obrucky/03_zeny_striebro.png',
+            'Golden Legacy'   => 'prsten/obrucky/101_muzi_zlato.png',
+            'Noble Ring'      => 'prsten/obrucky/102_muzi_zlato.png',
+            'Regal Gold'      => 'prsten/obrucky/103_muzi_zlato.png',
+            'Pure Circle'     => 'prsten/obrucky/1001_unisex_zlato.png',
+            'Golden Harmony'  => 'prsten/obrucky/1002_unisex_zlato.png',
+            'Twilight Ring'   => 'prsten/obrucky/1003_unisex_zlato.png',
+            'Elegant Loop'    => 'prsten/obrucky/1004_unisex_zlato.png',
+            'Golden Touch'    => 'prsten/obrucky/1005_unisex_zlato.png',
+            'Luminous Ring'   => 'prsten/obrucky/1006_unisex_zlato.png',
+            'Silver Eternity' => 'prsten/obrucky/1007_unisex_striebro.png',
+            'Titanium Balance'=> 'prsten/obrucky/1008_unisex_titanium.png',
 
-            // Obrúčky – Ženy
-            'Eternal Bond'    => 'ring_gold_1.png',
-            'Golden Unity'    => 'ring_gold_2.png',
-            'Silver Harmony'  => 'ring_silver_1.png',
-
-            // Obrúčky – Muži
-            'Golden Legacy'   => 'ring_gold_3.png',
-            'Noble Ring'      => 'ring_gold_4.png',
-            'Regal Gold'      => 'ring_gold_5.png',
-
-            // Obrúčky – Unisex
-            'Pure Circle'     => 'ring_gold_6.png',
-            'Golden Harmony'  => 'ring_gold_7.png',
-            'Twilight Ring'   => 'ring_gold_8.png',
-            'Elegant Loop'    => 'ring_gold_9.png',
-            'Golden Touch'    => 'ring_gold_10.png',
-            'Luminous Ring'   => 'ring_gold_11.png',
-            'Silver Eternity' => 'ring_silver_2.png',
-            'Titanium Balance'=> 'ring_titanium_1.png',
-
-            // Prstene s kamienkom – ženy – zlato – diamant
-            'Golden Diamond Radiance' => 'stone_gold_diamond_1.png',
-            'Golden Diamond Glow'     => 'stone_gold_diamond_2.png',
-            'Golden Diamond Sparkle'  => 'stone_gold_diamond_3.png',
-            'Golden Diamond Shine'    => 'stone_gold_diamond_4.png',
-
-            // ženy – zlato – rubín
-            'Ruby Golden Desire'      => 'stone_gold_ruby_1.png',
-            'Ruby Golden Charm'       => 'stone_gold_ruby_2.png',
-
-            // ženy – zlato – zafír
-            'Sapphire Golden Charm'   => 'stone_gold_sapphire_1.png',
-            'Sapphire Golden Desire'  => 'stone_gold_sapphire_2.png',
-
-            // ženy – striebro – diamant
-            'Silver Diamond Glow'     => 'stone_silver_diamond_1.png',
-
-            // muži – zlato – zafír
-            'Sapphire Golden Brilliance' => 'stone_gold_sapphire_3.png',
-
-            // muži – striebro – zafír
-            'Sapphire Silver Legend'     => 'stone_silver_sapphire_1.png',
-
-            // muži – titanium – rubín
-            'Crimson Titanium Ruby'      => 'stone_titanium_ruby_1.png',
-
-            // unisex – zlato – zafír
-            'Sapphire Gold Light'        => 'stone_gold_sapphire_4.png',
-            'Sapphire Gold Charm'        => 'stone_gold_sapphire_5.png',
-
-            // unisex – striebro – diamant
-            'Silver Diamond Essence'     => 'stone_silver_diamond_2.png',
-
-            // unisex – striebro – zafír
-            'Sapphire Silver Wonder'     => 'stone_silver_sapphire_2.png',
-            'Sapphire Silver Essence'    => 'stone_silver_sapphire_3.png',
-
-            // unisex – titanium – perla
-            'Titanium Pearl Serenity'    => 'stone_titanium_pearl_1.png',*/
+            // Prstene s kamienkom
+            'Golden Diamond Radiance' => 'prsten/s_kamienkom/01_zeny_zlato_diamant.png',
+            'Golden Diamond Glow'     => 'prsten/s_kamienkom/02_zeny_zlato_diamant.png',
+            'Golden Diamond Sparkle'  => 'prsten/s_kamienkom/03_zeny_zlato_diamant.png',
+            'Golden Diamond Shine'    => 'prsten/s_kamienkom/06_zeny_zlato_diamant.png',
+            'Ruby Golden Desire'      => 'prsten/s_kamienkom/05_zeny_zlato_rubin.png',
+            'Ruby Golden Charm'       => 'prsten/s_kamienkom/09_zeny_zlato_rubin.png',
+            'Sapphire Golden Charm'   => 'prsten/s_kamienkom/04_zeny_zlato_zafir.png',
+            'Sapphire Golden Desire'  => 'prsten/s_kamienkom/07_zeny_zlato_zafir.png',
+            'Silver Diamond Glow'     => 'prsten/s_kamienkom/08_zeny_striebro_diamant.png',
+            'Sapphire Golden Brilliance' => 'prsten/s_kamienkom/102_muzi_zlato_zafir.png',
+            'Sapphire Silver Legend'     => 'prsten/s_kamienkom/101_muzi_strieborny_zafir.png',
+            'Crimson Titanium Ruby'      => 'prsten/s_kamienkom/103_muzi_titanium_rubin.png',
+            'Sapphire Gold Light'        => 'prsten/s_kamienkom/1001_unisex_zlato_zafir.png',
+            'Sapphire Gold Charm'        => 'prsten/s_kamienkom/1002_unisex_zlato_zafir.png',
+            'Silver Diamond Essence'     => 'prsten/s_kamienkom/1004_unisex_striebro_diamant.png',
+            'Sapphire Silver Wonder'     => 'prsten/s_kamienkom/1005_unisex_striebro_zafir.png',
+            'Sapphire Silver Essence'    => 'prsten/s_kamienkom/1006_unisex_striebro_zafir.png',
+            'Titanium Pearl Serenity'    => 'prsten/s_kamienkom/1007_unisex_striebro_perla.png',
 
         ];
 
@@ -116,7 +88,7 @@ class ProductImageSeeder extends Seeder
 
             if ($product) {
                 ProductImage::create([
-                    'path' => 'public/image/' . $imageFile,
+                    'path' => $imageFile, // bez 'public/' predpony
                     'id_product' => $product->id,
                 ]);
             } else {

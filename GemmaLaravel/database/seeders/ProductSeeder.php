@@ -267,6 +267,7 @@ class ProductSeeder extends Seeder
                     ],
 
                 ],
+
                 'Obrúčky' => [
                     [
                         'name' => 'Eternal Bond',
@@ -405,6 +406,7 @@ class ProductSeeder extends Seeder
                         'price' => 480,
                     ],
                 ],
+
                 'S kamienkom' => [
                         [
                             'name' => 'Golden Diamond Radiance',

@@ -30,7 +30,6 @@ class ProductSeeder extends Seeder
             'quantity' => 5,
             'price' => 500,
             'subcategory_id' => $subcategory->id,
-
         ]);
     }
 }

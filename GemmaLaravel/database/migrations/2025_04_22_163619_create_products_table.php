@@ -20,6 +20,7 @@ return new class extends Migration
             $table->enum('purpose', ['zeny', 'muzi', 'deti', 'unisex']);
             $table->integer('quantity');
             $table->float('price');
+            $table->foreignId('subcategory_id')->constrained('subcategories')->onDelete('cascade');
             $table->timestamps();
         });
     }

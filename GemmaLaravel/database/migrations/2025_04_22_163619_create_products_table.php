@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('description');
             $table->enum('material', ['zlato', 'biele zlato', 'ruzove zlato', 'striebro', 'titanium']);
             $table->enum('stone_color', ['diamant', 'rubin', 'zafir', 'perla'])->nullable();
-            $table->enum('purpose', ['zeny', 'muzi', 'deti', 'unisex']);
+            $table->enum('purpose', ['zeny', 'muzi', 'unisex']);
             $table->integer('quantity');
             $table->float('price');
             $table->timestamps();

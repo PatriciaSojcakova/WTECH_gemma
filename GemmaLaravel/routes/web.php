@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 /*use App\Http\Controllers\AuthController;*/
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProductController;
 
 /* MAIN */
 Route::get('/', function () {
@@ -73,3 +74,12 @@ Route::get('/all_products_page', function () {
 Route::post('/register', [RegisterController::class, 'register'])->name('register.submit');
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+
+
+Route::get('/all_products_page', [ProductController::class, 'index'])->name('product.show');
+
+/*
+Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/{id}', [ProductController::class, 'show'])->name('product.show');
+*/

@@ -15,7 +15,7 @@ class ProductImageSeeder extends Seeder
     public function run(): void
     {
         ProductImage::create([
-            'path' => 'public/image/simple_gold_3-removebg-preview.png',
+            'path' => '', //'public/image/simple_gold_3-removebg-preview.png',
             'id_product' => Product::where('name','testovaci subjekt')->first()->id,
         ]);
     }

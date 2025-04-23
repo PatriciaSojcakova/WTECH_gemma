@@ -29,10 +29,16 @@ class ProductController extends Controller
             $query->where('subcategory_id', $request->subcategory_id);
         }
 
-        // Načítaj produkty s pagináciou a eager loading pre podkategóriu
+
         $products = $query->with('subcategory')->paginate(12)->withQueryString();
 
         return view('main_pages.all_products_page', compact('products'));
+    }
+
+    public function show($id){
+        $product = Product::find($id);
+        $images = $product->image;
+        return view('main_pages.one_product_page', compact('product', 'images'));
     }
 
 }

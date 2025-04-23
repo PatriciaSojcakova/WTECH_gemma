@@ -138,7 +138,7 @@
                             <p class="product-name">{{ $product->name }}</p>
                         </a>
                         <input type="checkbox" id="favorite-prod1" class="favorite-checkbox">
-                        <label for="favorite-prod1" class="favorite-icon material-icons">favorite</label>
+                        <label for="single-prod{{ $product->id }}" class="favorite-icon material-icons">favorite</label>
                     </div>
                 </div>
             @endforeach

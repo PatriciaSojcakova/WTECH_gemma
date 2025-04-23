@@ -36,10 +36,6 @@
                             <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="material1" name="material">
                             <label class="form-check-label custom_playfair_semi" for="material1">zlato</label>
                         </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="material2" name="material">
-                            <label class="form-check-label custom_playfair_semi" for="material2">biele/ružové zlato</label>
-                        </div>
                         <div class="filter-form-check ">
                             <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="material3" name="material">
                             <label class="form-check-label custom_playfair_semi" for="material3">striebro</label>
@@ -47,14 +43,6 @@
                         <div class="filter-form-check ">
                             <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="material4" name="material">
                             <label class="form-check-label custom_playfair_semi" for="material4">titanium</label>
-                        </div>
-                        <div class="filter-form-check ">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="material5" name="material">
-                            <label class="form-check-label custom_playfair_semi" for="material5">chirurgická oceľ</label>
-                        </div>
-                        <div class="filter-form-check ">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="material6" name="material">
-                            <label class="form-check-label custom_playfair_semi" for="material6">iné</label>
                         </div>
                     </div>
 
@@ -74,24 +62,8 @@
                             <label class="form-check-label custom_playfair_semi" for="farba3">zafír</label>
                         </div>
                         <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="farba4" name="farba">
-                            <label class="form-check-label custom_playfair_semi" for="farba4">smaragd</label>
-                        </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="farba4" name="farba">
-                            <label class="form-check-label custom_playfair_semi" for="farba4">ametyst</label>
-                        </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="farba5" name="farba">
-                            <label class="form-check-label custom_playfair_semi" for="farba5">topás</label>
-                        </div>
-                        <div class="filter-form-check">
                             <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="farba6" name="farba">
                             <label class="form-check-label custom_playfair_semi" for="farba6">perla</label>
-                        </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="farba7" name="farba">
-                            <label class="form-check-label custom_playfair_semi" for="farba7">jantár</label>
                         </div>
 
                     </div>
@@ -106,10 +78,6 @@
                         <div class="filter-form-check">
                             <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="urcenie2" name="urcenie">
                             <label class="form-check-label custom_playfair_semi" for="urcenie2">muži</label>
-                        </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="urcenie3" name="urcenie">
-                            <label class="form-check-label custom_playfair_semi" for="urcenie3">deti</label>
                         </div>
                         <div class="filter-form-check">
                             <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="urcenie4" name="urcenie">

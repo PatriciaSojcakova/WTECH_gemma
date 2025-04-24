@@ -145,8 +145,6 @@ class ProductSeeder extends Seeder
                         'price' => 510,
                     ],
                 ],
-
-
                 'Vrstviteľné' => [
                     [
                         'name' => 'Golden Layers',
@@ -257,7 +255,6 @@ class ProductSeeder extends Seeder
                         'price' => 310,
                     ],
                 ],
-
                 'Obrúčky' => [
                     [
                         'name' => 'Eternal Bond',
@@ -386,7 +383,6 @@ class ProductSeeder extends Seeder
                         'price' => 480,
                     ],
                 ],
-
                 'S kamienkom' => [
                     [
                         'name' => 'Golden Diamond Radiance',
@@ -544,18 +540,845 @@ class ProductSeeder extends Seeder
                 ],
             ],
             'Náušnice' => [
+                'Puzetkové' => [
+                    [
+                        'name' => 'Eternal Bloom',
+                        'description' => 'Luxusné zlaté náušnice s prírodným diamantom. Ideálne pre výnimočné chvíle plné elegancie a pôvabu.',
+                        'material' => 'zlato',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 1200,
+                    ],
+
+                    [
+                        'name' => 'Midnight Crown',
+                        'description' => 'Zlaté náušnice so sýtomodrým zafírom dodajú vášmu vzhľadu kráľovský štýl. Elegantný doplnok na špeciálne príležitosti.',
+                        'material' => 'zlato',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'ženy',
+                        'quantity' => 7,
+                        'price' => 1100,
+                    ],
+
+                    [
+                        'name' => 'Scarlet Dream',
+                        'description' => 'Zlaté náušnice s rubínom symbolizujú vášeň a silu. Ideálne pre sebavedomé ženy, ktoré milujú výrazné šperky.',
+                        'material' => 'zlato',
+                        'stone_color' => 'rubín',
+                        'purpose' => 'ženy',
+                        'quantity' => 5,
+                        'price' => 1150,
+                    ],
+
+                    [
+                        'name' => 'Luna Whisper',
+                        'description' => 'Strieborné náušnice s jemnými diamantmi žiariacimi ako mesačný svit. Jemný a štýlový doplnok ku každému outfitu.',
+                        'material' => 'striebro',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 8,
+                        'price' => 890,
+                    ],
+
+                    [
+                        'name' => 'Crimson Touch',
+                        'description' => 'Výrazný rubín zasadený v leštenom striebre. Odvážny kúsok pre ženy, ktoré sa neboja zažiariť.',
+                        'material' => 'striebro',
+                        'stone_color' => 'rubín',
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 780,
+                    ],
+
+                    [
+                        'name' => 'Velvet Line',
+                        'description' => 'Titánové náušnice bez kameňov sú stelesnením minimalizmu a pohodlia. Skvelá voľba pre moderné ženy.',
+                        'material' => 'titanium',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 9,
+                        'price' => 520,
+                    ],
+
+                    [
+                        'name' => 'Twilight Flame',
+                        'description' => 'Moderná titánová základňa doplnená žiarivým rubínom. Spojenie sily a elegancie v jednom šperku.',
+                        'material' => 'titanium',
+                        'stone_color' => 'rubín',
+                        'purpose' => 'ženy',
+                        'quantity' => 4,
+                        'price' => 970,
+                    ],
+
+                    [
+                        'name' => 'Opal Glow',
+                        'description' => 'Elegantné strieborné náušnice s iskrivými diamantmi. Hodí sa na každodenné nosenie aj výnimočné udalosti.',
+                        'material' => 'striebro',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 6,
+                        'price' => 860,
+                    ],
+                ],
+                'Kruhové' => [
+                    [
+                        'name' => 'Golden Whisper',
+                        'description' => 'Jednoduché a elegantné zlaté náušnice bez kameňov. Vhodné na každodenné nosenie aj špeciálne chvíle.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 6,
+                        'price' => 690,
+                    ],
+                    [
+                        'name' => 'Luna Touch',
+                        'description' => 'Zlaté náušnice bez kameňov s jemným leskom. Vytvorené pre ženy, ktoré milujú jednoduchý a elegantný štýl.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 4,
+                        'price' => 710,
+                    ],
+
+                    [
+                        'name' => 'Diamond Heartbeat',
+                        'description' => 'Strieborné náušnice zdobené iskrivým diamantom. Výnimočný šperk, ktorý zvýrazní vašu prirodzenú krásu.',
+                        'material' => 'striebro',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 1,
+                        'price' => 870,
+                    ],
+
+                    [
+                        'name' => 'Steel Harmony',
+                        'description' => 'Minimalistické titánové náušnice bez kameňov. Ľahké, odolné a ideálne na celodenné nosenie.',
+                        'material' => 'titanium',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 6,
+                        'price' => 540,
+                    ],
+                    [
+                        'name' => 'Titan Flow',
+                        'description' => 'Ľahké titánové náušnice bez ozdôb. Moderný dizajn pre ženy, ktoré preferujú funkčný a decentný šperk.',
+                        'material' => 'titanium',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 7,
+                        'price' => 530,
+                    ],
+
+                    [
+                        'name' => 'Zen Gold',
+                        'description' => 'Unisex náušnice zo žiarivého zlata bez kameňov. Nadčasový dizajn, ktorý sadne každému štýlu.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 3,
+                        'price' => 760,
+                    ],
+
+                    [
+                        'name' => 'Echo Silver',
+                        'description' => 'Univerzálne strieborné náušnice v čistom prevedení bez kameňov. Perfektné pre každodenný štýl aj elegantný outfit.',
+                        'material' => 'striebro',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 5,
+                        'price' => 620,
+                    ],
+                ],
                 'Perlové' => [
                     [
-                        'name' => 'Perlové náušnice',
-                        'description' => 'Elegantné náušnice s perlami',
+                        'name' => 'Pearl Fog',
+                        'description' => 'Zlaté náušnice s jemnou prírodnou perlou. Elegantné prevedenie pre výnimočné chvíle.',
                         'material' => 'zlato',
                         'stone_color' => 'perla',
                         'purpose' => 'ženy',
                         'quantity' => 6,
-                        'price' => 650,
+                        'price' => 980,
+                    ],
+                    [
+                        'name' => 'Golden Pearl Drop',
+                        'description' => 'Náušnice zo zlata s decentne visiaci perlovým prvkom. Nadčasová elegancia pre každú ženu.',
+                        'material' => 'zlato',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 1050,
+                    ],
+                    [
+                        'name' => 'Aurora Shell',
+                        'description' => 'Zlatý základ zdobený jemnou perlou. Kombinuje tradičný luxus s moderným dizajnom.',
+                        'material' => 'zlato',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => 7,
+                        'price' => 990,
+                    ],
+
+                    [
+                        'name' => 'Silver Pearl Dot',
+                        'description' => 'Strieborné náušnice s decentnou perličkou. Jemné a vkusné pre každodenné nosenie.',
+                        'material' => 'striebro',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => 5,
+                        'price' => 740,
+                    ],
+                    [
+                        'name' => 'Ocean Light',
+                        'description' => 'Elegantné striebro doplnené o bielu perlovú guľôčku. Minimalistický štýl, maximálny efekt.',
+                        'material' => 'striebro',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => 8,
+                        'price' => 780,
+                    ],
+                    [
+                        'name' => 'Pearl Harmony',
+                        'description' => 'Kombinácia jemného striebra a klasickej perly. Ideálny darček na výnimočné chvíle.',
+                        'material' => 'striebro',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => 4,
+                        'price' => 765,
+                    ],
+
+
+                    [
+                        'name' => 'Titan Pearl Glow',
+                        'description' => 'Moderné titánové náušnice s elegantnou perlou. Spojenie technológie a jemnosti.',
+                        'material' => 'titanium',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 690,
+                    ],
+                ],
+                'Visiace' => [
+                    [
+                        'name' => 'Ruby Elegance',
+                        'description' => 'Zlaté náušnice s nádherným rubínom. Výnimočná elegancia pre sofistikovanú ženu.',
+                        'material' => 'zlato',
+                        'stone_color' => 'rubín',
+                        'purpose' => 'ženy',
+                        'quantity' => 4,
+                        'price' => 1300,
+                    ],
+                    [
+                        'name' => 'Crimson Glow',
+                        'description' => 'Zlaté náušnice s červeným rubínom, symbolizujúce vášeň a silu. Pre odvážne ženy.',
+                        'material' => 'zlato',
+                        'stone_color' => 'rubín',
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 1250,
+                    ],
+                    [
+                        'name' => 'Golden Radiance',
+                        'description' => 'Luxusné zlaté náušnice s diamantmi. Prvotriedna kvalita pre elegantné ženy.',
+                        'material' => 'zlato',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 5,
+                        'price' => 1800,
+                    ],
+                    [
+                        'name' => 'Diamond Spark',
+                        'description' => 'Zlaté náušnice so žiarivými diamantmi. Perfektný doplnok pre každú príležitosť.',
+                        'material' => 'zlato',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 6,
+                        'price' => 1700,
+                    ],
+                    [
+                        'name' => 'Silver Glow',
+                        'description' => 'Strieborné náušnice bez kameňa, elegantné a minimalistické pre každý deň.',
+                        'material' => 'striebro',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 7,
+                        'price' => 850,
+                    ],
+                    [
+                        'name' => 'Blue Radiance',
+                        'description' => 'Strieborné náušnice so zafírom, doplnené o jemné detaily pre elegantný vzhľad.',
+                        'material' => 'striebro',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 950,
+                    ],
+                    [
+                        'name' => 'Sapphire Dream',
+                        'description' => 'Strieborné náušnice so zafírom. Pre ženy, ktoré milujú klasiku s moderným nádychom.',
+                        'material' => 'striebro',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'ženy',
+                        'quantity' => 4,
+                        'price' => 890,
+                    ],
+                    [
+                        'name' => 'Ocean Blue',
+                        'description' => 'Elegantné strieborné náušnice so zafírom. Pre ženy, ktoré túžia po nadčasovom štýle.',
+                        'material' => 'striebro',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 920,
+                    ],
+
+                    [
+                        'name' => 'Titanium Shine',
+                        'description' => 'Titanové náušnice s diamantmi. Jedinečný dizajn pre ženy, ktoré preferujú kvalitu a minimalizmus.',
+                        'material' => 'titanium',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 1250,
+                    ],
+                ],
+
+            ],
+
+            'Náhrdelníky' =>[
+                'Retiazkové' =>[
+                    [
+                        'name' => 'Golden Grace',
+                        'description' => 'Elegantný zlatý náhrdelník bez kameňa. Nadčasová krása pre sofistikované ženy.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 5,
+                        'price' => 1400,
+                    ],
+                    [
+                        'name' => 'Golden Strength',
+                        'description' => 'Silný a elegantný zlatý náhrdelník bez kameňa. Pre mužov, ktorí oceňujú kvalitný dizajn.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'muži',
+                        'quantity' => 6,
+                        'price' => 1600,
+                    ],
+                    [
+                        'name' => 'Bold Gold',
+                        'description' => 'Zlatý náhrdelník bez kameňa s minimalistickým vzhľadom. Pre mužov s odvahu ísť za svojím štýlom.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'muži',
+                        'quantity' => 3,
+                        'price' => 1500,
+                    ],
+                    [
+                        'name' => 'Regal Gold',
+                        'description' => 'Nadčasový zlatý náhrdelník bez kameňa. Vyjadrite svoju osobnosť a postavenie s týmto luxusným kúskom.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'muži',
+                        'quantity' => 4,
+                        'price' => 1700,
+                    ],
+                    [
+                        'name' => 'Unisex Gold Chain',
+                        'description' => 'Unisex zlatý náhrdelník bez kameňa, univerzálny a štýlový. Ideálny pre všetkých, ktorí milujú minimalistický dizajn.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 8,
+                        'price' => 1550,
+                    ],
+
+                    [
+                        'name' => 'Silver Minimalism',
+                        'description' => 'Unisex strieborný náhrdelník bez kameňa. Jednoduchý a čistý dizajn pre každodenné nosenie.',
+                        'material' => 'striebro',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 9,
+                        'price' => 950,
+                    ],
+
+
+                ],
+                'S príveskom' =>[
+                    [
+                        'name' => 'Golden Essence',
+                        'description' => 'Elegantný zlatý náhrdelník bez prívesku. Nadčasový dizajn pre každodenné nosenie.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 5,
+                        'price' => 850,
+                    ],
+                    [
+                        'name' => 'Diamond Glow',
+                        'description' => 'Zlatý náhrdelník so žiarivým diamantom. Luxusný kúsok, ktorý upúta pozornosť pri každej príležitosti.',
+                        'material' => 'zlato',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 6,
+                        'price' => 1800,
+                    ],
+                    [
+                        'name' => 'Royal Sapphire Pendant',
+                        'description' => 'Zlatý náhrdelník s príveskom zafíru. Elegantný a aristokratický dizajn, ktorý doda vášmu outfitu iskru.',
+                        'material' => 'zlato',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 1600,
+                    ],
+                    [
+                        'name' => 'Sapphire Radiance',
+                        'description' => 'Nádherný zlatý náhrdelník s príveskom zafíru. Vysoký lesk a hlboká modrá farba, ktorá očarí každú ženu.',
+                        'material' => 'zlato',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'ženy',
+                        'quantity' => 8,
+                        'price' => 1550,
+                    ],
+                    [
+                        'name' => 'Titan Diamond Charm',
+                        'description' => 'Jednoduchý, ale elegantný titánový náhrdelník s príveskom diamantového tvaru. Moderný a nadčasový.',
+                        'material' => 'titanium',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 9,
+                        'price' => 1100,
+                    ],
+                    [
+                        'name' => 'Silver Diamond Shine',
+                        'description' => 'Strieborný náhrdelník s jemným diamantom. Oslňujúci dizajn vhodný na špeciálne príležitosti.',
+                        'material' => 'striebro',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 5,
+                        'price' => 1200,
+                    ],
+
+                ],
+                'Perlové' =>[
+                    [
+                        'name' => 'Golden Pearl Elegance',
+                        'description' => 'Zlatý náhrdelník s perlovým príveskom. Dokonalá kombinácia klasického zlata a luxusných perál.',
+                        'material' => 'zlato',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => rand(1, 10),
+                        'price' => 2200,
+                    ],
+                    [
+                        'name' => 'Golden Radiance',
+                        'description' => 'Zlatý náhrdelník s perlovým príveskom, ktorý pridá šarm a eleganciu každej žene. Ideálny na špeciálne príležitosti.',
+                        'material' => 'zlato',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => rand(1, 10),
+                        'price' => 2400,
+                    ],
+                    [
+                        'name' => 'Silver Pearl Charm',
+                        'description' => 'Strieborný náhrdelník s jemnými perlami. Nadčasový dizajn, ktorý zdôrazní krásu každej ženy.',
+                        'material' => 'striebro',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => rand(1, 10),
+                        'price' => 850,
+                    ],
+                ],
+                'Chokers'=>[
+                    [
+                        'name' => 'Diamond Glow',
+                        'description' => 'Elegantný strieborný choker so žiarivým diamantom, ktorý dodá vášmu vzhľadu sofistikovanosť a jemnosť.',
+                        'material' => 'striebro',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 6,
+                        'price' => 1200,
+                    ],
+
+                    [
+                        'name' => 'Titan Touch',
+                        'description' => 'Minimalistický titánový choker bez kameňov, ideálny pre ženy a unisex štýl, ktorí preferujú elegantný minimalizmus.',
+                        'material' => 'titanium',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 5,
+                        'price' => 700,
+                    ],
+
+                    [
+                        'name' => 'Golden Essence',
+                        'description' => 'Luxusný zlatý choker bez kameňov, ideálny pre každodenné nosenie a špeciálne príležitosti.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 3,
+                        'price' => 1100,
+                    ],
+
+                ],
+
+            ],
+
+            'Náramky'=>[
+                'Pevné'=>[
+                    [
+                        'name' => 'Crystal Embrace',
+                        'description' => 'Strieborný pevný náramok zdobený žiarivým diamantom. Elegantný doplnok, ktorý vyžaruje noblesu a jemnosť.',
+                        'material' => 'striebro',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 4,
+                        'price' => 950,
+                    ],
+
+                    [
+                        'name' => 'Golden Radiant',
+                        'description' => 'Luxusný zlatý pevný náramok s vsadeným prírodným diamantom. Nadčasová elegancia pre výnimočné príležitosti.',
+                        'material' => 'zlato',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 1400,
+                    ],
+
+                    [
+                        'name' => 'Steel Core',
+                        'description' => 'Pevný titánový náramok bez kameňa, vytvorený pre moderného muža so zmyslom pre čistý dizajn.',
+                        'material' => 'titanium',
+                        'stone_color' => null,
+                        'purpose' => 'muži',
+                        'quantity' => 6,
+                        'price' => 780,
+                    ],
+
+                    [
+                        'name' => 'Silver Edge',
+                        'description' => 'Mužský pevný náramok z lešteného striebra bez ozdôb. Ideálny doplnok pre každodenné nosenie s dôrazom na jednoduchosť.',
+                        'material' => 'striebro',
+                        'stone_color' => null,
+                        'purpose' => 'muži',
+                        'quantity' => 5,
+                        'price' => 720,
+                    ],
+
+                    [
+                        'name' => 'Sapphire Line',
+                        'description' => 'Unisex titánový náramok s decentným zafírovým detailom. Spája moderný dizajn s dotykom luxusu.',
+                        'material' => 'titanium',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'unisex',
+                        'quantity' => 4,
+                        'price' => 990,
+                    ],
+
+                    [
+                        'name' => 'Silent Silver',
+                        'description' => 'Univerzálny pevný náramok zo striebra bez kameňov. Elegantný a diskrétny šperk pre každodenné nosenie.',
+                        'material' => 'striebro',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 7,
+                        'price' => 740,
+                    ],
+                ],
+                'Retiazkové' =>[
+                    [
+                        'name' => 'Golden Grace',
+                        'description' => 'Elegantný zlatý retiazkový náramok bez kameňov. Jednoduchý a jemný dizajn pre každodennú eleganciu.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 840,
+                    ],
+
+                    [
+                        'name' => 'Silver Whisper',
+                        'description' => 'Strieborný retiazkový náramok bez ozdôb. Minimalistický doplnok pre ženský štýl.',
+                        'material' => 'striebro',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 5,
+                        'price' => 710,
+                    ],
+
+                    [
+                        'name' => 'Iron Path',
+                        'description' => 'Mužský strieborný retiazkový náramok bez kameňov. Pevný štýl a klasická elegancia.',
+                        'material' => 'striebro',
+                        'stone_color' => null,
+                        'purpose' => 'muži',
+                        'quantity' => 4,
+                        'price' => 765,
+                    ],
+
+                    [
+                        'name' => 'Crown Link',
+                        'description' => 'Zlatý mužský náramok s jemne vsadeným diamantom. Luxusný a výrazný kúsok pre pánsky štýl.',
+                        'material' => 'zlato',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'muži',
+                        'quantity' => 2,
+                        'price' => 1280,
+                    ],
+
+                    [
+                        'name' => 'Titan Thread',
+                        'description' => 'Unisex titánový retiazkový náramok bez ozdôb. Ľahký, pevný a moderný doplnok.',
+                        'material' => 'titanium',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 6,
+                        'price' => 690,
+                    ],
+
+                    [
+                        'name' => 'Silent Bond',
+                        'description' => 'Minimalistický titánový náramok pre mužov aj ženy. Čistý dizajn pre každodenné nosenie.',
+                        'material' => 'titanium',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 5,
+                        'price' => 700,
+                    ],
+                ],
+                'Kamienkové' =>[
+                    [
+                        'name' => 'Silver Pearl Touch',
+                        'description' => 'Jemný dámsky náramok zo striebra s elegantnou bielou perlou. Kombinácia ženskosti a sofistikovanosti.',
+                        'material' => 'striebro',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 750,
+                    ],
+
+                    [
+                        'name' => 'Golden Shell Line',
+                        'description' => 'Zlatý náramok s decentne vsadenou prírodnou perlou. Nadčasový doplnok pre každú príležitosť.',
+                        'material' => 'zlato',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 980,
+                    ],
+
+                    [
+                        'name' => 'Titan Shadow',
+                        'description' => 'Pevný titánový pánsky náramok bez kameňov. Elegantná voľba pre každodenné nosenie.',
+                        'material' => 'titanium',
+                        'stone_color' => null,
+                        'purpose' => 'muži',
+                        'quantity' => 5,
+                        'price' => 630,
+                    ],
+
+                    [
+                        'name' => 'Steel Drift',
+                        'description' => 'Moderný titánový náramok pre mužov s dôrazom na jednoduchosť a odolnosť. Bez kameňov.',
+                        'material' => 'titanium',
+                        'stone_color' => null,
+                        'purpose' => 'muži',
+                        'quantity' => 4,
+                        'price' => 645,
+                    ],
+
+                    [
+                        'name' => 'Moonlit Pearl',
+                        'description' => 'Strieborný pánsky náramok s jemne vsadenou perlou. Spojenie klasiky a originality.',
+                        'material' => 'striebro',
+                        'stone_color' => 'perla',
+                        'purpose' => 'muži',
+                        'quantity' => 2,
+                        'price' => 800,
+                    ],
+
+                    [
+                        'name' => 'Auric Line',
+                        'description' => 'Unisex náramok zo žiarivého zlata bez kameňov. Elegantný a všestranný doplnok.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'unisex',
+                        'quantity' => 3,
+                        'price' => 900,
+                    ],
+
+                    [
+                        'name' => 'Sapphire Halo',
+                        'description' => 'Unisex strieborný náramok so sýtym modrým zafírom. Výrazný a rafinovaný kúsok.',
+                        'material' => 'striebro',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'unisex',
+                        'quantity' => 2,
+                        'price' => 980,
                     ],
                 ],
             ],
+
+            'Kolekcie'=>[
+                'Lady of elegance'=>[
+                    [
+                        'name' => 'Golden Mirage',
+                        'description' => 'Elegantná brošňa zo zlata bez kameňov. Minimalistický dizajn, ktorý zvýrazní každý outfit.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 860,
+                    ],
+
+                    [
+                        'name' => 'Diamond Aurora',
+                        'description' => 'Luxusná zlatá brošňa zdobená žiarivým diamantom. Pre výnimočné príležitosti a štýlový dojem.',
+                        'material' => 'zlato',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 1,
+                        'price' => 1250,
+                    ],
+
+                    [
+                        'name' => 'Silver Dusk',
+                        'description' => 'Strieborná brošňa s jemným diamantom. Spojenie decentného lesku a nadčasového dizajnu.',
+                        'material' => 'striebro',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 910,
+                    ],
+
+                    [
+                        'name' => 'Sapphire Mist',
+                        'description' => 'Elegantná brošňa zo striebra so sýtomodrým zafírom. Pre ženy s citom pre detail.',
+                        'material' => 'striebro',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 940,
+                    ],
+
+                    [
+                        'name' => 'Pearl Ember',
+                        'description' => 'Moderná brošňa z titánu s jemne zasadenou perlou. Spojenie technickej precíznosti a elegancie.',
+                        'material' => 'titanium',
+                        'stone_color' => 'perla',
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 780,
+                    ],
+                ],
+                'Signature of nature'=>[
+                    [
+                        'name' => 'Golden Blossom',
+                        'description' => 'Elegantný náhrdelník zo zlata inšpirovaný tvarom kvetu. Bez kameňov, jemný a sofistikovaný dizajn, ktorý zaujme svojou jednoduchosťou.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 1020,
+                    ],
+
+                    [
+                        'name' => 'Golden Horizon',
+                        'description' => 'Zlatý náhrdelník s minimalistickým dizajnom inšpirovaným horizontom. Ideálny doplnok pre každodenný štýl.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 4,
+                        'price' => 980,
+                    ],
+
+                    [
+                        'name' => 'Golden Serenade',
+                        'description' => 'Luxusný náhrdelník zo zlata s jemnými krivkami, ktoré evokujú eleganciu a krásu. Bez kameňov pre tichú, ale pôsobivú krásu.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 1150,
+                    ],
+
+                    [
+                        'name' => 'Golden Mirage',
+                        'description' => 'Zlatý náhrdelník inšpirovaný mystickým zázrakom prírody. Jemný, ale výrazný, bez kameňov pre čistý a sofistikovaný vzhľad.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 1070,
+                    ],
+
+                    [
+                        'name' => 'Golden Whisper',
+                        'description' => 'Minimalistický náhrdelník zo zlata, ktorý svojou čistotou a eleganciou dokonale ladí s každým štýlom. Bez kameňov pre jemnosť a jednoduchosť.',
+                        'material' => 'zlato',
+                        'stone_color' => null,
+                        'purpose' => 'ženy',
+                        'quantity' => 5,
+                        'price' => 950,
+                    ],
+                ],
+                'Tiara'=>[
+                    [
+                        'name' => 'Diamond Radiance',
+                        'description' => 'Luxusná tiara zo zlata zdobená žiarivým diamantom. Pre nezabudnuteľný vzhľad a výnimočné príležitosti.',
+                        'material' => 'zlato',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 3,
+                        'price' => 3500,
+                    ],
+
+                    [
+                        'name' => 'Silver Grace',
+                        'description' => 'Elegantná tiara zo striebra, zdobená jemnými diamantmi. Spojenie klasickej krásy a moderného lesku.',
+                        'material' => 'striebro',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 2,
+                        'price' => 2800,
+                    ],
+
+                    [
+                        'name' => 'Twilight Sparkle',
+                        'description' => 'Krásna strieborná tiara s diamantmi, ktorá osvetlí vašu tvár jemným a rafinovaným leskom.',
+                        'material' => 'striebro',
+                        'stone_color' => 'diamant',
+                        'purpose' => 'ženy',
+                        'quantity' => 8,
+                        'price' => 2950,
+                    ],
+
+                    [
+                        'name' => 'Crimson Dream',
+                        'description' => 'Strieborná tiara so zasadeným rubínom, ktorá dodá vášmu vzhľadu vášnivý a výrazný nádych.',
+                        'material' => 'striebro',
+                        'stone_color' => 'rubín',
+                        'purpose' => 'ženy',
+                        'quantity' => 4,
+                        'price' => 3100,
+                    ],
+
+                    [
+                        'name' => 'Blue Serenity',
+                        'description' => 'Tiara z titánu so zasadeným zafírom, ktorá kombinuje moderný dizajn a elegantnú krásu modrého zafíru.',
+                        'material' => 'titanium',
+                        'stone_color' => 'zafír',
+                        'purpose' => 'ženy',
+                        'quantity' => 6,
+                        'price' => 3300,
+                    ],
+                ],
+            ],
+
+
         ];
 
         foreach ($data as $categoryName => $subcategories) {

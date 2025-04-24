@@ -9,6 +9,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 
 
+
 /* MAIN */
 Route::get('/basket', function () {
     return view('main_pages.basket');
@@ -94,6 +95,8 @@ Route::post('/order_submit', [OrderController::class, 'submit'])->name('order.su
 Route::get('/order_done', function () {
     return view('side_pages.order_done');
 })->name('order.success');
+
+
 
 /*
 Route::post('/cart/add', [CartController::class, 'addToCart']);

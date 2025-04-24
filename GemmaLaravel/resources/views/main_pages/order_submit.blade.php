@@ -18,7 +18,8 @@
 <main class="container py-5" style="padding-top: 86px;">
     <h2 class="text-center fw-bold mb-5">Doručovacie údaje</h2>
 
-    <form id="checkoutForm" method="post" action="order_done.php">
+    <form id="checkoutForm" method="post" action="{{ route('order.submit') }}">
+        @csrf
         <div class="row justify-content-center gap-5">
 
             <div class="col-md-5">
@@ -56,27 +57,27 @@
             <div class="col-md-5">
                 <h2 class="text-center mb-5 mt-4">Spôsob doručenia</h2>
                 <div class="form-check">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="doprava" id="kurier" required>
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="doprava" id="kurier" value="kurier" required>
                     <label class="form-check-label" for="kurier">Kuriér na adresu (3,50 €)</label>
                 </div>
                 <div class="form-check mb-4">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="doprava" id="posta" required>
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="doprava" id="posta" value="posta" required>
                     <label class="form-check-label" for="posta">Doručenie na poštu (2,50 €)</label>
                 </div>
 
                 <h2 class="text-center mb-4 mt-5">Spôsob platby</h2>
                 <div class="form-check">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="dobierka" required>
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="dobierka" value="dobierka" required>
                     <label class="form-check-label" for="dobierka">Dobierka pri prevzatí (1,00 €)</label>
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="prevod" data-bs-toggle="collapse" data-bs-target="#bankInfo">
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="prevod" value="prevod" data-bs-toggle="collapse" data-bs-target="#bankInfo">
                     <label class="form-check-label" for="prevod">Bankový prevod (0,00 €)</label>
                 </div>
 
                 <div class="form-check">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="karta" data-bs-toggle="collapse" data-bs-target="#cardForm">
+                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="karta" value="karta" data-bs-toggle="collapse" data-bs-target="#cardForm">
                     <label class="form-check-label" for="karta">Kartou online (0,00 €)</label>
                 </div>
 
@@ -113,6 +114,16 @@
                         Prečítal/a som si a súhlasím so Všeobecnými obchodnými podmienkami webovej stránky.
                     </label>
                 </div>
+
+                @if($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
                 <div class="mt-5 mb-5">
                     <button type="submit" class="btn btn-dark w-100 py-2">Odoslať</button>

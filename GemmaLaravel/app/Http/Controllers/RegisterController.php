@@ -60,11 +60,11 @@ class RegisterController extends Controller
                 ->first();
 
             if ($cartItem) {
-                // Aktualizuj množstvo
+
                 $cartItem->quantity += $item['quantity'];
                 $cartItem->save();
             } else {
-                // Vytvor nový záznam
+
                 Cart::create([
                     'id_user' => Auth::id(),
                     'id_product' => $productId,

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 /*use App\Http\Controllers\AuthController;*/
 use App\Http\Controllers\RegisterController;
@@ -87,6 +88,12 @@ Route::post('/cart/add', [CartController::class, 'addToCart'])->name('cart.add')
 Route::delete('/cart/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
 Route::patch('/cart/update/{id}', [CartController::class, 'updateCart'])->name('cart.update');
 
+
+Route::post('/order_submit', [OrderController::class, 'submit'])->name('order.submit');
+
+Route::get('/order_done', function () {
+    return view('side_pages.order_done');
+})->name('order.success');
 
 /*
 Route::post('/cart/add', [CartController::class, 'addToCart']);

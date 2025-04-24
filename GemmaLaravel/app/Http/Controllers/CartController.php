@@ -40,6 +40,7 @@ class CartController extends Controller
                 $cart[$productId]['quantity'] += $quantity;
             } else {
                 $cart[$productId] = [
+                    'product_id' => $productId,
                     'name' => $product->name,
                     'price' => $product->price,
                     'quantity' => $quantity,

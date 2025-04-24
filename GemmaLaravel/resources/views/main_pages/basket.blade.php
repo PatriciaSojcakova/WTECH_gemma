@@ -52,7 +52,16 @@
                 </div>
 
                 <div class="col-md-3 text-center">
-                    <input type="number" class="form-control text-center w-50 mx-auto" value="{{ $item->quantity }}" min="1" max="10" disabled>
+                    <form method="POST" action="{{ route('cart.update', $item->id) }}">
+                        @csrf
+                        @method('PATCH')
+                        <input type="number"
+                               name="quantity"
+                               class="form-control text-center w-50 mx-auto"
+                               value="{{ $item->quantity }}"
+                               min="1" max="10"
+                               onchange="this.form.submit()">
+                    </form>
                 </div>
 
                 <div class="col-md-2 text-center">

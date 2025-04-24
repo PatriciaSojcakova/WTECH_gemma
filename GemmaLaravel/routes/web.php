@@ -87,6 +87,8 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('/cart', [CartController::class, 'showCart'])->name('cart.show');
 Route::post('/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
 Route::delete('/cart/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
+Route::patch('/cart/update/{id}', [CartController::class, 'updateCart'])->name('cart.update');
+
 
 /*
 Route::post('/cart/add', [CartController::class, 'addToCart']);

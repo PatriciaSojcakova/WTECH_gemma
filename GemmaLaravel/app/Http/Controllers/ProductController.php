@@ -72,6 +72,7 @@ class ProductController extends Controller
         $images = $product->image;
         $moreProducts = Product::inRandomOrder()->limit(8)->get();
         $moreImages = $moreProducts->pluck('image');
+
         return view('main_pages.one_product_page', compact('product', 'images', 'moreProducts', 'moreImages'));
     }
 

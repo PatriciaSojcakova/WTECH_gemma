@@ -51,9 +51,12 @@
                                 @endif
                                 <p class="product-name">{{ $product->name }}</p>
                             </a>
+                            <h5>{{ $product->price }}€</h5>
                         </div>
+                        <!--
                         <input type="checkbox" id="favorite-main{{ $product->id }}" class="favorite-checkbox">
                         <label for="favorite-main{{ $product->id }}" class="favorite-icon material-icons">favorite</label>
+                        -->
                     </div>
                 @endforeach
             </div>

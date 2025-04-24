@@ -302,7 +302,7 @@ class ProductSeeder extends Seeder
                         'price' => 920,
                     ],
                     [
-                        'name' => 'Regal Gold',
+                        'name' => 'Regaly Gold',
                         'description' => 'Masívna obrúčka v zlatom prevedení, ktorá dodá každému mužovi prestížny vzhľad. Je to skvelý symbol večnej lásky a záväzku.',
                         'material' => 'zlato',
                         'stone_color' => null,
@@ -623,7 +623,7 @@ class ProductSeeder extends Seeder
                 ],
                 'Kruhové' => [
                     [
-                        'name' => 'Golden Whisper',
+                        'name' => 'Golden Whispering',
                         'description' => 'Jednoduché a elegantné zlaté náušnice bez kameňov. Vhodné na každodenné nosenie aj špeciálne chvíle.',
                         'material' => 'zlato',
                         'stone_color' => null,
@@ -778,7 +778,7 @@ class ProductSeeder extends Seeder
                         'price' => 1250,
                     ],
                     [
-                        'name' => 'Golden Radiance',
+                        'name' => 'Golden Radiation',
                         'description' => 'Luxusné zlaté náušnice s diamantmi. Prvotriedna kvalita pre elegantné ženy.',
                         'material' => 'zlato',
                         'stone_color' => 'diamant',
@@ -848,7 +848,7 @@ class ProductSeeder extends Seeder
             'Náhrdelníky' =>[
                 'Retiazkové' =>[
                     [
-                        'name' => 'Golden Grace',
+                        'name' => 'Golden Eternity',
                         'description' => 'Elegantný zlatý náhrdelník bez kameňa. Nadčasová krása pre sofistikované ženy.',
                         'material' => 'zlato',
                         'stone_color' => null,
@@ -907,7 +907,7 @@ class ProductSeeder extends Seeder
                 ],
                 'S príveskom' =>[
                     [
-                        'name' => 'Golden Essence',
+                        'name' => 'Golden Essences',
                         'description' => 'Elegantný zlatý náhrdelník bez prívesku. Nadčasový dizajn pre každodenné nosenie.',
                         'material' => 'zlato',
                         'stone_color' => null,
@@ -916,7 +916,7 @@ class ProductSeeder extends Seeder
                         'price' => 850,
                     ],
                     [
-                        'name' => 'Diamond Glow',
+                        'name' => 'Diamond Glowing',
                         'description' => 'Zlatý náhrdelník so žiarivým diamantom. Luxusný kúsok, ktorý upúta pozornosť pri každej príležitosti.',
                         'material' => 'zlato',
                         'stone_color' => 'diamant',
@@ -993,7 +993,7 @@ class ProductSeeder extends Seeder
                 ],
                 'Chokers'=>[
                     [
-                        'name' => 'Diamond Glow',
+                        'name' => 'Glowing Silver',
                         'description' => 'Elegantný strieborný choker so žiarivým diamantom, ktorý dodá vášmu vzhľadu sofistikovanosť a jemnosť.',
                         'material' => 'striebro',
                         'stone_color' => 'diamant',
@@ -1003,7 +1003,7 @@ class ProductSeeder extends Seeder
                     ],
 
                     [
-                        'name' => 'Titan Touch',
+                        'name' => 'Titan Touches',
                         'description' => 'Minimalistický titánový choker bez kameňov, ideálny pre ženy a unisex štýl, ktorí preferujú elegantný minimalizmus.',
                         'material' => 'titanium',
                         'stone_color' => null,
@@ -1225,7 +1225,7 @@ class ProductSeeder extends Seeder
             'Kolekcie'=>[
                 'Lady of elegance'=>[
                     [
-                        'name' => 'Golden Mirage',
+                        'name' => 'Golden Mirror',
                         'description' => 'Elegantná brošňa zo zlata bez kameňov. Minimalistický dizajn, ktorý zvýrazní každý outfit.',
                         'material' => 'zlato',
                         'stone_color' => null,

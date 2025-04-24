@@ -20,7 +20,6 @@
                         </button>
                     </div>
 
-                    {{-- Zachovanie ostatných filtrov, ak existujú --}}
                     @foreach(request()->except('search', 'page') as $key => $value)
                         @if(is_array($value))
                             @foreach($value as $v)
@@ -50,7 +49,7 @@
                         </a>
                     @endif
                 @endguest
-                <a href="{{ url('/favorite') }}">
+                <a href="#">
                     <span class="material-icons" style="color: #000000;">favorite</span>
                 </a>
 

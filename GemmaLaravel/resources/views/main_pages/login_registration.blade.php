@@ -31,10 +31,11 @@
                         <label for="loginPassword" class="form-label">Heslo</label>
                         <input type="password" name="password" class="form-control" id="loginPassword" placeholder="Zadajte heslo" required>
                     </div>
+                    <!--
                     <div class="form-check mb-3">
                         <input type="checkbox" name="remember" class="form-check-input focus-ring focus-ring-dark" id="rememberMe">
                         <label class="form-check-label" for="rememberMe">Zapamätať si ma</label>
-                    </div>
+                    </div> -->
 
                     @if ($errors->login->any())
                         <div class="alert alert-danger">

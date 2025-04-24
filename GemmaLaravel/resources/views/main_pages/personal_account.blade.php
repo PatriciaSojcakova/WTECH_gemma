@@ -29,9 +29,9 @@
             <p><strong>Email:</strong> {{ Auth::user()->email }} </p>
             <p><strong>Odoberanie katalógu:</strong> {{ Auth::user()->newsletter_subscribed ? 'Odoberá' : 'Neodoberá' }}</p>
 
-            <h3 class="mt-5">Objednávky</h3>
+            <!--<h3 class="mt-5">Objednávky</h3>
             <p>Posledná objednávka: #2024001 (12.3.2024)</p>
-            <p>Stav: Odoslaná</p>
+            <p>Stav: Odoslaná</p> -->
 
             <form method="POST" action="{{ route('logout') }}">
                 @csrf

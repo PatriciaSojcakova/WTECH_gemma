@@ -36,7 +36,6 @@
                         <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 6]) }}">Kruhové</a></li>
                         <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 7]) }}">Perlové</a></li>
                         <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 8]) }}">Visiace</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 9]) }}">Retiazkové</a></li>
                         <li><a class="dropdown-item" href="{{ route('products.index', ['category_id' => 2]) }}">Všetky</a></li>
                     </ul>
                 </li>
@@ -48,11 +47,10 @@
                         NÁHRDELNÍKY
                     </a>
                     <ul class="dropdown-menu custom-dropdown" style="background-color: #E2CBCB;">
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 10]) }}">Retiazkové</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 11]) }}">S príveskom</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 12]) }}">Perlové</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 13]) }}">Tenisové</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 14]) }}">Chokers</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 9]) }}">Retiazkové</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 10]) }}">S príveskom</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 11]) }}">Perlové</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 12]) }}">Chokers</a></li>
                         <li><a class="dropdown-item" href="{{ route('products.index', ['category_id' => 3]) }}">Všetky</a></li>
                     </ul>
                 </li>
@@ -64,11 +62,9 @@
                         NÁRAMKY
                     </a>
                     <ul class="dropdown-menu custom-dropdown" style="background-color: #E2CBCB;">
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 15]) }}">Pevné</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 16]) }}">Retiazkové</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 17]) }}">Tenisové</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 18]) }}">Bezpríveskové</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 19]) }}">Perlové</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 13]) }}">Pevné</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 14]) }}">Retiazkové</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 15]) }}">Kamienkové</a></li>
                         <li><a class="dropdown-item" href="{{ route('products.index', ['category_id' => 4]) }}">Všetky</a></li>
                     </ul>
                 </li>
@@ -80,11 +76,9 @@
                         KOLEKCIE
                     </a>
                     <ul class="dropdown-menu custom-dropdown" style="background-color: #E2CBCB;">
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['purpose' => 'minimalistic']) }}">Minimalistic</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['purpose' => 'eternal']) }}">Eternal</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['purpose' => 'gemma_moments']) }}">GEMMA moments</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['purpose' => 'gemma_oasis']) }}">GEMMA x Oasis</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['purpose' => 'signature_of_love']) }}">Signature of love</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 16]) }}">Lady of elegance</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 17]) }}">Tiara</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 18]) }}">Signature of nature</a></li>
                         <li><a class="dropdown-item" href="{{ route('products.index', ['category_id' => 5]) }}">Všetky</a></li>
                     </ul>
                 </li>

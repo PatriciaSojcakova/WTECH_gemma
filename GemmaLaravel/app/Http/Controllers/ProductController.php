@@ -51,6 +51,7 @@ class ProductController extends Controller
 
 
 
+
         $products = $query->with('subcategory')->paginate(12)->withQueryString();
 
         return view('main_pages.all_products_page', compact('products'));

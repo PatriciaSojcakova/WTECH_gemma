@@ -25,99 +25,103 @@
         </button>
 
 
-        <!-- Filter sekcia -->
-        <div id="filterCollapse" class="collapse mt-2">
-            <div class="filter-container">
-                <div class="row justify-content-center">
-                    <!-- Materiál -->
-                    <div class="col-md-3 d-flex flex-column align-items-start">
-                        <p class="custom_playfair_bold mt-3 mb-1">MATERIÁL</p>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="material1" name="material">
-                            <label class="form-check-label custom_playfair_semi" for="material1">zlato</label>
+        <form method="GET" action="{{ route('products.index') }}">
+            <div id="filterCollapse" class="collapse mt-2">
+                <div class="filter-container">
+                    <div class="row justify-content-center">
+
+                        <!-- Materiál -->
+                        <div class="col-md-3 d-flex flex-column align-items-start">
+                            <p class="custom_playfair_bold mt-3 mb-1">MATERIÁL</p>
+                            @foreach(['zlato', 'striebro', 'titanium'] as $material)
+                                <div class="filter-form-check">
+                                    <input class="form-check-input" type="checkbox" name="material[]" value="{{ $material }}"
+                                        {{ in_array($material, request()->input('material', [])) ? 'checked' : '' }}>
+                                    <label class="form-check-label custom_playfair_semi">{{ $material }}</label>
+                                </div>
+                            @endforeach
                         </div>
-                        <div class="filter-form-check ">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="material3" name="material">
-                            <label class="form-check-label custom_playfair_semi" for="material3">striebro</label>
+
+                        <!-- Farba kameňa -->
+                        <div class="col-md-3 d-flex flex-column align-items-start">
+                            <p class="custom_playfair_bold mt-3 mb-1">FARBA KAMEŇA</p>
+                            @foreach(['diamant', 'rubín', 'zafír', 'perla'] as $color)
+                                <div class="filter-form-check">
+                                    <input class="form-check-input" type="checkbox" name="stone_color[]" value="{{ $color }}"
+                                        {{ in_array($color, request()->input('stone_color', [])) ? 'checked' : '' }}>
+                                    <label class="form-check-label custom_playfair_semi">{{ $color }}</label>
+                                </div>
+                            @endforeach
                         </div>
-                        <div class="filter-form-check ">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="material4" name="material">
-                            <label class="form-check-label custom_playfair_semi" for="material4">titanium</label>
+
+                        <!-- Určenie -->
+                        <div class="col-md-3 d-flex flex-column align-items-start">
+                            <p class="custom_playfair_bold mt-3 mb-1">URČENIE</p>
+                            @foreach(['ženy', 'muži', 'unisex'] as $purpose)
+                                <div class="filter-form-check">
+                                    <input class="form-check-input" type="checkbox" name="purpose[]" value="{{ $purpose }}"
+                                        {{ in_array($purpose, request()->input('purpose', [])) ? 'checked' : '' }}>
+                                    <label class="form-check-label custom_playfair_semi">{{ $purpose }}</label>
+                                </div>
+                            @endforeach
                         </div>
+
+                        <!-- Cena -->
+                        <div class="col-md-3 d-flex flex-column align-items-start">
+                            <p class="custom_playfair_bold mt-3 mb-1">CENA</p>
+                            <label class="custom_playfair_semi">Vyberte cenový rozsah</label>
+
+                            <input type="range" class="form-range" name="min_price" id="minPrice" min="0" max="5000" step="10" value="{{ request('min_price', 0) }}">
+                            <input type="range" class="form-range" name="max_price" id="maxPrice" min="0" max="5000" step="10" value="{{ request('max_price', 5000) }}">
+
+                            <div class="d-flex justify-content-between">
+                                <span id="minPriceValue">{{ request('min_price', 0) }}€</span>
+                                <span>-</span>
+                                <span id="maxPriceValue">{{ request('max_price', 5000) }}€</span>
+                            </div>
+                        </div>
+
                     </div>
-
-                    <!-- Farba -->
-                    <div class="col-md-3 d-flex flex-column align-items-start">
-                        <p class="custom_playfair_bold mt-3 mb-1">FARBA KAMEŇA</p>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="farba1" name="farba">
-                            <label class="form-check-label custom_playfair_semi" for="farba1">diamant</label>
-                        </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="farba2" name="farba">
-                            <label class="form-check-label custom_playfair_semi" for="farba2">rubín</label>
-                        </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="farba3" name="farba">
-                            <label class="form-check-label custom_playfair_semi" for="farba3">zafír</label>
-                        </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="farba6" name="farba">
-                            <label class="form-check-label custom_playfair_semi" for="farba6">perla</label>
-                        </div>
-
-                    </div>
-
-                    <!-- Určenie -->
-                    <div class="col-md-3 d-flex flex-column align-items-start">
-                        <p class="custom_playfair_bold mt-3 mb-1">URČENIE</p>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="urcenie1" name="urcenie">
-                            <label class="form-check-label custom_playfair_semi" for="urcenie1">ženy</label>
-                        </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="urcenie2" name="urcenie">
-                            <label class="form-check-label custom_playfair_semi" for="urcenie2">muži</label>
-                        </div>
-                        <div class="filter-form-check">
-                            <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="urcenie4" name="urcenie">
-                            <label class="form-check-label custom_playfair_semi" for="urcenie4">unisex</label>
-                        </div>
-                    </div>
-
-                    <!-- Cena -->
-                    <div class="col-md-3 d-flex flex-column align-items-start">
-                        <p class="custom_playfair_bold mt-3 mb-1">CENA</p>
-                        <label for="priceRange" class="custom_playfair_semi">Vyberte cenový rozsah</label>
-
-                        <!-- Slider pre cenu s dvoma posuvníkmi -->
-                        <input type="range" class="form-range" id="minPrice" min="0" max="5000" step="10" value="0">
-                        <input type="range" class="form-range" id="maxPrice" min="0" max="5000" step="10" value="5000">
-
-                        <!-- Zobrazenie zvoleného rozsahu -->
-                        <div class="d-flex justify-content-between">
-                            <span id="minPriceValue">0€</span>
-                            <span>-</span>
-                            <span id="maxPriceValue">5000€</span>
-                        </div>
-                    </div>
-                </div>
 
                     <!-- Tlačidlo na filtrovanie -->
-                <div class="text-center mt-4">
-                    <button class="btn btn-secondary bg-black w-25">Filtruj</button>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-secondary bg-black w-25">Filtruj</button>
+                    </div>
+
+                    <!-- Skryté inputy na zachovanie kategórie / subkategórie -->
+                    @if(request()->has('category_id'))
+                        <input type="hidden" name="category_id" value="{{ request('category_id') }}">
+                    @endif
+
+                    @if(request()->has('subcategory_id'))
+                        <input type="hidden" name="subcategory_id" value="{{ request('subcategory_id') }}">
+                    @endif
                 </div>
             </div>
+        </form>
+    </div>
+
+
+    <form method="GET" id="sortForm" action="{{ route('products.index') }}">
+        <div class="d-flex justify-content-end mb-4 me-3 mt-1">
+            <select id="sortPrice" name="sort" class="form-select w-25 focus-ring focus-ring-dark" onchange="document.getElementById('sortForm').submit()">
+                <option value="">Zoradiť podľa ceny</option>
+                <option value="asc" {{ request('sort') === 'asc' ? 'selected' : '' }}>Cena: vzostupne</option>
+                <option value="desc" {{ request('sort') === 'desc' ? 'selected' : '' }}>Cena: zostupne</option>
+            </select>
         </div>
-    </div>
 
+        @foreach(request()->except('sort', 'page') as $key => $value)
+            @if(is_array($value))
+                @foreach($value as $v)
+                    <input type="hidden" name="{{ $key }}[]" value="{{ $v }}">
+                @endforeach
+            @else
+                <input type="hidden" name="{{ $key }}" value="{{ $value }}">
+            @endif
+        @endforeach
+    </form>
 
-    <div class="d-flex justify-content-end mb-4 me-3 mt-1">
-        <select id="sortPrice" class="form-select w-25 focus-ring focus-ring-dark">
-            <option value="asc">Cena: vzostupne</option>
-            <option value="desc">Cena: zostupne</option>
-        </select>
-    </div>
 
     <div class="custom-container mt-5 mb-5">
 
@@ -167,11 +171,8 @@
     const minPriceValue = document.getElementById('minPriceValue');
     const maxPriceValue = document.getElementById('maxPriceValue');
 
-    // Aktualizovanie hodnôt pri zmene posuvníkov
     minPrice.addEventListener('input', function() {
-        // Upravíme hodnotu zobrazenia minimálnej ceny
         minPriceValue.textContent = minPrice.value + '€';
-        // Ak je minimálna cena vyššia než maximálna, nastavíme maximálnu cenu na rovnakú hodnotu
         if (parseInt(minPrice.value) > parseInt(maxPrice.value)) {
             maxPrice.value = minPrice.value;
             maxPriceValue.textContent = minPrice.value + '€';
@@ -179,9 +180,7 @@
     });
 
     maxPrice.addEventListener('input', function() {
-        // Upravíme hodnotu zobrazenia maximálnej ceny
         maxPriceValue.textContent = maxPrice.value + '€';
-        // Ak je maximálna cena menšia než minimálna, nastavíme minimálnu cenu na rovnakú hodnotu
         if (parseInt(maxPrice.value) < parseInt(minPrice.value)) {
             minPrice.value = maxPrice.value;
             minPriceValue.textContent = maxPrice.value + '€';

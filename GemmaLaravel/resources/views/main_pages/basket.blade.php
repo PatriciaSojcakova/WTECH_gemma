@@ -34,8 +34,10 @@
             <div class="row align-items-center py-3 border-bottom">
                 <div class="col-md-3 text-center">
                     <div class="product-container">
-                        <a href="#" class="text-decoration-none text-reset d-block">
-                            <img src="{{ $item->product->image ?? asset('images/default.png') }}" class="product-image" alt="Obrázok produktu">
+                        <a href="{{ route('product.show', $item ->product->id) }}" class="text-decoration-none text-reset d-block">
+                            <img src="{{ $item->product->image->first() ? asset('image/' . $item->product->image->first()->path) : asset('images/default.png') }}"
+                                 class="product-image"
+                                 alt="{{ $item->product->name ?? $item->name }}">
                         </a>
                     </div>
                 </div>

@@ -7,16 +7,32 @@
             </div>
 
             <div class="col text-center d-none d-md-block">
-                <div class="input-group mx-auto position-relative" style="max-width: 400px;">
-                    <input type="text" class="form-control custom-form-control rounded-pill ps-4" placeholder="Hľadať..."
-                           style="padding-right: 50px; background-color: rgba(226, 203, 203, 0.7);">
+                <form method="GET" action="{{ route('products.index') }}">
+                    <div class="input-group mx-auto position-relative" style="max-width: 400px;">
+                        <input type="text" name="search" class="form-control custom-form-control rounded-pill ps-4"
+                               placeholder="Hľadať..." value="{{ request('search') }}"
+                               style="padding-right: 50px; background-color: rgba(226, 203, 203, 0.7);">
 
-                    <button class="btn position-absolute end-0 top-50 translate-middle-y me-3 p-0 border-0 bg-transparent"
-                            style="z-index: 10; width: 40px; height: 40px;">
-                        <span class="material-symbols-outlined custom-search-icon" style="font-size: 24px; transform: translateY(2px);">search</span>
-                    </button>
-                </div>
+                        <button type="submit" class="btn position-absolute end-0 top-50 translate-middle-y me-3 p-0 border-0 bg-transparent"
+                                style="z-index: 10; width: 40px; height: 40px;">
+                <span class="material-symbols-outlined custom-search-icon"
+                      style="font-size: 24px; transform: translateY(2px);">search</span>
+                        </button>
+                    </div>
+
+                    {{-- Zachovanie ostatných filtrov, ak existujú --}}
+                    @foreach(request()->except('search', 'page') as $key => $value)
+                        @if(is_array($value))
+                            @foreach($value as $v)
+                                <input type="hidden" name="{{ $key }}[]" value="{{ $v }}">
+                            @endforeach
+                        @else
+                            <input type="hidden" name="{{ $key }}" value="{{ $value }}">
+                        @endif
+                    @endforeach
+                </form>
             </div>
+
 
             <div class="col text-end d-flex justify-content-center gap-3 gap-sm-4 gap-md-4">
                 @guest

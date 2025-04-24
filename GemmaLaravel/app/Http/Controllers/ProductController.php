@@ -49,6 +49,12 @@ class ProductController extends Controller
             $query->orderBy('price', $request->sort);
         }
 
+        if ($request->filled('search')) {
+            $query->where(function ($q) use ($request) {
+                $q->whereRaw('name ILIKE ?', ['%' . $request->search . '%'])
+                    ->orWhereRaw('description ILIKE ?', ['%' . $request->search . '%']);
+            });
+        }
 
 
 

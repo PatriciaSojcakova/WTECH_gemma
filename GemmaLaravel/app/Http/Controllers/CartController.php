@@ -61,14 +61,22 @@ class CartController extends Controller
             $cartItems = collect();
 
             foreach ($sessionCart as $productId => $item) {
-                $product = new \stdClass();
-                $product->id = $productId;
-                $product->name = $item['name'];
-                $product->price = $item['price'];
-                $product->quantity = $item['quantity'];
-                $cartItems->push($product);
+
+                $product = Product::with('image')->find($productId);
+
+                if (!$product) {
+                    continue;
+                }
+
+                $cart = new Cart();
+                $cart->id = $productId;
+                $cart->quantity = $item['quantity'];
+                $cart->setRelation('product', $product);
+
+                $cartItems->push($cart);
             }
         }
+
         return view('main_pages.basket', compact('cartItems'));
     }
 

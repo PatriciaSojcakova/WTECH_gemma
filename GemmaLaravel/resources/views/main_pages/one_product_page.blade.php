@@ -111,7 +111,7 @@
         </div>
 
         <div class="container-fluid d-flex justify-content-center align-items-center mt-5 mb-5">
-            <a href="products_desktop.php">
+            <a href="{{ url('/all_products_page') }}">
                 <button class="btn btn-dark">Pokračovať ďalej ...</button>
             </a>
         </div>

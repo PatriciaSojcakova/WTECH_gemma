@@ -20,7 +20,6 @@ Route::get('/order_submit', function () {
 
 
 
-
 /* HEADER */
 Route::get('/favorite', function () {
     return view('main_pages.favorite');
@@ -68,7 +67,7 @@ Route::get('/all_products_page', [ProductController::class, 'index'])->name('pro
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/one_product_page/{id}', [ProductController::class, 'show'])->name('product.show');
 Route::get('/', [ProductController::class, 'home'])->name('home');
-//Route::get('/one_product_page', [ProductController::class, 'more'])->name('more');
+
 /*
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('product.show');
@@ -100,3 +99,5 @@ Route::delete('/cart/clear', [CartController::class, 'clearCart']);
 Route::middleware(['auth'])->group(function () {
 });
 */
+
+

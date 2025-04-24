@@ -34,101 +34,29 @@
         </div>
 
         <div class="custom-container mt-5 mb-5">
-
-            <h2 class="text-center mb-5 mt-5">ZĽAVNENÉ</h2>
+            <h2 class="text-center mb-5 mt-5">NAŠE TIPY</h2>
 
             <div class="row d-flex flex-wrap justify-content-center g-0">
-
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
-                    <div class="product-container">
-                        <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                            <img src="{{ asset('image/prsten/jednoduche/01_zeny_zlato.png') }}" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
-                        </a>
+                @foreach($randomProducts as $product)
+                    <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
+                        <div class="product-container">
+                            <a href="{{ route('product.show', $product->id) }}" class="text-decoration-none text-reset d-block">
+                                @php
+                                    $firstImage = $product->image->first();
+                                @endphp
+                                @if ($firstImage)
+                                    <img src="{{ asset('image/' . $firstImage->path) }}" class="product-image" alt="{{ $product->name }}">
+                                @else
+                                    <img src="{{ asset('image/default-image.png') }}" class="product-image" alt="{{ $product->name }}">  <!-- Default obrázok -->
+                                @endif
+                                <p class="product-name">{{ $product->name }}</p>
+                            </a>
+                        </div>
+                        <input type="checkbox" id="favorite-main{{ $product->id }}" class="favorite-checkbox">
+                        <label for="favorite-main{{ $product->id }}" class="favorite-icon material-icons">favorite</label>
                     </div>
-                    <input type="checkbox" id="favorite-main1" class="favorite-checkbox">
-                    <label for="favorite-main1" class="favorite-icon material-icons">favorite</label>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
-                    <div class="product-container">
-                        <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                            <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
-                        </a>
-                    </div>
-                    <input type="checkbox" id="favorite-main2" class="favorite-checkbox">
-                    <label for="favorite-main2" class="favorite-icon material-icons">favorite</label>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
-                    <div class="product-container">
-                        <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                            <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
-                        </a>
-                    </div>
-                    <input type="checkbox" id="favorite-main3" class="favorite-checkbox">
-                    <label for="favorite-main3" class="favorite-icon material-icons">favorite</label>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
-                    <div class="product-container">
-                        <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                            <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
-                        </a>
-                    </div>
-                    <input type="checkbox" id="favorite-main4" class="favorite-checkbox">
-                    <label for="favorite-main4" class="favorite-icon material-icons">favorite</label>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
-                    <div class="product-container">
-                        <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                            <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
-                        </a>
-                    </div>
-                    <input type="checkbox" id="favorite-main5" class="favorite-checkbox">
-                    <label for="favorite-main5" class="favorite-icon material-icons">favorite</label>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
-                    <div class="product-container">
-                        <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                            <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
-                        </a>
-                    </div>
-                    <input type="checkbox" id="favorite-main6" class="favorite-checkbox">
-                    <label for="favorite-main6" class="favorite-icon material-icons">favorite</label>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
-                    <div class="product-container">
-                        <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                            <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
-                        </a>
-                    </div>
-                    <input type="checkbox" id="favorite-main7" class="favorite-checkbox">
-                    <label for="favorite-main7" class="favorite-icon material-icons">favorite</label>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 mt-2 mb-5 text-center">
-                    <div class="product-container">
-                        <a href="one_product.php" class="text-decoration-none text-reset d-block">
-                            <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                            <p class="product-name">Prsteň Elegant</p>
-                        </a>
-                    </div>
-                    <input type="checkbox" id="favorite-main8" class="favorite-checkbox">
-                    <label for="favorite-main" class="favorite-icon material-icons">favorite</label>
-                </div>
-
+                @endforeach
             </div>
-
         </div>
 
         <div class="container-fluid d-flex justify-content-center align-items-center mt-5 mb-5">

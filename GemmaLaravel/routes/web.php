@@ -9,9 +9,9 @@ use App\Http\Controllers\CartController;
 
 
 /* MAIN */
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('main_pages.main_page');
-});
+});*/
 
 Route::get('/basket', function () {
     return view('main_pages.basket');
@@ -20,6 +20,8 @@ Route::get('/basket', function () {
 Route::get('/order_submit', function () {
     return view('main_pages.order_submit');
 });
+
+Route::get('/', [ProductController::class, 'home'])->name('home');
 
 
 

@@ -53,6 +53,7 @@ class ProductController extends Controller
 
 
 
+
         $products = $query->with('subcategory')->paginate(12)->withQueryString();
 
         return view('main_pages.all_products_page', compact('products'));
@@ -64,6 +65,13 @@ class ProductController extends Controller
         $product = Product::find($id);
         $images = $product->image;
         return view('main_pages.one_product_page', compact('product', 'images'));
+    }
+
+    public function home()
+    {
+        $randomProducts = Product::inRandomOrder()->limit(8)->get();
+        $images = $randomProducts->pluck('image');
+        return view('main_pages.main_page', compact('randomProducts','images'));
     }
 
 }

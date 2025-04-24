@@ -41,10 +41,10 @@
                         <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
-                <div class="favorite-container text-center mt-3">
+                <!--<div class="favorite-container text-center mt-3">
                     <input type="checkbox" id="single-prod1" class="favorite-checkbox d-none">
                     <label for="single-prod{{ $product->id }}" class="favorite-icon material-icons">favorite</label>
-                </div>
+                </div>-->
             </div>
 
             <div class="col-md-7 mb-5">
@@ -68,11 +68,11 @@
                 </div>
 
                 <div class="d-flex justify-content-end align-items-center mt-3">
-                    <form action="{{ route('cart.add') }}" method="POST">
+                    <form action="{{ route('cart.add') }}" method="POST" class="d-flex align-items-center">
                         @csrf
                         <input type="hidden" name="product_id" value="{{ $product->id }}">
-                        <input type="number" name="quantity" value="1" min="1">
-                        <button type="submit">Pridať do košíka</button>
+                        <input type="number" class="form-control text-center me-2" style="width: 80px;" name="quantity" value="1" min="1">
+                        <button type="submit" class="btn btn-dark">Pridať do košíka</button>
                     </form>
                 </div>
             </div>

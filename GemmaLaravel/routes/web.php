@@ -64,6 +64,9 @@ Route::get('/complaints', function () {
 
 
 /* PRODUCTS */
+Route::get('/all_products_page', [ProductController::class, 'index'])->name('product.show');
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+Route::get('/one_product_page/{id}', [ProductController::class, 'show'])->name('product.show');
 
 
 
@@ -75,15 +78,9 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
 
-//Route::get('/all_products_page', [ProductController::class, 'index'])->name('product.show');
+
 
 /*
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('product.show');
 */
-
-
-Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-
-
-Route::get('/one_product_page/{id}', [ProductController::class, 'show'])->name('product.show');

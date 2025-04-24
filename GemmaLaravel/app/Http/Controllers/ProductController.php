@@ -12,6 +12,18 @@ class ProductController extends Controller
     {
         $query = Product::query();
 
+        // Ak je prítomná 'category_id', pridaj filter na túto kategóriu
+        if ($request->filled('category_id')) {
+            $query->whereHas('subcategory', function ($subquery) use ($request) {
+                $subquery->where('category_id', $request->category_id);
+            });
+        }
+
+        // Ak je prítomná 'subcategory_id', filtrovanie podľa subkategórie
+        if ($request->filled('subcategory_id')) {
+            $query->where('subcategory_id', $request->subcategory_id);
+        }
+
         // Filtrovanie podľa GET parametrov
         if ($request->filled('material')) {
             $query->where('material', $request->material);
@@ -25,15 +37,26 @@ class ProductController extends Controller
             $query->where('purpose', $request->purpose);
         }
 
-        if ($request->filled('subcategory_id')) {
-            $query->where('subcategory_id', $request->subcategory_id);
+        if ($request->filled('min_price')) {
+            $query->where('price', '>=', $request->min_price);
         }
+
+        if ($request->filled('max_price')) {
+            $query->where('price', '<=', $request->max_price);
+        }
+
+        if ($request->filled('sort') && in_array($request->sort, ['asc', 'desc'])) {
+            $query->orderBy('price', $request->sort);
+        }
+
 
 
         $products = $query->with('subcategory')->paginate(12)->withQueryString();
 
         return view('main_pages.all_products_page', compact('products'));
     }
+
+
 
     public function show($id){
         $product = Product::find($id);

@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('description');
             $table->enum('material', ['zlato', 'striebro', 'titanium']);
-            $table->enum('stone_color', ['diamant', 'rubin', 'zafir', 'perla'])->nullable();
-            $table->enum('purpose', ['zeny', 'muzi', 'unisex']);
+            $table->enum('stone_color', ['diamant', 'rubín', 'zafír', 'perla'])->nullable();
+            $table->enum('purpose', ['ženy', 'muži', 'unisex']);
             $table->integer('quantity');
             $table->float('price');
             $table->foreignId('subcategory_id')->constrained('subcategories')->onDelete('cascade');

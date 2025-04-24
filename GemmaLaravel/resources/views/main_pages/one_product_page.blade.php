@@ -24,7 +24,7 @@
             <div class="col-md-5">
                 <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        @foreach($product->image as $index => $image)
+                        @foreach($images as $index => $image)
                             <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                                 <div class="product-container-single">
                                     <a href="one_product.php" class="text-decoration-none text-reset d-block">
@@ -35,16 +35,15 @@
                         @endforeach
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Predchádzajúci</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Ďalší</span>
                     </button>
                 </div>
-                <!--<div class="favorite-container text-center mt-3">
-                    <input type="checkbox" id="single-prod1" class="favorite-checkbox d-none">
-                    <label for="single-prod{{ $product->id }}" class="favorite-icon material-icons">favorite</label>
-                </div>-->
+
             </div>
 
             <div class="col-md-7 mb-5">
@@ -76,7 +75,6 @@
                     </form>
                 </div>
             </div>
-
 
         </div>
     </div>
@@ -126,7 +124,7 @@
     @include('components.footer')
 </footer>
 
-<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

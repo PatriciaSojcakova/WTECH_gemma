@@ -75,11 +75,11 @@
                     <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="prevod" value="prevod" data-bs-toggle="collapse" data-bs-target="#bankInfo">
                     <label class="form-check-label" for="prevod">Bankový prevod (0,00 €)</label>
                 </div>
-
+                <!--
                 <div class="form-check">
                     <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="karta" value="karta" data-bs-toggle="collapse" data-bs-target="#cardForm">
                     <label class="form-check-label" for="karta">Kartou online (0,00 €)</label>
-                </div>
+                </div> -->
 
                 <div id="bankInfo" class="collapse mt-3">
                     <div class="card card-body">
@@ -90,6 +90,7 @@
                     </div>
                 </div>
 
+                <!--
                 <div id="cardForm" class="collapse mt-3">
                     <div class="card card-body">
                         <p><strong>Zadajte údaje karty:</strong></p>
@@ -106,7 +107,7 @@
                             <input type="text" class="form-control" name="cvc" id="cvc" placeholder="123">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="form-check mb-4 mt-5">
                     <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="suhlas" required>

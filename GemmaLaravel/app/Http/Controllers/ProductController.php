@@ -64,7 +64,9 @@ class ProductController extends Controller
     public function show($id){
         $product = Product::find($id);
         $images = $product->image;
-        return view('main_pages.one_product_page', compact('product', 'images'));
+        $moreProducts = Product::inRandomOrder()->limit(8)->get();
+        $moreImages = $moreProducts->pluck('image');
+        return view('main_pages.one_product_page', compact('product', 'images', 'moreProducts', 'moreImages'));
     }
 
     public function home()

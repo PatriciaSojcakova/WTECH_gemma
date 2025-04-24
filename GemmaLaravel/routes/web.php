@@ -9,10 +9,6 @@ use App\Http\Controllers\CartController;
 
 
 /* MAIN */
-/*Route::get('/', function () {
-    return view('main_pages.main_page');
-});*/
-
 Route::get('/basket', function () {
     return view('main_pages.basket');
 });
@@ -21,7 +17,7 @@ Route::get('/order_submit', function () {
     return view('main_pages.order_submit');
 });
 
-Route::get('/', [ProductController::class, 'home'])->name('home');
+
 
 
 
@@ -71,7 +67,8 @@ Route::get('/complaints', function () {
 Route::get('/all_products_page', [ProductController::class, 'index'])->name('product.show');
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/one_product_page/{id}', [ProductController::class, 'show'])->name('product.show');
-
+Route::get('/', [ProductController::class, 'home'])->name('home');
+//Route::get('/one_product_page', [ProductController::class, 'more'])->name('more');
 /*
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('product.show');

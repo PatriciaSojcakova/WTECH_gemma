@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CartController;
+
 
 /* MAIN */
 Route::get('/', function () {
@@ -87,3 +89,19 @@ Route::get('/products', [ProductController::class, 'index'])->name('products.ind
 
 
 Route::get('/one_product_page/{id}', [ProductController::class, 'show'])->name('product.show');
+
+/*
+Route::post('/cart/add', [CartController::class, 'addToCart']);
+Route::get('/cart', [CartController::class, 'viewCart']);
+Route::delete('/cart/remove', [CartController::class, 'removeFromCart']);
+Route::delete('/cart/clear', [CartController::class, 'clearCart']);
+*/
+
+Route::get('/cart', [CartController::class, 'showCart'])->name('cart.show');
+Route::post('/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
+Route::delete('/cart/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
+
+/*
+Route::middleware(['auth'])->group(function () {
+});
+*/

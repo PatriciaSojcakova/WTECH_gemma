@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 /*use App\Http\Controllers\Controller;*/
+
+use App\Models\Cart;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -40,9 +42,37 @@ class RegisterController extends Controller
         ]);
 
         Auth::login($user);
+
+        $this->mergeSessionCartToDatabase();
+
         if ($user->admin) {
             return redirect('/admin_account');
         } else {
             return redirect('/personal_account');
         }    }
+    private function mergeSessionCartToDatabase()
+    {
+        $sessionCart = session('cart', []);
+
+        foreach ($sessionCart as $productId => $item) {
+            $cartItem = Cart::where('id_user', Auth::id())
+                ->where('id_product', $productId)
+                ->first();
+
+            if ($cartItem) {
+                // Aktualizuj množstvo
+                $cartItem->quantity += $item['quantity'];
+                $cartItem->save();
+            } else {
+                // Vytvor nový záznam
+                Cart::create([
+                    'id_user' => Auth::id(),
+                    'id_product' => $productId,
+                    'quantity' => $item['quantity'],
+                ]);
+            }
+        }
+
+        session()->forget('cart');
+    }
 }

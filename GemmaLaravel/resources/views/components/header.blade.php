@@ -38,7 +38,7 @@
                     <span class="material-icons" style="color: #000000;">favorite</span>
                 </a>
 
-                <a href="{{ url('/basket') }}">
+                <a href="{{ route('cart.show') }}">
                     <span class="material-icons" style="color: #000000;">shopping_cart</span>
                 </a>
 

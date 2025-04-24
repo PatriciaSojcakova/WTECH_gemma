@@ -91,4 +91,28 @@ class CartController extends Controller
 
         return redirect()->back()->with('success', 'Produkt bol odstránený z košíka.');
     }
+
+    public function updateCart(Request $request, $id)
+    {
+        $quantity = $request->input('quantity');
+
+        if (Auth::check()) {
+
+            $cartItem = Cart::where('id_user', Auth::id())->where('id', $id)->first();
+            if ($cartItem) {
+                $cartItem->quantity = $quantity;
+                $cartItem->save();
+            }
+        } else {
+
+            $cart = session()->get('cart', []);
+            if (isset($cart[$id])) {
+                $cart[$id]['quantity'] = $quantity;
+                session()->put('cart', $cart);
+            }
+        }
+
+        return redirect()->back();
+    }
+
 }

@@ -78,8 +78,9 @@ class ProductController extends Controller
     public function home()
     {
         $randomProducts = Product::inRandomOrder()->limit(8)->get();
+        $carouselProducts = Product::inRandomOrder()->limit(9)->get();
         $images = $randomProducts->pluck('image');
-        return view('main_pages.main_page', compact('randomProducts','images'));
+        return view('main_pages.main_page', compact('randomProducts','images', 'carouselProducts'));
     }
 
 }

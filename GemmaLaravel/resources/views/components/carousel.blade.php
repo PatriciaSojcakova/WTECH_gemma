@@ -3,102 +3,36 @@
 
     <div class="carousel-container">
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-
             <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center gap-4">
-
-                        <div class="product-container">
-                            <a href="{{ url('/one_product') }}" class="text-decoration-none text-reset d-block">
-                                <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                                <p class="product-name">Prsteň Elegant</p>
-                            </a>
+                @foreach($carouselProducts->chunk(3) as $chunkIndex => $productsChunk)
+                    <!-- Vytvoríme jeden slide pre každú sadu 3 produktov -->
+                    <div class="carousel-item {{ $chunkIndex == 0 ? 'active' : '' }}">
+                        <div class="d-flex justify-content-center gap-4">
+                            @foreach($productsChunk as $product)
+                                <div class="product-container">
+                                    <a href="{{ route('product.show', $product->id) }}" class="text-decoration-none text-reset d-block">
+                                        @php
+                                            $firstImage = $product->image->first();
+                                        @endphp
+                                        @if ($firstImage)
+                                            <img src="{{ asset('image/' . $firstImage->path) }}" class="product-image" alt="{{ $product->name }}">
+                                        @else
+                                            <img src="{{ asset('image/default-image.png') }}" class="product-image" alt="{{ $product->name }}">  <!-- Default obrázok -->
+                                        @endif
+                                        <p class="product-name">{{ $product->name }}</p>
+                                    </a>
+                                </div>
+                            @endforeach
                         </div>
-
-
-                        <div class="product-container d-none d-md-block">
-                            <a href="{{ url('/one_product') }}" class="text-decoration-none text-reset d-block">
-                                <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                                <p class="product-name">Prsteň Elegant</p>
-                            </a>
-                        </div>
-
-
-                        <div class="product-container d-none d-md-block">
-                            <a href="{{ url('/one_product') }}" class="text-decoration-none text-reset d-block">
-                                <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                                <p class="product-name">Prsteň Elegant</p>
-                            </a>
-                        </div>
-
                     </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center gap-4">
-
-                        <div class="product-container">
-                            <a href="{{ url('/one_product') }}" class="text-decoration-none text-reset d-block">
-                                <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                                <p class="product-name">Prsteň Elegant</p>
-                            </a>
-                        </div>
-
-
-                        <div class="product-container d-none d-md-block">
-                            <a href="{{ url('/one_product') }}" class="text-decoration-none text-reset d-block">
-                                <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                                <p class="product-name">Prsteň Elegant</p>
-                            </a>
-                        </div>
-
-
-                        <div class="product-container d-none d-md-block">
-                            <a href="{{ url('/one_product') }}" class="text-decoration-none text-reset d-block">
-                                <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                                <p class="product-name">Prsteň Elegant</p>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center gap-4">
-
-                        <div class="product-container">
-                            <a href="{{ url('/one_product') }}" class="text-decoration-none text-reset d-block">
-                                <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                                <p class="product-name">Prsteň Elegant</p>
-                            </a>
-                        </div>
-
-                        <div class="product-container d-none d-md-block">
-                            <a href="{{ url('/one_product') }}" class="text-decoration-none text-reset d-block">
-                                <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                                <p class="product-name">Prsteň Elegant</p>
-                            </a>
-                        </div>
-
-                        <div class="product-container d-none d-md-block">
-                            <a href="{{ url('/one_product') }}" class="text-decoration-none text-reset d-block">
-                                <img src="../custom_files/Obrazky/ring/woman/simple_gold_4-removebg-preview.png" class="product-image" alt="Obrázok produktu">
-                                <p class="product-name">Prsteň Elegant</p>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+                @endforeach
             </div>
 
             <!-- Indikátory pod obrázkami -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                @foreach($randomProducts->chunk(3) as $chunkIndex => $productsChunk)
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="{{ $chunkIndex }}" class="{{ $chunkIndex == 0 ? 'active' : '' }}"></button>
+                @endforeach
             </div>
 
             <!-- Šípky -->

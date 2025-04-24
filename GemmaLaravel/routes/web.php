@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CartController;
+
 
 /* MAIN */
 Route::get('/', function () {
@@ -68,7 +70,10 @@ Route::get('/all_products_page', [ProductController::class, 'index'])->name('pro
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/one_product_page/{id}', [ProductController::class, 'show'])->name('product.show');
 
-
+/*
+Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/{id}', [ProductController::class, 'show'])->name('product.show');
+*/
 
 
 /* LOGIN */
@@ -78,9 +83,19 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
 
-
+/* KOSIK */
+Route::get('/cart', [CartController::class, 'showCart'])->name('cart.show');
+Route::post('/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
+Route::delete('/cart/{id}', [CartController::class, 'removeFromCart'])->name('cart.remove');
 
 /*
-Route::get('/products', [ProductController::class, 'index']);
-Route::get('/products/{id}', [ProductController::class, 'show'])->name('product.show');
+Route::post('/cart/add', [CartController::class, 'addToCart']);
+Route::get('/cart', [CartController::class, 'viewCart']);
+Route::delete('/cart/remove', [CartController::class, 'removeFromCart']);
+Route::delete('/cart/clear', [CartController::class, 'clearCart']);
+*/
+
+/*
+Route::middleware(['auth'])->group(function () {
+});
 */

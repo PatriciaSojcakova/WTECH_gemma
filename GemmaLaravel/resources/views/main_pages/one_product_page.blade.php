@@ -68,8 +68,12 @@
                 </div>
 
                 <div class="d-flex justify-content-end align-items-center mt-3">
-                    <input type="number" class="form-control text-center me-2" style="width: 80px;" value="1" min="1" max="10">
-                    <button class="btn btn-dark">Vložiť do košíka</button>
+                    <form action="{{ route('cart.add') }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                        <input type="number" name="quantity" value="1" min="1">
+                        <button type="submit">Pridať do košíka</button>
+                    </form>
                 </div>
             </div>
 

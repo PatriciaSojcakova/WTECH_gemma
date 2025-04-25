@@ -77,8 +77,8 @@
                     </a>
                     <ul class="dropdown-menu custom-dropdown" style="background-color: #E2CBCB;">
                         <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 16]) }}">Lady of elegance</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 17]) }}">Tiara</a></li>
-                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 18]) }}">Signature of nature</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 17]) }}">Signature of nature</a></li>
+                        <li><a class="dropdown-item" href="{{ route('products.index', ['subcategory_id' => 18]) }}">Tiara</a></li>
                         <li><a class="dropdown-item" href="{{ route('products.index', ['category_id' => 5]) }}">Všetky</a></li>
                     </ul>
                 </li>

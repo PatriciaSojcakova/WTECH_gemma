@@ -281,32 +281,32 @@ class ProductImageSeeder extends Seeder
                 'nausnice/puzetkove/01_zeny_zlato_diamant(2).png',
             ],
             'Midnight Crown' => [
-                'nausnice/puzetkove/02_zeny_titanium_zafir.png',
-                'nausnice/puzetkove/02_zeny_titanium_zafir(2).png',
-            ],
-            'Scarlet Dream' => [
-                'nausnice/puzetkove/03_zeny_striebro_diamant.png',
-                'nausnice/puzetkove/03_zeny_striebro_diamant(2).png',
-            ],
-            'Luna Whisper' => [
                 'nausnice/puzetkove/04_zeny_zlato_zafir.png',
                 'nausnice/puzetkove/04_zeny_zlato_zafir(2).png',
             ],
-            'Crimson Touch' => [
-                'nausnice/puzetkove/05_zeny_titanium.png',
-                'nausnice/puzetkove/05_zeny_titanium(2).png',
-            ],
-            'Velvet Line' => [
-                'nausnice/puzetkove/06_zeny_striebro_diamant.png',
-                'nausnice/puzetkove/06_zeny_striebro_diamant(2).png',
-            ],
-            'Twilight Flame' => [
+            'Scarlet Dream' => [
                 'nausnice/puzetkove/07_zeny_zlato_rubin.png',
                 'nausnice/puzetkove/07_zeny_zlato_rubin(2).png',
             ],
-            'Opal Glow' => [
+            'Luna Whisper' => [
+                'nausnice/puzetkove/03_zeny_striebro_diamant.png',
+                'nausnice/puzetkove/03_zeny_striebro_diamant(2).png',
+            ],
+            'Crimson Touch' => [
                 'nausnice/puzetkove/08_zeny_striebro_rubin.png',
                 'nausnice/puzetkove/08_zeny_striebro_rubin(2).png',
+            ],
+            'Velvet Line' => [
+                'nausnice/puzetkove/05_zeny_titanium.png',
+                'nausnice/puzetkove/05_zeny_titanium(2).png',
+            ],
+            'Twilight Flame' => [
+                'nausnice/puzetkove/02_zeny_titanium_zafir.png',
+                'nausnice/puzetkove/02_zeny_titanium_zafir(2).png',
+            ],
+            'Opal Glow' => [
+                'nausnice/puzetkove/06_zeny_striebro_diamant.png',
+                'nausnice/puzetkove/06_zeny_striebro_diamant(2).png',
             ],
 
 
@@ -351,8 +351,8 @@ class ProductImageSeeder extends Seeder
                 'nausnice/perlove/02_zeny_zlato(2).png',
             ],
             'Aurora Shell' => [
-                'nausnice/perlove/03_zeny_striebro.png',
-                'nausnice/perlove/03_zeny_striebro(2).png',
+                'nausnice/perlove/07_zeny_zlato.png',
+                'nausnice/perlove/07_zeny_zlato(2).png',
             ],
             'Silver Pearl Dot' => [
                 'nausnice/perlove/04_zeny_striebro.png',
@@ -363,12 +363,12 @@ class ProductImageSeeder extends Seeder
                 'nausnice/perlove/05_zeny_striebro(2).png',
             ],
             'Pearl Harmony' => [
-                'nausnice/perlove/06_zeny_titanium.png',
-                'nausnice/perlove/06_zeny_titanium(2).png',
+                'nausnice/perlove/03_zeny_striebro.png',
+                'nausnice/perlove/03_zeny_striebro(2).png',
             ],
             'Titan Pearl Glow' => [
-                'nausnice/perlove/07_zeny_zlato.png',
-                'nausnice/perlove/07_zeny_zlato(2).png',
+                'nausnice/perlove/06_zeny_titanium.png',
+                'nausnice/perlove/06_zeny_titanium(2).png',
             ],
 
 
@@ -382,24 +382,24 @@ class ProductImageSeeder extends Seeder
                 'nausnice/visiace/02_zeny_zlato_rubin(2).png',
             ],
             'Golden Radiation' => [
-                'nausnice/visiace/03_zeny_striebro_zafir.png',
-                'nausnice/visiace/03_zeny_striebro_zafir(2).png',
-            ],
-            'Diamond Spark' => [
-                'nausnice/visiace/04_zeny_striebro.png',
-                'nausnice/visiace/04_zeny_striebro(2).png',
-            ],
-            'Silver Glow' => [
                 'nausnice/visiace/05_zeny_zlato_diamant.png',
                 'nausnice/visiace/05_zeny_zlato_diamant(2).png',
+            ],
+            'Diamond Spark' => [
+                'nausnice/visiace/07_zeny_zlato_diamant.png',
+                'nausnice/visiace/07_zeny_zlato_diamant(2).png',
+            ],
+            'Silver Glow' => [
+                'nausnice/visiace/04_zeny_striebro.png',
+                'nausnice/visiace/04_zeny_striebro(2).png',
             ],
             'Blue Radiance' => [
                 'nausnice/visiace/06_striebro_zafir.png',
                 'nausnice/visiace/06_striebro_zafir(2).png',
             ],
             'Sapphire Dream' => [
-                'nausnice/visiace/07_zeny_zlato_diamant.png',
-                'nausnice/visiace/07_zeny_zlato_diamant(2).png',
+                'nausnice/visiace/03_zeny_striebro_zafir.png',
+                'nausnice/visiace/03_zeny_striebro_zafir(2).png',
             ],
             'Ocean Blue' => [
                 'nausnice/visiace/08_zeny_striebro_zafir.png',
@@ -474,12 +474,12 @@ class ProductImageSeeder extends Seeder
                 'nahrdelnik/perlove/01_zeny_zlato(2).png',
             ],
             'Golden Radiance' => [
-                'nahrdelnik/perlove/02_zeny_striebro.png',
-                'nahrdelnik/perlove/02_zeny_striebro(2).png',
-            ],
-            'Silver Pearl Charm' => [
                 'nahrdelnik/perlove/03_zeny_zlato.png',
                 'nahrdelnik/perlove/03_zeny_zlato(2).png',
+            ],
+            'Silver Pearl Charm' => [
+                'nahrdelnik/perlove/02_zeny_striebro.png',
+                'nahrdelnik/perlove/02_zeny_striebro(2).png',
             ],
 
 
@@ -599,20 +599,20 @@ class ProductImageSeeder extends Seeder
                 'kolekcie/lady_of_elegance/01_zeny_zlato(2).png',
             ],
             'Diamond Aurora' => [
-                'kolekcie/lady_of_elegance/02_zeny_striebro_zafir.png',
-                'kolekcie/lady_of_elegance/02_zeny_striebro_zafir(2).png',
+                'kolekcie/lady_of_elegance/05_zeny_zlato_diamant.png',
+                'kolekcie/lady_of_elegance/05_zeny_zlato_diamant(2).png',
             ],
             'Silver Dusk' => [
-                'kolekcie/lady_of_elegance/03_zeny_titanium_perla.png',
-                'kolekcie/lady_of_elegance/03_zeny_titanium_perla(2).png',
-            ],
-            'Sapphire Mist' => [
                 'kolekcie/lady_of_elegance/04_zeny_striebro_diamant.png',
                 'kolekcie/lady_of_elegance/04_zeny_striebro_diamant(2).png',
             ],
+            'Sapphire Mist' => [
+                'kolekcie/lady_of_elegance/02_zeny_striebro_zafir.png',
+                'kolekcie/lady_of_elegance/02_zeny_striebro_zafir(2).png',
+            ],
             'Pearl Ember' => [
-                'kolekcie/lady_of_elegance/05_zeny_zlato_diamant.png',
-                'kolekcie/lady_of_elegance/05_zeny_zlato_diamant(2).png',
+                'kolekcie/lady_of_elegance/03_zeny_titanium_perla.png',
+                'kolekcie/lady_of_elegance/03_zeny_titanium_perla(2).png',
             ],
 
 
@@ -641,20 +641,20 @@ class ProductImageSeeder extends Seeder
 
             //tiara
             'Diamond Radiance' => [
-                'kolekcie/tiara/01_zeny_silver_diamant.png',
-                'kolekcie/tiara/01_zeny_silver_diamant(2).png',
-            ],
-            'Silver Grace' => [
                 'kolekcie/tiara/02_zeny_zlato_diamant.png',
                 'kolekcie/tiara/02_zeny_zlato_diamant(2).png',
             ],
-            'Twilight Sparkle' => [
-                'kolekcie/tiara/03_zeny_striebro_rubin.png',
-                'kolekcie/tiara/03_zeny_striebro_rubin(2).png',
+            'Silver Grace' => [
+                'kolekcie/tiara/01_zeny_silver_diamant.png',
+                'kolekcie/tiara/01_zeny_silver_diamant(2).png',
             ],
-            'Crimson Dream' => [
+            'Twilight Sparkle' => [
                 'kolekcie/tiara/04_zeny_striebro_diamant.png',
                 'kolekcie/tiara/04_zeny_striebro_diamant(2).png',
+            ],
+            'Crimson Dream' => [
+                'kolekcie/tiara/03_zeny_striebro_rubin.png',
+                'kolekcie/tiara/03_zeny_striebro_rubin(2).png',
             ],
             'Blue Serenity' => [
                 'kolekcie/tiara/05_zeny_titanium_zafir.png',

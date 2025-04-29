@@ -603,9 +603,9 @@ class ProductSeeder extends Seeder
 
                     [
                         'name' => 'Twilight Flame',
-                        'description' => 'Moderná titánová základňa doplnená žiarivým rubínom. Spojenie sily a elegancie v jednom šperku.',
+                        'description' => 'Moderná titánová základňa doplnená žiarivým zafírom. Spojenie sily a elegancie v jednom šperku.',
                         'material' => 'titanium',
-                        'stone_color' => 'rubín',
+                        'stone_color' => 'zafír',
                         'purpose' => 'ženy',
                         'quantity' => 4,
                         'price' => 970,

@@ -72,12 +72,12 @@
                         <label for="registerPassword" class="form-label">Heslo</label>
                         <input type="password" name="password" class="form-control" id="registerPassword" placeholder="Zadajte heslo" required>
                     </div>
-                    <div class="form-check mb-2">
-                        <input type="checkbox" name="terms_accepted" class="form-check-input focus-ring focus-ring-dark" id="terms">
+                    <div class="form-check form-check custom-checkbox mb-2">
+                        <input type="checkbox" name="terms_accepted" class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" id="terms">
                         <label class="form-check-label"  for="terms">Prečítal/a som si a súhlasím so Všeobecnými obchodnými podmienkami webovet stránky.</label>
                     </div>
-                    <div class="form-check mb-3">
-                        <input type="checkbox" name="newsletter_subscribed" class="form-check-input focus-ring focus-ring-dark" id="newsletter">
+                    <div class="form-check form-check custom-checkbox mb-3">
+                        <input type="checkbox" name="newsletter_subscribed" class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" id="newsletter">
                         <label class="form-check-label" for="newsletter">Chcem dostávať e-mailom  informácie o produktoch a exkluzívnych ponukách spoločnosti Gemma.</label>
                     </div>
 

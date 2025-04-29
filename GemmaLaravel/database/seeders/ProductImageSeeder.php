@@ -90,54 +90,55 @@ class ProductImageSeeder extends Seeder
 
 
             // Vrstviteľné
-            'Golden Layers'   => [
+            'Golden Layers' => [
                 'prsten/vrstvitelne/01_zeny_zlato.png',
-                'prsten/vrstvitelne/01_zeny_zlato – kópia.png',
+                'prsten/vrstvitelne/01_zeny_zlato(2).png',
             ],
-            'Delicate Glow'   => [
+            'Delicate Glow' => [
                 'prsten/vrstvitelne/02_zeny_zlato.png',
-                'prsten/vrstvitelne/02_zeny_zlato - kópia.png',
+                'prsten/vrstvitelne/02_zeny_zlato(2).png',
             ],
-            'Soft Glimmer'    => [
+            'Soft Glimmer' => [
                 'prsten/vrstvitelne/03_zeny_zlato.png',
-                'prsten/vrstvitelne/03_zeny_zlato - kópia.png',
+                'prsten/vrstvitelne/03_zeny_zlato(2).png',
             ],
-            'Silver Line'     => [
+            'Silver Line' => [
                 'prsten/vrstvitelne/04_zeny_striebro.png',
-                'prsten/vrstvitelne/04_zeny_striebro - kópia.png',
+                'prsten/vrstvitelne/04_zeny_striebro(2).png',
             ],
-            'Moonlight Band'  => [
+            'Moonlight Band' => [
                 'prsten/vrstvitelne/05_zeny_striebro.png',
-                'prsten/vrstvitelne/05_zeny_striebro - kópia.png',
+                'prsten/vrstvitelne/05_zeny_striebro(2).png',
             ],
-            'Frosted Touch'   => [
+            'Frosted Touch' => [
                 'prsten/vrstvitelne/06_zeny_striebro.png',
-                'prsten/vrstvitelne/06_zeny_striebro - kópia.png',
+                'prsten/vrstvitelne/06_zeny_striebro(2).png',
             ],
-            'Titan Mist'      => [
+            'Titan Mist' => [
                 'prsten/vrstvitelne/07_zeny_titanium.png',
-                'prsten/vrstvitelne/07_zeny_titanium - kópia.png',
+                'prsten/vrstvitelne/07_zeny_titanium(2).png',
             ],
-            'Iron Layer'      => [
+            'Iron Layer' => [
                 'prsten/vrstvitelne/101_muzi_titanium.png',
-                'prsten/vrstvitelne/101_muzi_titanium - kópia.png',
+                'prsten/vrstvitelne/101_muzi_titanium(2).png',
             ],
-            'Steel Shadow'    => [
+            'Steel Shadow' => [
                 'prsten/vrstvitelne/102_muzi_titanium.png',
-                'prsten/vrstvitelne/102_muzi_titanium - kópia.png',
+                'prsten/vrstvitelne/102_muzi_titanium(2).png',
             ],
-            'Golden Flow'     => [
+            'Golden Flow' => [
                 'prsten/vrstvitelne/1001_unisex_zlato.png',
-                'prsten/vrstvitelne/1001_unisex_zlato - kópia.png',
+                'prsten/vrstvitelne/1001_unisex_zlato(2).png',
             ],
-            'Layer Beam'      => [
+            'Layer Beam' => [
                 'prsten/vrstvitelne/1002_unisex_zlato.png',
-                'prsten/vrstvitelne/1002_unisex_zlato - kópia.png',
+                'prsten/vrstvitelne/1002_unisex_zlato(2).png',
             ],
-            'Silver Loop'     => [
+            'Silver Loop' => [
                 'prsten/vrstvitelne/1003_unisex_striebro.png',
-                'prsten/vrstvitelne/1003_unisex_striebro - kópia.png',
+                'prsten/vrstvitelne/1003_unisex_striebro(2).png',
             ],
+
 
             // Obrúčky
             'Eternal Bond'    => [

@@ -400,7 +400,9 @@ head {
     gap: 5px;
 }
 
-
+.custom-checkbox .form-check-input:checked {
+    background-color: #9b7474;
+}
 
 
 

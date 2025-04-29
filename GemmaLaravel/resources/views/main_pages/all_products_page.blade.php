@@ -34,8 +34,8 @@
                         <div class="col-md-3 d-flex flex-column align-items-start">
                             <p class="custom_playfair_bold mt-3 mb-1">MATERIÁL</p>
                             @foreach(['zlato', 'striebro', 'titanium'] as $material)
-                                <div class="filter-form-check">
-                                    <input class="form-check-input" type="checkbox" name="material[]" value="{{ $material }}"
+                                <div class="filter-form-check form-check custom-checkbox">
+                                    <input class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" type="checkbox" name="material[]" value="{{ $material }}"
                                         {{ in_array($material, request()->input('material', [])) ? 'checked' : '' }}>
                                     <label class="form-check-label custom_playfair_semi">{{ $material }}</label>
                                 </div>
@@ -46,8 +46,8 @@
                         <div class="col-md-3 d-flex flex-column align-items-start">
                             <p class="custom_playfair_bold mt-3 mb-1">FARBA KAMEŇA</p>
                             @foreach(['diamant', 'rubín', 'zafír', 'perla'] as $color)
-                                <div class="filter-form-check">
-                                    <input class="form-check-input" type="checkbox" name="stone_color[]" value="{{ $color }}"
+                                <div class="filter-form-check form-check custom-checkbox">
+                                    <input class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" type="checkbox" name="stone_color[]" value="{{ $color }}"
                                         {{ in_array($color, request()->input('stone_color', [])) ? 'checked' : '' }}>
                                     <label class="form-check-label custom_playfair_semi">{{ $color }}</label>
                                 </div>
@@ -58,8 +58,8 @@
                         <div class="col-md-3 d-flex flex-column align-items-start">
                             <p class="custom_playfair_bold mt-3 mb-1">URČENIE</p>
                             @foreach(['ženy', 'muži', 'unisex'] as $purpose)
-                                <div class="filter-form-check">
-                                    <input class="form-check-input" type="checkbox" name="purpose[]" value="{{ $purpose }}"
+                                <div class="filter-form-check form-check custom-checkbox">
+                                    <input class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" type="checkbox" name="purpose[]" value="{{ $purpose }}"
                                         {{ in_array($purpose, request()->input('purpose', [])) ? 'checked' : '' }}>
                                     <label class="form-check-label custom_playfair_semi">{{ $purpose }}</label>
                                 </div>
@@ -104,7 +104,7 @@
 
     <form method="GET" id="sortForm" action="{{ route('products.index') }}">
         <div class="d-flex justify-content-end mb-4 me-3 mt-1">
-            <select id="sortPrice" name="sort" class="form-select w-25 focus-ring focus-ring-dark" onchange="document.getElementById('sortForm').submit()">
+            <select id="sortPrice" name="sort" class="form-select w-25 focus-ring focus-ring-danger border border-dark-subtle" onchange="document.getElementById('sortForm').submit()">
                 <option value="">Zoradiť podľa ceny</option>
                 <option value="asc" {{ request('sort') === 'asc' ? 'selected' : '' }}>Cena: vzostupne</option>
                 <option value="desc" {{ request('sort') === 'desc' ? 'selected' : '' }}>Cena: zostupne</option>

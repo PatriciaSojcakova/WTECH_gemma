@@ -56,23 +56,23 @@
 
             <div class="col-md-5">
                 <h2 class="text-center mb-5 mt-4">Spôsob doručenia</h2>
-                <div class="form-check">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="doprava" id="kurier" value="kurier" required>
+                <div class="form-check form-check custom-checkbox">
+                    <input class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" type="radio" name="doprava" id="kurier" value="kurier" required>
                     <label class="form-check-label" for="kurier">Kuriér na adresu (3,50 €)</label>
                 </div>
-                <div class="form-check mb-4">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="doprava" id="posta" value="posta" required>
+                <div class="form-check form-check custom-checkbox mb-4">
+                    <input class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" type="radio" name="doprava" id="posta" value="posta" required>
                     <label class="form-check-label" for="posta">Doručenie na poštu (2,50 €)</label>
                 </div>
 
                 <h2 class="text-center mb-4 mt-5">Spôsob platby</h2>
-                <div class="form-check">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="dobierka" value="dobierka" required>
+                <div class="form-check form-check custom-checkbox">
+                    <input class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" type="radio" name="platba" id="dobierka" value="dobierka" required>
                     <label class="form-check-label" for="dobierka">Dobierka pri prevzatí (1,00 €)</label>
                 </div>
 
-                <div class="form-check">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="radio" name="platba" id="prevod" value="prevod" data-bs-toggle="collapse" data-bs-target="#bankInfo">
+                <div class="form-check form-check custom-checkbox">
+                    <input class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" type="radio" name="platba" id="prevod" value="prevod" data-bs-toggle="collapse" data-bs-target="#bankInfo">
                     <label class="form-check-label" for="prevod">Bankový prevod (0,00 €)</label>
                 </div>
                 <!--
@@ -109,8 +109,8 @@
                     </div>
                 </div> -->
 
-                <div class="form-check mb-4 mt-5">
-                    <input class="form-check-input focus-ring focus-ring-dark" type="checkbox" id="suhlas" required>
+                <div class="form-check form-check custom-checkbox mb-4 mt-5">
+                    <input class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" type="checkbox" id="suhlas" required>
                     <label class="form-check-label" for="suhlas">
                         Prečítal/a som si a súhlasím so Všeobecnými obchodnými podmienkami webovej stránky.
                     </label>

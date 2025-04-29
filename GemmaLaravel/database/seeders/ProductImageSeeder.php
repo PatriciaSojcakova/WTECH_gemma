@@ -200,76 +200,77 @@ class ProductImageSeeder extends Seeder
             // Prstene s kamienkom
             'Golden Diamond Radiance' => [
                 'prsten/s_kamienkom/01_zeny_zlato_diamant.png',
-                'prsten/s_kamienkom/01_zeny_zlato_diamant - kópia.png',
+                'prsten/s_kamienkom/01_zeny_zlato_diamant(2).png',
             ],
             'Golden Diamond Glow' => [
                 'prsten/s_kamienkom/02_zeny_zlato_diamant.png',
-                'prsten/s_kamienkom/02_zeny_zlato_diamant - kópia.png',
+                'prsten/s_kamienkom/02_zeny_zlato_diamant(2).png',
             ],
             'Golden Diamond Sparkle' => [
                 'prsten/s_kamienkom/03_zeny_zlato_diamant.png',
-                'prsten/s_kamienkom/03_zeny_zlato_diamant - kópia.png',
+                'prsten/s_kamienkom/03_zeny_zlato_diamant(2).png',
             ],
             'Golden Diamond Shine' => [
                 'prsten/s_kamienkom/06_zeny_zlato_diamant.png',
-                'prsten/s_kamienkom/06_zeny_zlato_diamant - kópia.png',
+                'prsten/s_kamienkom/06_zeny_zlato_diamant(2).png',
             ],
             'Ruby Golden Desire' => [
                 'prsten/s_kamienkom/05_zeny_zlato_rubin.png',
-                'prsten/s_kamienkom/05_zeny_zlato_rubin - kópia.png',
+                'prsten/s_kamienkom/05_zeny_zlato_rubin(2).png',
             ],
             'Ruby Golden Charm' => [
                 'prsten/s_kamienkom/09_zeny_zlato_rubin.png',
-                'prsten/s_kamienkom/09_zeny_zlato_rubin - kópia.png',
+                'prsten/s_kamienkom/09_zeny_zlato_rubin(2).png',
             ],
             'Sapphire Golden Charm' => [
                 'prsten/s_kamienkom/04_zeny_zlato_zafir.png',
-                'prsten/s_kamienkom/04_zeny_zlato_zafir - kópia.png',
+                'prsten/s_kamienkom/04_zeny_zlato_zafir(2).png',
             ],
             'Sapphire Golden Desire' => [
                 'prsten/s_kamienkom/07_zeny_zlato_zafir.png',
-                'prsten/s_kamienkom/07_zeny_zlato_zafir - kópia.png',
+                'prsten/s_kamienkom/07_zeny_zlato_zafir(2).png',
             ],
             'Silver Diamond Glow' => [
                 'prsten/s_kamienkom/08_zeny_striebro_diamant.png',
-                'prsten/s_kamienkom/08_zeny_striebro_diamant - kópia.png',
+                'prsten/s_kamienkom/08_zeny_striebro_diamant(2).png',
             ],
             'Sapphire Golden Brilliance' => [
                 'prsten/s_kamienkom/102_muzi_zlato_zafir.png',
-                'prsten/s_kamienkom/102_muzi_zlato_zafir - kópia.png',
+                'prsten/s_kamienkom/102_muzi_zlato_zafir(2).png',
             ],
             'Sapphire Silver Legend' => [
                 'prsten/s_kamienkom/101_muzi_strieborny_zafir.png',
-                'prsten/s_kamienkom/101_muzi_strieborny_zafir - kópia.png',
+                'prsten/s_kamienkom/101_muzi_strieborny_zafir(2).png',
             ],
             'Crimson Titanium Ruby' => [
                 'prsten/s_kamienkom/103_muzi_titanium_rubin.png',
-                'prsten/s_kamienkom/103_muzi_titanium_rubin - kópia.png',
+                'prsten/s_kamienkom/103_muzi_titanium_rubin(2).png',
             ],
             'Sapphire Gold Light' => [
                 'prsten/s_kamienkom/1001_unisex_zlato_zafir.png',
-                'prsten/s_kamienkom/1001_unisex_zlato_zafir - kópia.png',
+                'prsten/s_kamienkom/1001_unisex_zlato_zafir(2).png',
             ],
             'Sapphire Gold Charm' => [
                 'prsten/s_kamienkom/1002_unisex_zlato_zafir.png',
-                'prsten/s_kamienkom/1002_unisex_zlato_zafir - kópia.png',
+                'prsten/s_kamienkom/1002_unisex_zlato_zafir(2).png',
             ],
             'Silver Diamond Essence' => [
                 'prsten/s_kamienkom/1004_unisex_striebro_diamant.png',
-                'prsten/s_kamienkom/1004_unisex_striebro_diamant - kópia.png',
+                'prsten/s_kamienkom/1004_unisex_striebro_diamant(2).png',
             ],
             'Sapphire Silver Wonder' => [
                 'prsten/s_kamienkom/1005_unisex_striebro_zafir.png',
-                'prsten/s_kamienkom/1005_unisex_striebro_zafir - kópia.png',
+                'prsten/s_kamienkom/1005_unisex_striebro_zafir(2).png',
             ],
             'Sapphire Silver Essence' => [
                 'prsten/s_kamienkom/1006_unisex_striebro_zafir.png',
-                'prsten/s_kamienkom/1006_unisex_striebro_zafir - kópia.png',
+                'prsten/s_kamienkom/1006_unisex_striebro_zafir(2).png',
             ],
             'Titanium Pearl Serenity' => [
                 'prsten/s_kamienkom/1007_unisex_striebro_perla.png',
-                'prsten/s_kamienkom/1007_unisex_striebro_perla - kópia.png',
+                'prsten/s_kamienkom/1007_unisex_striebro_perla(2).png',
             ],
+
 
 
 
@@ -277,134 +278,138 @@ class ProductImageSeeder extends Seeder
             //puzetkove
             'Eternal Bloom' => [
                 'nausnice/puzetkove/01_zeny_zlato_diamant.png',
-                'nausnice/puzetkove/01_zeny_zlato_diamant - kópia.png',
+                'nausnice/puzetkove/01_zeny_zlato_diamant(2).png',
             ],
             'Midnight Crown' => [
                 'nausnice/puzetkove/02_zeny_titanium_zafir.png',
-                'nausnice/puzetkove/02_zeny_titanium_zafir - kópia.png',
+                'nausnice/puzetkove/02_zeny_titanium_zafir(2).png',
             ],
             'Scarlet Dream' => [
                 'nausnice/puzetkove/03_zeny_striebro_diamant.png',
-                'nausnice/puzetkove/03_zeny_striebro_diamant - kópia.png',
+                'nausnice/puzetkove/03_zeny_striebro_diamant(2).png',
             ],
             'Luna Whisper' => [
                 'nausnice/puzetkove/04_zeny_zlato_zafir.png',
-                'nausnice/puzetkove/04_zeny_zlato_zafir - kópia.png',
+                'nausnice/puzetkove/04_zeny_zlato_zafir(2).png',
             ],
             'Crimson Touch' => [
                 'nausnice/puzetkove/05_zeny_titanium.png',
-                'nausnice/puzetkove/05_zeny_titanium - kópia.png',
+                'nausnice/puzetkove/05_zeny_titanium(2).png',
             ],
             'Velvet Line' => [
                 'nausnice/puzetkove/06_zeny_striebro_diamant.png',
-                'nausnice/puzetkove/06_zeny_striebro_diamant - kópia.png',
+                'nausnice/puzetkove/06_zeny_striebro_diamant(2).png',
             ],
             'Twilight Flame' => [
                 'nausnice/puzetkove/07_zeny_zlato_rubin.png',
-                'nausnice/puzetkove/07_zeny_zlato_rubin - kópia.png',
+                'nausnice/puzetkove/07_zeny_zlato_rubin(2).png',
             ],
             'Opal Glow' => [
                 'nausnice/puzetkove/08_zeny_striebro_rubin.png',
-                'nausnice/puzetkove/08_zeny_striebro_rubin - kópia.png',
+                'nausnice/puzetkove/08_zeny_striebro_rubin(2).png',
             ],
+
 
             //kruhove
             'Golden Whispering' => [
                 'nausnice/kruhove/01_zeny_zlato.png',
-                'nausnice/kruhove/01_zeny_zlato - kópia.png',
+                'nausnice/kruhove/01_zeny_zlato(2).png',
             ],
             'Luna Touch' => [
                 'nausnice/kruhove/02_zeny_zlato.png',
-                'nausnice/kruhove/02_zeny_zlato - kópia.png',
+                'nausnice/kruhove/02_zeny_zlato(2).png',
             ],
             'Diamond Heartbeat' => [
                 'nausnice/kruhove/03_zeny_striebro_diamant.png',
-                'nausnice/kruhove/03_zeny_striebro_diamant - kópia.png',
+                'nausnice/kruhove/03_zeny_striebro_diamant(2).png',
             ],
             'Steel Harmony' => [
                 'nausnice/kruhove/04_zeny_titanium.png',
-                'nausnice/kruhove/04_zeny_titanium - kópia.png',
+                'nausnice/kruhove/04_zeny_titanium(2).png',
             ],
             'Titan Flow' => [
                 'nausnice/kruhove/05_zeny_titanium.png',
-                'nausnice/kruhove/05_zeny_titanium - kópia.png',
+                'nausnice/kruhove/05_zeny_titanium(2).png',
             ],
             'Zen Gold' => [
                 'nausnice/kruhove/1001_unisex_zlato.png',
-                'nausnice/kruhove/1001_unisex_zlato - kópia.png',
+                'nausnice/kruhove/1001_unisex_zlato(2).png',
             ],
             'Echo Silver' => [
                 'nausnice/kruhove/1002_unisex_striebro.png',
-                'nausnice/kruhove/1002_unisex_striebro - kópia.png',
+                'nausnice/kruhove/1002_unisex_striebro(2).png',
             ],
+
 
             //perlove
             'Pearl Fog' => [
                 'nausnice/perlove/01_zeny_zlato.png',
-                'nausnice/perlove/01_zeny_zlato - kópia.png',
+                'nausnice/perlove/01_zeny_zlato(2).png',
             ],
             'Golden Pearl Drop' => [
                 'nausnice/perlove/02_zeny_zlato.png',
-                'nausnice/perlove/02_zeny_zlato - kópia.png',
+                'nausnice/perlove/02_zeny_zlato(2).png',
             ],
             'Aurora Shell' => [
                 'nausnice/perlove/03_zeny_striebro.png',
-                'nausnice/perlove/03_zeny_striebro - kópia.png',
+                'nausnice/perlove/03_zeny_striebro(2).png',
             ],
             'Silver Pearl Dot' => [
                 'nausnice/perlove/04_zeny_striebro.png',
-                'nausnice/perlove/04_zeny_striebro - kópia.png',
+                'nausnice/perlove/04_zeny_striebro(2).png',
             ],
             'Ocean Light' => [
                 'nausnice/perlove/05_zeny_striebro.png',
-                'nausnice/perlove/05_zeny_striebro - kópia.png',
+                'nausnice/perlove/05_zeny_striebro(2).png',
             ],
             'Pearl Harmony' => [
                 'nausnice/perlove/06_zeny_titanium.png',
-                'nausnice/perlove/06_zeny_titanium - kópia.png',
+                'nausnice/perlove/06_zeny_titanium(2).png',
             ],
             'Titan Pearl Glow' => [
                 'nausnice/perlove/07_zeny_zlato.png',
-                'nausnice/perlove/07_zeny_zlato - kópia.png',
+                'nausnice/perlove/07_zeny_zlato(2).png',
             ],
+
 
             //visiace
             'Ruby Elegance' => [
                 'nausnice/visiace/01_zeny_zlato_rubin.png',
-                'nausnice/visiace/01_zeny_zlato_rubin - kópia.png',
+                'nausnice/visiace/01_zeny_zlato_rubin(2).png',
             ],
             'Crimson Glow' => [
                 'nausnice/visiace/02_zeny_zlato_rubin.png',
-                'nausnice/visiace/02_zeny_zlato_rubin - kópia.png',
+                'nausnice/visiace/02_zeny_zlato_rubin(2).png',
             ],
             'Golden Radiation' => [
                 'nausnice/visiace/03_zeny_striebro_zafir.png',
-                'nausnice/visiace/03_zeny_striebro_zafir - kópia.png',
+                'nausnice/visiace/03_zeny_striebro_zafir(2).png',
             ],
             'Diamond Spark' => [
                 'nausnice/visiace/04_zeny_striebro.png',
-                'nausnice/visiace/04_zeny_striebro - kópia.png',
+                'nausnice/visiace/04_zeny_striebro(2).png',
             ],
             'Silver Glow' => [
                 'nausnice/visiace/05_zeny_zlato_diamant.png',
-                'nausnice/visiace/05_zeny_zlato_diamant - kópia.png',
+                'nausnice/visiace/05_zeny_zlato_diamant(2).png',
             ],
             'Blue Radiance' => [
                 'nausnice/visiace/06_striebro_zafir.png',
-                'nausnice/visiace/06_striebro_zafir - kópia.png',
+                'nausnice/visiace/06_striebro_zafir(2).png',
             ],
             'Sapphire Dream' => [
                 'nausnice/visiace/07_zeny_zlato_diamant.png',
-                'nausnice/visiace/07_zeny_zlato_diamant - kópia.png',
+                'nausnice/visiace/07_zeny_zlato_diamant(2).png',
             ],
             'Ocean Blue' => [
                 'nausnice/visiace/08_zeny_striebro_zafir.png',
-                'nausnice/visiace/08_zeny_striebro_zafir - kópia.png',
+                'nausnice/visiace/08_zeny_striebro_zafir(2).png',
             ],
             'Titanium Shine' => [
                 'nausnice/visiace/09_zeny_titanium_diamant.png',
-                'nausnice/visiace/09_zeny_titanium_diamant - kópia.png',
+                'nausnice/visiace/09_zeny_titanium_diamant(2).png',
             ],
+
 
 
 
@@ -412,82 +417,86 @@ class ProductImageSeeder extends Seeder
             //retiazkove
             'Golden Eternity' => [
                 'nahrdelnik/retiazkove/01_zeny_zlato.png',
-                'nahrdelnik/retiazkove/01_zeny_zlato - kópia.png',
+                'nahrdelnik/retiazkove/01_zeny_zlato(2).png',
             ],
             'Golden Strength' => [
                 'nahrdelnik/retiazkove/101_muzi_zlato.png',
-                'nahrdelnik/retiazkove/101_muzi_zlato - kópia.png',
+                'nahrdelnik/retiazkove/101_muzi_zlato(2).png',
             ],
             'Bold Gold' => [
                 'nahrdelnik/retiazkove/102_muzi_zlato.png',
-                'nahrdelnik/retiazkove/102_muzi_zlato - kópia.png',
+                'nahrdelnik/retiazkove/102_muzi_zlato(2).png',
             ],
             'Regal Gold' => [
                 'nahrdelnik/retiazkove/103_muzi_zlato.png',
-                'nahrdelnik/retiazkove/103_muzi_zlato - kópia.png',
+                'nahrdelnik/retiazkove/103_muzi_zlato(2).png',
             ],
             'Unisex Gold Chain' => [
                 'nahrdelnik/retiazkove/1001_unisex_zlato.png',
-                'nahrdelnik/retiazkove/1001_unisex_zlato - kópia.png',
+                'nahrdelnik/retiazkove/1001_unisex_zlato(2).png',
             ],
             'Silver Minimalism' => [
                 'nahrdelnik/retiazkove/1002_unisex_striebro.png',
-                'nahrdelnik/retiazkove/1002_unisex_striebro - kópia.png',
+                'nahrdelnik/retiazkove/1002_unisex_striebro(2).png',
             ],
+
 
             //s priveskom
             'Golden Essences' => [
                 'nahrdelnik/s_priveskom/01_zeny_zlato.png',
-                'nahrdelnik/s_priveskom/01_zeny_zlato - kópia.png',
+                'nahrdelnik/s_priveskom/01_zeny_zlato(2).png',
             ],
             'Diamond Glowing' => [
                 'nahrdelnik/s_priveskom/02_zeny_zlato.png',
-                'nahrdelnik/s_priveskom/02_zeny_zlato - kópia.png',
+                'nahrdelnik/s_priveskom/02_zeny_zlato(2).png',
             ],
             'Royal Sapphire Pendant' => [
                 'nahrdelnik/s_priveskom/03_zeny_zlato_zafir.png',
-                'nahrdelnik/s_priveskom/03_zeny_zlato_zafir - kópia.png',
+                'nahrdelnik/s_priveskom/03_zeny_zlato_zafir(2).png',
             ],
             'Sapphire Radiance' => [
                 'nahrdelnik/s_priveskom/04_zeny_zlato_zafir.png',
-                'nahrdelnik/s_priveskom/04_zeny_zlato_zafir - kópia.png',
+                'nahrdelnik/s_priveskom/04_zeny_zlato_zafir(2).png',
             ],
             'Titan Diamond Charm' => [
                 'nahrdelnik/s_priveskom/05_zeny_titanium.png',
-                'nahrdelnik/s_priveskom/05_zeny_titanium - kópia.png',
+                'nahrdelnik/s_priveskom/05_zeny_titanium(2).png',
             ],
             'Silver Diamond Shine' => [
                 'nahrdelnik/s_priveskom/06_zeny_striebro.png',
-                'nahrdelnik/s_priveskom/06_zeny_striebro - kópia.png',
+                'nahrdelnik/s_priveskom/06_zeny_striebro(2).png',
             ],
+
 
             //perlove
             'Golden Pearl Elegance' => [
                 'nahrdelnik/perlove/01_zeny_zlato.png',
-                'nahrdelnik/perlove/01_zeny_zlato - kópia.png',
+                'nahrdelnik/perlove/01_zeny_zlato(2).png',
             ],
             'Golden Radiance' => [
                 'nahrdelnik/perlove/02_zeny_striebro.png',
-                'nahrdelnik/perlove/02_zeny_striebro - kópia.png',
+                'nahrdelnik/perlove/02_zeny_striebro(2).png',
             ],
             'Silver Pearl Charm' => [
                 'nahrdelnik/perlove/03_zeny_zlato.png',
-                'nahrdelnik/perlove/03_zeny_zlato - kópia.png',
+                'nahrdelnik/perlove/03_zeny_zlato(2).png',
             ],
+
 
             //chokers
             'Glowing Silver' => [
                 'nahrdelnik/chokers/01_zeny_striebro.png',
-                'nahrdelnik/chokers/01_zeny_striebro - kópia.png',
+                'nahrdelnik/chokers/01_zeny_striebro(2).png',
             ],
             'Titan Touches' => [
                 'nahrdelnik/chokers/1001_unisex_titanium.png',
-                'nahrdelnik/chokers/1001_unisex_titanium - kópia.png',
+                'nahrdelnik/chokers/1001_unisex_titanium(2).png',
             ],
             'Golden Essence' => [
                 'nahrdelnik/chokers/1002_unisex_zlato.png',
-                'nahrdelnik/chokers/1002_unisex_zlato - kópia.png',
+                'nahrdelnik/chokers/1002_unisex_zlato(2).png',
             ],
+
 
 
 
@@ -496,84 +505,87 @@ class ProductImageSeeder extends Seeder
             //pevne
             'Crystal Embrace' => [
                 'naramok/pevne/01_zeny_striebro_diamant.png',
-                'naramok/pevne/01_zeny_striebro_diamant - kópia.png',
+                'naramok/pevne/01_zeny_striebro_diamant(2).png',
             ],
             'Golden Radiant' => [
                 'naramok/pevne/02_zeny_zlato_diamant.png',
-                'naramok/pevne/02_zeny_zlato_diamant - kópia.png',
+                'naramok/pevne/02_zeny_zlato_diamant(2).png',
             ],
             'Steel Core' => [
                 'naramok/pevne/101_muzi_titanium.png',
-                'naramok/pevne/101_muzi_titanium - kópia.png',
+                'naramok/pevne/101_muzi_titanium(2).png',
             ],
             'Silver Edge' => [
                 'naramok/pevne/102_muzi_striebro.png',
-                'naramok/pevne/102_muzi_striebro - kópia.png',
+                'naramok/pevne/102_muzi_striebro(2).png',
             ],
             'Sapphire Line' => [
                 'naramok/pevne/1001_unisex_titanium_zafir.png',
-                'naramok/pevne/1001_unisex_titanium_zafir - kópia.png',
+                'naramok/pevne/1001_unisex_titanium_zafir(2).png',
             ],
             'Silent Silver' => [
                 'naramok/pevne/1002_unisex_striebro.png',
-                'naramok/pevne/1002_unisex_striebro - kópia.png',
+                'naramok/pevne/1002_unisex_striebro(2).png',
             ],
+
 
             //retiazkove
             'Golden Grace' => [
                 'naramok/retiazkove/01_zeny_zlato.png',
-                'naramok/retiazkove/01_zeny_zlato - kópia.png',
+                'naramok/retiazkove/01_zeny_zlato(2).png',
             ],
             'Silver Whisper' => [
                 'naramok/retiazkove/02_zeny_striebro.png',
-                'naramok/retiazkove/02_zeny_striebro - kópia.png',
+                'naramok/retiazkove/02_zeny_striebro(2).png',
             ],
             'Iron Path' => [
                 'naramok/retiazkove/101_muzi_striebro.png',
-                'naramok/retiazkove/101_muzi_striebro - kópia.png',
+                'naramok/retiazkove/101_muzi_striebro(2).png',
             ],
             'Crown Link' => [
                 'naramok/retiazkove/102_muzi_zlato_diamant.png',
-                'naramok/retiazkove/102_muzi_zlato_diamant - kópia.png',
+                'naramok/retiazkove/102_muzi_zlato_diamant(2).png',
             ],
             'Titan Thread' => [
                 'naramok/retiazkove/1001_unisex_titanium.png',
-                'naramok/retiazkove/1001_unisex_titanium - kópia.png',
+                'naramok/retiazkove/1001_unisex_titanium(2).png',
             ],
             'Silent Bond' => [
                 'naramok/retiazkove/1002_unisex_titanium.png',
-                'naramok/retiazkove/1002_unisex_titanium - kópia.png',
+                'naramok/retiazkove/1002_unisex_titanium(2).png',
             ],
+
 
             //kamienkove
             'Silver Pearl Touch' => [
                 'naramok/kamienkove/01_zeny_striebro_perla.png',
-                'naramok/kamienkove/01_zeny_striebro_perla - kópia.png',
+                'naramok/kamienkove/01_zeny_striebro_perla(2).png',
             ],
             'Golden Shell Line' => [
                 'naramok/kamienkove/02_zeny_zlato_perla.png',
-                'naramok/kamienkove/02_zeny_zlato_perla - kópia.png',
+                'naramok/kamienkove/02_zeny_zlato_perla(2).png',
             ],
             'Titan Shadow' => [
                 'naramok/kamienkove/101_muzi_titanium.png',
-                'naramok/kamienkove/101_muzi_titanium - kópia.png',
+                'naramok/kamienkove/101_muzi_titanium(2).png',
             ],
             'Steel Drift' => [
                 'naramok/kamienkove/102_muzi_titanium.png',
-                'naramok/kamienkove/102_muzi_titanium - kópia.png',
+                'naramok/kamienkove/102_muzi_titanium(2).png',
             ],
             'Moonlit Pearl' => [
                 'naramok/kamienkove/103_muzi_striebro_perla.png',
-                'naramok/kamienkove/103_muzi_striebro_perla - kópia.png',
+                'naramok/kamienkove/103_muzi_striebro_perla(2).png',
             ],
             'Auric Line' => [
                 'naramok/kamienkove/1001_unisex_zlato.png',
-                'naramok/kamienkove/1001_unisex_zlato - kópia.png',
+                'naramok/kamienkove/1001_unisex_zlato(2).png',
             ],
             'Sapphire Halo' => [
                 'naramok/kamienkove/1002_unisex_striebro_zafir.png',
-                'naramok/kamienkove/1002_unisex_striebro_zafir - kópia.png',
+                'naramok/kamienkove/1002_unisex_striebro_zafir(2).png',
             ],
+
 
 
 
@@ -584,68 +596,71 @@ class ProductImageSeeder extends Seeder
             //lady of elegance
             'Golden Mirror' => [
                 'kolekcie/lady_of_elegance/01_zeny_zlato.png',
-                'kolekcie/lady_of_elegance/01_zeny_zlato - kópia.png',
+                'kolekcie/lady_of_elegance/01_zeny_zlato(2).png',
             ],
             'Diamond Aurora' => [
                 'kolekcie/lady_of_elegance/02_zeny_striebro_zafir.png',
-                'kolekcie/lady_of_elegance/02_zeny_striebro_zafir - kópia.png',
+                'kolekcie/lady_of_elegance/02_zeny_striebro_zafir(2).png',
             ],
             'Silver Dusk' => [
                 'kolekcie/lady_of_elegance/03_zeny_titanium_perla.png',
-                'kolekcie/lady_of_elegance/03_zeny_titanium_perla - kópia.png',
+                'kolekcie/lady_of_elegance/03_zeny_titanium_perla(2).png',
             ],
             'Sapphire Mist' => [
                 'kolekcie/lady_of_elegance/04_zeny_striebro_diamant.png',
-                'kolekcie/lady_of_elegance/04_zeny_striebro_diamant - kópia.png',
+                'kolekcie/lady_of_elegance/04_zeny_striebro_diamant(2).png',
             ],
             'Pearl Ember' => [
                 'kolekcie/lady_of_elegance/05_zeny_zlato_diamant.png',
-                'kolekcie/lady_of_elegance/05_zeny_zlato_diamant - kópia.png',
+                'kolekcie/lady_of_elegance/05_zeny_zlato_diamant(2).png',
             ],
+
 
             //signature of nature
             'Golden Blossom' => [
                 'kolekcie/signature_of_nature/01_zeny_zlato.png',
-                'kolekcie/signature_of_nature/01_zeny_zlato - kópia.png',
+                'kolekcie/signature_of_nature/01_zeny_zlato(2).png',
             ],
             'Golden Horizon' => [
                 'kolekcie/signature_of_nature/02_zeny_zlato.png',
-                'kolekcie/signature_of_nature/02_zeny_zlato - kópia.png',
+                'kolekcie/signature_of_nature/02_zeny_zlato(2).png',
             ],
             'Golden Serenade' => [
                 'kolekcie/signature_of_nature/03_zeny_zlato.png',
-                'kolekcie/signature_of_nature/03_zeny_zlato - kópia.png',
+                'kolekcie/signature_of_nature/03_zeny_zlato(2).png',
             ],
             'Golden Mirage' => [
                 'kolekcie/signature_of_nature/04_zeny_zlato.png',
-                'kolekcie/signature_of_nature/04_zeny_zlato - kópia.png',
+                'kolekcie/signature_of_nature/04_zeny_zlato(2).png',
             ],
             'Golden Whisper' => [
                 'kolekcie/signature_of_nature/05_zeny_zlato.png',
-                'kolekcie/signature_of_nature/05_zeny_zlato - kópia.png',
+                'kolekcie/signature_of_nature/05_zeny_zlato(2).png',
             ],
+
 
             //tiara
             'Diamond Radiance' => [
                 'kolekcie/tiara/01_zeny_silver_diamant.png',
-                'kolekcie/tiara/01_zeny_silver_diamant - kópia.png',
+                'kolekcie/tiara/01_zeny_silver_diamant(2).png',
             ],
             'Silver Grace' => [
                 'kolekcie/tiara/02_zeny_zlato_diamant.png',
-                'kolekcie/tiara/02_zeny_zlato_diamant - kópia.png',
+                'kolekcie/tiara/02_zeny_zlato_diamant(2).png',
             ],
             'Twilight Sparkle' => [
                 'kolekcie/tiara/03_zeny_striebro_rubin.png',
-                'kolekcie/tiara/03_zeny_striebro_rubin - kópia.png',
+                'kolekcie/tiara/03_zeny_striebro_rubin(2).png',
             ],
             'Crimson Dream' => [
                 'kolekcie/tiara/04_zeny_striebro_diamant.png',
-                'kolekcie/tiara/04_zeny_striebro_diamant - kópia.png',
+                'kolekcie/tiara/04_zeny_striebro_diamant(2).png',
             ],
             'Blue Serenity' => [
                 'kolekcie/tiara/05_zeny_titanium_zafir.png',
-                'kolekcie/tiara/05_zeny_titanium_zafir - kópia.png',
+                'kolekcie/tiara/05_zeny_titanium_zafir(2).png',
             ],
+
 
         ];
 

@@ -92,7 +92,7 @@ class ProductImageSeeder extends Seeder
             // Vrstviteľné
             'Golden Layers'   => [
                 'prsten/vrstvitelne/01_zeny_zlato.png',
-                'prsten/vrstvitelne/01_zeny_zlato - kópia.png',
+                'prsten/vrstvitelne/01_zeny_zlato – kópia.png',
             ],
             'Delicate Glow'   => [
                 'prsten/vrstvitelne/02_zeny_zlato.png',

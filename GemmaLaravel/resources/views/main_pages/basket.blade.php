@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"/>
+    <link rel="icon" type="image/png" href="{{ asset('image/logo.png') }}">
     <title>Nákupný košík</title>
 </head>
 <body class="basket-page">
@@ -20,7 +21,7 @@
     <h2 class="text-center mb-5 mt-5">NÁKUPNÝ KOŠÍK</h2>
 
     @if($cartItems->isEmpty())
-        <div class="alert alert-info text-center">Košík je prázdny.</div>
+        <div class="alert alert-dark text-center">Košík je prázdny.</div>
     @else
         <div class="row title-bar fw-bold border-bottom border-black pb-2 d-none d-md-flex justify-content-between custom-basket-fav-font" style="background: #F6F7F9">
             <div class="col-md-3 text-center mt-2">Detail produktu</div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 /*use App\Http\Controllers\AuthController;*/
@@ -35,9 +36,10 @@ Route::get('/personal_account', function () {
     return view('main_pages.personal_account');  //->middleware('auth');
 });
 
+/*
 Route::get('/admin_account', function () {
     return view('main_pages.admin_account');
-});
+});*/
 
 
 
@@ -95,6 +97,11 @@ Route::post('/order_submit', [OrderController::class, 'submit'])->name('order.su
 Route::get('/order_done', function () {
     return view('side_pages.order_done');
 })->name('order.success');
+
+
+
+/*ADMIN*/
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 
 
 

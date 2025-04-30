@@ -40,7 +40,7 @@
                     </a>
                 @else
                     @if((bool) Auth::user()->admin)
-                        <a href="{{ url('/admin_account') }}">
+                        <a href="{{ route('admin.dashboard') }}">
                             <span class="material-icons" style="color: #000000;">account_circle</span>
                         </a>
                     @else

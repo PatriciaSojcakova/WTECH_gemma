@@ -46,7 +46,7 @@ class RegisterController extends Controller
         $this->mergeSessionCartToDatabase();
 
         if ($user->admin) {
-            return redirect('/admin_account');
+            return redirect()->route('admin.dashboard');
         } else {
             return redirect('/personal_account');
         }    }

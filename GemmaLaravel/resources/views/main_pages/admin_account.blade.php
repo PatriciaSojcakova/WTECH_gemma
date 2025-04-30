@@ -20,6 +20,46 @@
     <!-- Admin dashboard -->
     <h2 class="text-center mb-5 mt-5">Administrátorský Panel</h2>
 
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header custom-card-header-bg text-black">
+                    <h5 class="mb-0">Zoznam produktov</h5>
+                </div>
+                <div class="card-body" style="max-height: 300px; overflow-y: auto;">
+                    <table class="table table-striped table-bordered mb-0">
+                        <thead class="table-dark text-center">
+                        <tr>
+                            <th>ID</th>
+                            <th>Názov</th>
+                            <th>Popis</th>
+                            <th>Materiál</th>
+                            <th>Farba kameňa</th>
+                            <th>Určenie</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @forelse ($products as $product)
+                            <tr>
+                                <td class="text-center">{{ $product->id }}</td>
+                                <td>{{ $product->name }}</td>
+                                <td>{{ $product->description }}</td>
+                                <td>{{ $product->material }}</td>
+                                <td>{{ $product->stone_color }}</td>
+                                <td>{{ $product->purpose }}</td>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td colspan="5" class="text-center">Žiadne produkty neboli nájdené.</td>
+                            </tr>
+                        @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-4">
             <div class="card mt-4">

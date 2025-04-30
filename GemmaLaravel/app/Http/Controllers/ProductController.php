@@ -12,19 +12,19 @@ class ProductController extends Controller
     {
         $query = Product::query();
 
-        // Ak je prítomná 'category_id', pridaj filter na túto kategóriu
+
         if ($request->filled('category_id')) {
             $query->whereHas('subcategory', function ($subquery) use ($request) {
                 $subquery->where('category_id', $request->category_id);
             });
         }
 
-        // Ak je prítomná 'subcategory_id', filtrovanie podľa subkategórie
+
         if ($request->filled('subcategory_id')) {
             $query->where('subcategory_id', $request->subcategory_id);
         }
 
-        // Filtrovanie podľa GET parametrov
+
         if ($request->filled('material')) {
             $query->where('material', $request->material);
         }

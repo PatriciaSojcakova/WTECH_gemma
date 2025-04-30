@@ -159,10 +159,11 @@
                     <h5>Odstrániť produkt</h5>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form method="POST" action="{{ route('admin.deleteProduct') }}">
+                        @csrf
                         <div class="mb-3">
-                            <label for="deleteProductCode" class="form-label">Kód produktu na odstránenie</label>
-                            <input type="text" class="form-control" id="deleteProductCode" placeholder="Zadajte kód produktu na odstránenie" required>
+                            <label for="deleteProductId" class="form-label">ID produktu na odstránenie</label>
+                            <input type="number" name="product_id" class="form-control" id="deleteProductId" placeholder="Zadajte ID produktu" required>
                         </div>
                         <button type="submit" class="btn btn-dark w-100">Odstrániť produkt</button>
                     </form>

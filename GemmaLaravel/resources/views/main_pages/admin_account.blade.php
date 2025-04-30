@@ -67,29 +67,111 @@
                     <h5>Pridať nový produkt</h5>
                 </div>
                 <div class="card-body">
-                    <form>
+
+                    <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+
                         <div class="mb-3">
                             <label for="productName" class="form-label">Názov produktu</label>
-                            <input type="text" class="form-control" id="productName" placeholder="Zadajte názov produktu" required>
+                            <input type="text" class="form-control" id="productName" name="name" placeholder="Zadajte názov produktu" required>
                         </div>
+
                         <div class="mb-3">
                             <label for="productDescription" class="form-label">Popis produktu</label>
-                            <textarea class="form-control" id="productDescription" placeholder="Zadajte popis produktu" required></textarea>
+                            <textarea class="form-control" id="productDescription" name="description" placeholder="Zadajte popis produktu" required></textarea>
                         </div>
+
+                        <!-- Materiál -->
+                        <div class="mb-3">
+                            <label for="material" class="form-label">Materiál</label>
+                            <select name="material" id="material" class="form-select">
+                                <option value="">-- Vyber materiál --</option>
+                                <option value="zlato" {{ old('material') == 'zlato' ? 'selected' : '' }}>Zlato</option>
+                                <option value="striebro" {{ old('material') == 'striebro' ? 'selected' : '' }}>Striebro</option>
+                                <option value="titanium" {{ old('material') == 'titanium' ? 'selected' : '' }}>Titanium</option>
+                            </select>
+                        </div>
+
+
+                        <!-- Farba kameňa -->
+                        <div class="mb-3">
+                            <label for="stone_color" class="form-label">Farba kameňa</label>
+                            <select name="stone_color" id="stone_color" class="form-select">
+                                <option value="">-- Vyber farbu kameňa --</option>
+                                <option value="diamant" {{ old('stone_color') == 'diamant' ? 'selected' : '' }}>Diamant</option>
+                                <option value="rubín" {{ old('stone_color') == 'rubin' ? 'selected' : '' }}>Rubín</option>
+                                <option value="zafír" {{ old('stone_color') == 'zafir' ? 'selected' : '' }}>Zafír</option>
+                                <option value="perla" {{ old('stone_color') == 'perla' ? 'selected' : '' }}>Perla</option>
+                                <option value=" " {{ old('stone_color') == 'bez_kamena' ? 'selected' : '' }}>Bez kameňa</option>
+                            </select>
+                        </div>
+
+
+                        <!-- Určenie -->
+                        <div class="mb-3">
+                            <label for="purpose" class="form-label">Určenie</label>
+                            <select name="purpose" id="purpose" class="form-select">
+                                <option value="">-- Vyber určenie --</option>
+                                <option value="muži" {{ old('purpose') == 'muži' ? 'selected' : '' }}>Muži</option>
+                                <option value="ženy" {{ old('purpose') == 'ženy' ? 'selected' : '' }}>Ženy</option>
+                                <option value="unisex" {{ old('purpose') == 'unisex' ? 'selected' : '' }}>Unisex</option>
+                            </select>
+                        </div>
+
+                        <!-- Počet kusov -->
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Množstvo</label>
+                            <input type="number" name="quantity" id="quantity" class="form-control" min="0" value="{{ old('quantity') }}">
+                        </div>
+
                         <div class="mb-3">
                             <label for="productPrice" class="form-label">Cena</label>
-                            <input type="number" class="form-control" id="productPrice" placeholder="Zadajte cenu" required>
+                            <input type="number" step="0.01" class="form-control" id="productPrice" name="price" placeholder="Zadajte cenu" required>
                         </div>
+
                         <div class="mb-3">
                             <label for="productImage" class="form-label">Obrázok produktu</label>
-                            <input type="file" class="form-control" id="productImage" required>
+                            <input type="file" class="form-control" id="productImage" name="image" required>
                         </div>
+
+                        <!-- Výber kategórie -->
                         <div class="mb-3">
-                            <label for="productCode" class="form-label">Kód produktu</label>
-                            <input type="text" class="form-control" id="productCode" placeholder="Zadajte kód produktu" required>
+                            <label for="category" class="form-label">Kategória</label>
+                            <select class="form-select" id="category" name="category_id" required>
+                                <option value="">Vyber kategóriu</option>
+                                @foreach($categories as $category)
+                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                @endforeach
+                            </select>
                         </div>
+
+                        <!-- Výber podkategórie -->
+                        <div class="mb-3">
+                            <label for="subcategory" class="form-label">Podkategória</label>
+                            <select class="form-select" id="subcategory" name="subcategory_id" required>
+                                <option value="">Vyber podkategóriu</option>
+                                @foreach($subcategories as $subcategory)
+                                    <option value="{{ $subcategory->id }}" data-category="{{ $subcategory->category_id }}">
+                                        {{ $subcategory->name }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+
+
                         <button type="submit" class="btn btn-dark w-100">Pridať produkt</button>
                     </form>
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -183,6 +265,45 @@
 <footer>
     @include('components.footer')
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const categorySelect = document.getElementById('category');
+        const subcategorySelect = document.getElementById('subcategory');
+        const subcategoryOptions = subcategorySelect.querySelectorAll('option');
+
+        function filterSubcategories(categoryId) {
+            subcategoryOptions.forEach(option => {
+                const optionCategory = option.getAttribute('data-category');
+
+                if (!optionCategory || option.value === "") {
+                    // Prázdna možnosť (napr. "Vyber podkategóriu")
+                    option.hidden = false;
+                    option.disabled = false;
+                } else if (optionCategory === categoryId) {
+                    option.hidden = false;
+                    option.disabled = false;
+                } else {
+                    option.hidden = true;
+                    option.disabled = true;
+                }
+            });
+
+            // Reset selected value
+            subcategorySelect.value = "";
+        }
+
+        // Pri načítaní stránky aj pri zmene
+        categorySelect.addEventListener('change', function () {
+            filterSubcategories(this.value);
+        });
+
+        // Volanie pri načítaní ak už je zvolená kategória (napr. pri validácii späť)
+        if (categorySelect.value) {
+            filterSubcategories(categorySelect.value);
+        }
+    });
+</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

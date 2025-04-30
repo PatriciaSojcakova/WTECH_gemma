@@ -20,6 +20,23 @@ class Product extends Model
     ];
 
 
+    public function up()
+    {
+        Schema::create('products', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->text('description');
+            $table->string('material')->nullable();
+            $table->string('stone_color')->nullable();
+            $table->enum('purpose', ['muži', 'ženy', 'unisex']);
+            $table->integer('quantity')->default(0);
+            $table->decimal('price', 8, 2);
+            $table->foreignId('subcategory_id')->constrained();
+            $table->string('image');
+            $table->timestamps();
+        });
+    }
+
 
     public function image(){
         return $this->hasMany(ProductImage::class, 'id_product');

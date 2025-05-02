@@ -10,17 +10,15 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    // Zoznam produktov + formulár na pridanie
     public function index()
     {
         $products = Product::all();
         $categories = Category::all();
-        $subcategories = Subcategory::all(); // <- Dôležité, inak bude chyba
+        $subcategories = Subcategory::all();
 
         return view('main_pages.admin_account', compact('products', 'categories', 'subcategories'));
     }
 
-    // Voliteľné – ak by si chcel oddelenú stránku na vytváranie
     public function create()
     {
         $categories = Category::all();
@@ -29,7 +27,6 @@ class AdminController extends Controller
         return view('main_pages.admin_account', compact('categories', 'subcategories'));
     }
 
-    // Uloženie nového produktu
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -44,13 +41,10 @@ class AdminController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
-        // Uloženie obrázka
-        $image = $request->file('image'); // Získanie objektu súboru
-        $imageName = time() . '.' . $image->getClientOriginalExtension(); // Generovanie unikátneho názvu pre obrázok
-        $image->move(public_path('image/uploads'), $imageName); // Presunutie obrázka do verejného adresára 'uploads'
+        $image = $request->file('image');
+        $imageName = time() . '.' . $image->getClientOriginalExtension();
+        $image->move(public_path('image/uploads'), $imageName);
 
-
-        // Vytvorenie produktu
         $product = Product::create([
             'name' => $validated['name'],
             'description' => $validated['description'],
@@ -74,7 +68,6 @@ class AdminController extends Controller
         }
     }
 
-    // Odstránenie produktu
     public function deleteProduct(Request $request)
     {
         $request->validate([

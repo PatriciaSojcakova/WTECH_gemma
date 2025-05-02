@@ -81,7 +81,6 @@
                             <textarea class="form-control" id="productDescription" name="description" placeholder="Zadajte popis produktu" required></textarea>
                         </div>
 
-                        <!-- Materiál -->
                         <div class="mb-3">
                             <label for="material" class="form-label">Materiál</label>
                             <select name="material" id="material" class="form-select">
@@ -92,8 +91,6 @@
                             </select>
                         </div>
 
-
-                        <!-- Farba kameňa -->
                         <div class="mb-3">
                             <label for="stone_color" class="form-label">Farba kameňa</label>
                             <select name="stone_color" id="stone_color" class="form-select">
@@ -106,8 +103,6 @@
                             </select>
                         </div>
 
-
-                        <!-- Určenie -->
                         <div class="mb-3">
                             <label for="purpose" class="form-label">Určenie</label>
                             <select name="purpose" id="purpose" class="form-select">
@@ -118,7 +113,6 @@
                             </select>
                         </div>
 
-                        <!-- Počet kusov -->
                         <div class="mb-3">
                             <label for="quantity" class="form-label">Množstvo</label>
                             <input type="number" name="quantity" id="quantity" class="form-control" min="0" value="{{ old('quantity') }}">
@@ -134,7 +128,6 @@
                             <input type="file" class="form-control" id="productImage" name="image" required>
                         </div>
 
-                        <!-- Výber kategórie -->
                         <div class="mb-3">
                             <label for="category" class="form-label">Kategória</label>
                             <select class="form-select" id="category" name="category_id" required>
@@ -145,7 +138,6 @@
                             </select>
                         </div>
 
-                        <!-- Výber podkategórie -->
                         <div class="mb-3">
                             <label for="subcategory" class="form-label">Podkategória</label>
                             <select class="form-select" id="subcategory" name="subcategory_id" required>
@@ -158,20 +150,8 @@
                             </select>
                         </div>
 
-
                         <button type="submit" class="btn btn-dark w-100">Pridať produkt</button>
                     </form>
-
-
-
-
-
-
-
-
-
-
-
                 </div>
             </div>
         </div>
@@ -276,7 +256,6 @@
                 const optionCategory = option.getAttribute('data-category');
 
                 if (!optionCategory || option.value === "") {
-                    // Prázdna možnosť (napr. "Vyber podkategóriu")
                     option.hidden = false;
                     option.disabled = false;
                 } else if (optionCategory === categoryId) {
@@ -288,23 +267,18 @@
                 }
             });
 
-            // Reset selected value
             subcategorySelect.value = "";
         }
 
-        // Pri načítaní stránky aj pri zmene
         categorySelect.addEventListener('change', function () {
             filterSubcategories(this.value);
         });
 
-        // Volanie pri načítaní ak už je zvolená kategória (napr. pri validácii späť)
         if (categorySelect.value) {
             filterSubcategories(categorySelect.value);
         }
     });
 </script>
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

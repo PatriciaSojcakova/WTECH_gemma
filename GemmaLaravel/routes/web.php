@@ -104,8 +104,6 @@ Route::get('/order_done', function () {
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 Route::post('/admin/delete-product', [AdminController::class, 'deleteProduct'])->name('admin.deleteProduct');
 Route::post('/products', [AdminController::class, 'store'])->name('products.store');
-//Route::get('/get-subcategories/{categoryId}', [AdminController::class, 'getSubcategories']);
-//Route::get('/products/create', [AdminController::class, 'create'])->name('products.create');
 Route::get('/admin/create', [AdminController::class, 'create'])->name('products.create');
 
 

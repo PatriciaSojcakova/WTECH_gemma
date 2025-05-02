@@ -17,7 +17,6 @@
 
 
 <main class="container" style="padding-top: 86px;padding-bottom: 100px;">
-    <!-- Admin dashboard -->
     <h2 class="text-center mb-5 mt-5">Administrátorský Panel</h2>
 
     <div class="row mb-5">
@@ -163,14 +162,12 @@
                 </div>
 
                 <div class="card-body">
-                    {{-- Flash správy --}}
                     @if(session('success'))
                         <div class="alert alert-success">{{ session('success') }}</div>
                     @elseif(session('error'))
                         <div class="alert alert-danger">{{ session('error') }}</div>
                     @endif
 
-                    {{-- Formulár na zadanie ID produktu --}}
                     <form method="POST" action="{{ route('admin.product.show') }}">
                         @csrf
                         <div class="mb-3">
@@ -178,10 +175,9 @@
                             <input type="text" id="productId" class="form-control" name="id" value="{{ old('id') }}" required>
                         </div>
 
-                        <button type="submit" class="btn btn-primary w-100">Zobraziť produkt</button>
+                        <button type="submit" class="btn btn-dark w-100">Zobraziť produkt</button>
                     </form>
 
-                    {{-- Ak je produkt nájdený, zobrazíme jeho údaje na úpravu --}}
                     @isset($info_product)
                         <form method="POST">
                             @csrf
@@ -206,7 +202,6 @@
                                 <input type="number" step="0.01" class="form-control" name="product_price" value="{{ old('product_price', $info_product->price) }}">
                             </div>
 
-                            {{-- Obrázky --}}
                             <div class="mb-3">
                                 <label class="form-label">Obrázky produktu</label>
                                 <div class="d-flex flex-wrap gap-2">
@@ -240,20 +235,12 @@
         </div>
 
 
-
-
-
-
-
-
-
         <div class="col-md-4">
             <div class="card mt-4">
                 <div class="card-header custom-card-header-bg text-black">
                     <h5>Odstrániť produkt</h5>
                 </div>
                 <div class="card-body">
-                    {{-- Flash správy pre vymazanie produktu --}}
                     @if(session('delete_success'))
                         <div class="alert alert-success">{{ session('delete_success') }}</div>
                     @elseif(session('delete_error'))

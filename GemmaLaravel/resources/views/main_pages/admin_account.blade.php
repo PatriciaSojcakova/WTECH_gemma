@@ -253,6 +253,13 @@
                     <h5>Odstrániť produkt</h5>
                 </div>
                 <div class="card-body">
+                    {{-- Flash správy pre vymazanie produktu --}}
+                    @if(session('delete_success'))
+                        <div class="alert alert-success">{{ session('delete_success') }}</div>
+                    @elseif(session('delete_error'))
+                        <div class="alert alert-danger">{{ session('delete_error') }}</div>
+                    @endif
+
                     <form method="POST" action="{{ route('admin.deleteProduct') }}">
                         @csrf
                         <div class="mb-3">
@@ -263,13 +270,8 @@
                     </form>
                 </div>
             </div>
+
         </div>
-        <form method="POST" action="{{ route('logout') }}">
-            @csrf
-            <div class="text-center mt-5 mb-2">
-                <button class="btn btn-dark w-50">Odhlásiť sa</button>
-            </div>
-        </form>
     </div>
 </main>
 

@@ -77,34 +77,39 @@ class AdminController extends Controller
         $deleted = Product::where('id', $request->product_id)->delete();
 
         if ($deleted) {
-            return redirect()->back()->with('success', 'Produkt bol úspešne odstránený.');
+            return redirect()->back()->with('delete_success', 'Produkt bol úspešne odstránený.');
         } else {
-            return redirect()->back()->with('error', 'Produkt s daným ID nebol nájdený.');
+            return redirect()->back()->with('delete_error', 'Produkt s daným ID nebol nájdený.');
         }
     }
 
 
+
+
     public function showProduct(Request $request)
     {
-        // Validácia - zabezpečíme, že ID produktu je povinné a existuje v databáze
         $request->validate([
-            'id' => 'required|integer|exists:products,id', // Tu je lepšie použiť integer namiesto string
+            'id' => 'required|integer',
         ]);
 
-        // Vyhľadanie produktu podľa ID
-        $info_product = Product::find($request->input('id')); // Používanie `find` na priamy prístup podľa ID
+        $info_product = Product::find($request->input('id'));
 
         if (!$info_product) {
-            return back()->with('error', 'Produkt s týmto ID neexistuje.');
+            return redirect()
+                ->route('admin.dashboard')
+                ->with('error', 'Produkt s týmto ID neexistuje.');
         }
-
 
         $products = Product::all();
         $categories = Category::all();
         $subcategories = Subcategory::all();
 
-        return view('main_pages.admin_account', compact('products', 'categories', 'subcategories', 'info_product'));
+        return view('main_pages.admin_account', compact('products', 'categories', 'subcategories', 'info_product'))
+            ->with('success', 'Produkt bol nájdený.');
     }
+
+
+
 
 
 }

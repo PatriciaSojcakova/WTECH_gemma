@@ -107,8 +107,8 @@ Route::post('/products', [AdminController::class, 'store'])->name('products.stor
 Route::get('/admin/create', [AdminController::class, 'create'])->name('products.create');
 
 
-Route::post('/admin/product/show', [AdminController::class, 'showProduct'])->name('admin.product.show');
-
+//Route::post('/admin/product/show', [AdminController::class, 'showProduct'])->name('admin.product.show');
+Route::match(['get', 'post'], '/admin/product/show', [AdminController::class, 'showProduct'])->name('admin.product.show');
 
 
 

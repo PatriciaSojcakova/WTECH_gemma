@@ -210,10 +210,10 @@
                             <div class="mb-3">
                                 <label class="form-label">Obrázky produktu</label>
                                 <div class="d-flex flex-wrap gap-2">
-                                    @if($info_product->images && $info_product->images->count())
-                                        @foreach($info_product->images as $image)
+                                    @if($info_product->image && $info_product->image->count())
+                                        @foreach($info_product->image as $image)
                                             <div class="text-center">
-                                                <img src="{{ asset('image/' . $image->path) }}" class="img-thumbnail mb-2" style="width: 100px; height: 100px;">
+                                                <img src="{{ asset('image/' . $image->path) }}" style="width: 80px; height: 80px;" class="img-thumbnail mb-2">
                                                 <br>
                                                 <input type="checkbox" name="delete_images[]" value="{{ $image->id }}"> Vymazať
                                             </div>
@@ -223,6 +223,7 @@
                                     @endif
                                 </div>
                             </div>
+
 
                             <div class="mb-3">
                                 <label class="form-label">Pridať nové obrázky</label>

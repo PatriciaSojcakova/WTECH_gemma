@@ -161,59 +161,90 @@
                 <div class="card-header custom-card-header-bg text-black">
                     <h5>Upraviť produkt</h5>
                 </div>
+
                 <div class="card-body">
-                    <form method="post" action="update_product.php" enctype="multipart/form-data">
+                    {{-- Flash správy --}}
+                    @if(session('success'))
+                        <div class="alert alert-success">{{ session('success') }}</div>
+                    @elseif(session('error'))
+                        <div class="alert alert-danger">{{ session('error') }}</div>
+                    @endif
+
+                    {{-- Formulár na zadanie ID produktu --}}
+                    <form method="POST" action="{{ route('admin.product.show') }}">
+                        @csrf
                         <div class="mb-3">
-                            <label for="editProductCode" class="form-label">Kód produktu</label>
-                            <input type="text" class="form-control" name="product_code" id="editProductCode" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="editProductName" class="form-label">Názov produktu</label>
-                            <input type="text" class="form-control" name="product_name" id="editProductName" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="editProductDescription" class="form-label">Popis produktu</label>
-                            <textarea class="form-control" name="product_description" id="editProductDescription"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="editProductPrice" class="form-label">Cena</label>
-                            <input type="number" class="form-control" name="product_price" id="editProductPrice">
+                            <label class="form-label">Zadajte ID produktu</label>
+                            <input type="text" class="form-control" name="id" value="{{ old('id') }}" required>
                         </div>
 
-                        <div class="mb-3">
-                            <label class="form-label">Obrázky produktu</label>
-                            <div class="d-flex flex-wrap gap-2">
-                                <div class="text-center">
-                                    <div class="img-thumbnail d-flex justify-content-center align-items-center bg-secondary text-white" style="width: 100px; height: 100px;">
-                                        Obrázok tu
-                                    </div>
-                                    <input type="checkbox" name="delete_images[]" value="1"> Vymazať
-                                </div>
-                                <div class="text-center">
-                                    <div class="img-thumbnail d-flex justify-content-center align-items-center bg-secondary text-white" style="width: 100px; height: 100px;">
-                                        Obrázok tu
-                                    </div>
-                                    <input type="checkbox" name="delete_images[]" value="2"> Vymazať
-                                </div>
-                                <div class="text-center">
-                                    <div class="img-thumbnail d-flex justify-content-center align-items-center bg-secondary text-white" style="width: 100px; height: 100px;">
-                                        Obrázok tu
-                                    </div>
-                                    <input type="checkbox" name="delete_images[]" value="3"> Vymazať
+                        <button type="submit" class="btn btn-primary w-100">Zobraziť produkt</button>
+                    </form>
+
+                    {{-- Ak je produkt nájdený, zobrazíme jeho údaje na úpravu --}}
+                    @isset($info_product)
+                        <form method="POST">
+                            @csrf
+
+                            <div class="mb-3">
+                                <label class="form-label">Kód produktu</label>
+                                <input type="text" class="form-control" name="product_code" value="{{ old('product_code', $info_product->id) }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Názov produktu</label>
+                                <input type="text" class="form-control" name="product_name" value="{{ old('product_name', $info_product->name) }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Popis produktu</label>
+                                <textarea class="form-control" name="product_description">{{ old('product_description', $info_product->description) }}</textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Cena</label>
+                                <input type="number" step="0.01" class="form-control" name="product_price" value="{{ old('product_price', $info_product->price) }}">
+                            </div>
+
+                            {{-- Obrázky --}}
+                            <div class="mb-3">
+                                <label class="form-label">Obrázky produktu</label>
+                                <div class="d-flex flex-wrap gap-2">
+                                    @if($info_product->images && $info_product->images->count())
+                                        @foreach($info_product->images as $image)
+                                            <div class="text-center">
+                                                <img src="{{ asset('image/' . $image->path) }}" class="img-thumbnail mb-2" style="width: 100px; height: 100px;">
+                                                <br>
+                                                <input type="checkbox" name="delete_images[]" value="{{ $image->id }}"> Vymazať
+                                            </div>
+                                        @endforeach
+                                    @else
+                                        <p>Žiadne obrázky</p>
+                                    @endif
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="mb-3">
-                            <label for="editProductImages" class="form-label">Pridať nové obrázky</label>
-                            <input type="file" class="form-control" name="new_images[]" multiple accept="image/*">
-                        </div>
+                            <div class="mb-3">
+                                <label class="form-label">Pridať nové obrázky</label>
+                                <input type="file" class="form-control" name="new_images[]" multiple accept="image/*">
+                            </div>
 
-                        <button type="submit" class="btn btn-dark w-100">Upraviť produkt</button>
-                    </form>
+                            <button type="submit" class="btn btn-dark w-100">Upraviť produkt</button>
+                        </form>
+                    @else
+                        <p>Produkt s týmto ID neexistuje.</p>
+                    @endisset
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
 
         <div class="col-md-4">
             <div class="card mt-4">

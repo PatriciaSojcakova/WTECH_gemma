@@ -107,12 +107,8 @@ Route::post('/products', [AdminController::class, 'store'])->name('products.stor
 Route::get('/admin/create', [AdminController::class, 'create'])->name('products.create');
 
 
-Route::get('/admin/find-product', [AdminController::class, 'findProduct'])->name('admin.find.product');
-Route::post('/admin/product/{id}/update', [AdminController::class, 'updateProduct'])->name('admin.update.product');
-Route::get('/admin/product/edit/{id}', [AdminController::class, 'editProduct'])->name('admin.edit.product');
 Route::post('/admin/product/show', [AdminController::class, 'showProduct'])->name('admin.product.show');
-Route::post('/admin/product/update/{id}', [AdminController::class, 'updateProduct'])->name('admin.update.product');
-Route::put('admin/products/{id}', [AdminController::class, 'updateProduct'])->name('admin.updateProduct');
+
 
 
 

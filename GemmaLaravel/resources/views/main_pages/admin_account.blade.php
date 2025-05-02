@@ -175,7 +175,7 @@
                         @csrf
                         <div class="mb-3">
                             <label class="form-label">Zadajte ID produktu</label>
-                            <input type="text" class="form-control" name="id" value="{{ old('id') }}" required>
+                            <input type="text" id="productId" class="form-control" name="id" value="{{ old('id') }}" required>
                         </div>
 
                         <button type="submit" class="btn btn-primary w-100">Zobraziť produkt</button>

@@ -22,6 +22,7 @@
         <div class="row justify-content-center">
             <div class="col-md-5">
                 <h2 class="text-center mb-4 mt-4">Prihlásiť sa</h2>
+
                 <form action="{{ route('login.submit') }}" method="POST">
                     @csrf
                     <div class="mb-3">
@@ -32,11 +33,6 @@
                         <label for="loginPassword" class="form-label">Heslo</label>
                         <input type="password" name="password" class="form-control" id="loginPassword" placeholder="Zadajte heslo" required>
                     </div>
-                    <!--
-                    <div class="form-check mb-3">
-                        <input type="checkbox" name="remember" class="form-check-input focus-ring focus-ring-dark" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">Zapamätať si ma</label>
-                    </div> -->
 
                     @if ($errors->login->any())
                         <div class="alert alert-danger">
@@ -61,22 +57,27 @@
                         <label for="registerFirstName" class="form-label">Meno</label>
                         <input type="text" name="name" class="form-control" id="registerFirstName" placeholder="Vaše meno" required>
                     </div>
+
                     <div class="mb-3">
                         <label for="registerLastName" class="form-label">Priezvisko</label>
                         <input type="text" name="surname" class="form-control" id="registerLastName" placeholder="Vaše priezvisko" required>
                     </div>
+
                     <div class="mb-3">
                         <label for="registerEmail" class="form-label">E-mail</label>
                         <input type="email" name="email" class="form-control" id="registerEmail" placeholder="Zadajte e-mail" required>
                     </div>
+
                     <div class="mb-3">
                         <label for="registerPassword" class="form-label">Heslo</label>
                         <input type="password" name="password" class="form-control" id="registerPassword" placeholder="Zadajte heslo" required>
                     </div>
+
                     <div class="form-check form-check custom-checkbox mb-2">
                         <input type="checkbox" name="terms_accepted" class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" id="terms">
                         <label class="form-check-label"  for="terms">Prečítal/a som si a súhlasím so Všeobecnými obchodnými podmienkami webovet stránky.</label>
                     </div>
+
                     <div class="form-check form-check custom-checkbox mb-3">
                         <input type="checkbox" name="newsletter_subscribed" class="form-check-input focus-ring focus-ring-danger border border-dark-subtle" id="newsletter">
                         <label class="form-check-label" for="newsletter">Chcem dostávať e-mailom  informácie o produktoch a exkluzívnych ponukách spoločnosti Gemma.</label>
@@ -96,7 +97,6 @@
                 </form>
             </div>
         </div>
-
     </main>
 
     <footer>

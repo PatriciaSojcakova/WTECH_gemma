@@ -1,6 +1,5 @@
 <nav class="navbar navbar-bar navbar-expand-md p-1" style="background-color: #E2CBCB;">
     <div class="container-fluid">
-
         <button style="max-height: 25px;" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -10,7 +9,6 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
             <ul class="navbar-nav w-75 justify-content-between">
 
-                {{-- PRSTENE --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle custom_playfair_bold m-0 p-0" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
@@ -25,7 +23,6 @@
                     </ul>
                 </li>
 
-                {{-- NÁUŠNICE --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle custom_playfair_bold m-0 p-0" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,7 +37,6 @@
                     </ul>
                 </li>
 
-                {{-- NÁHRDELNÍKY --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle custom_playfair_bold m-0 p-0" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,7 +51,6 @@
                     </ul>
                 </li>
 
-                {{-- NÁRAMKY --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle custom_playfair_bold m-0 p-0" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,7 +64,6 @@
                     </ul>
                 </li>
 
-                {{-- KOLEKCIE --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle custom_playfair_bold m-0 p-0" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
@@ -82,7 +76,6 @@
                         <li><a class="dropdown-item" href="{{ route('products.index', ['category_id' => 5]) }}">Všetky</a></li>
                     </ul>
                 </li>
-
             </ul>
         </div>
     </div>

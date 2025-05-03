@@ -5,7 +5,6 @@
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 @foreach($carouselProducts->chunk(3) as $chunkIndex => $productsChunk)
-                    <!-- Vytvoríme jeden slide pre každú sadu 3 produktov -->
                     <div class="carousel-item {{ $chunkIndex == 0 ? 'active' : '' }}">
                         <div class="d-flex justify-content-center gap-4">
                             @foreach($productsChunk as $product)
@@ -17,7 +16,7 @@
                                         @if ($firstImage)
                                             <img src="{{ asset('image/' . $firstImage->path) }}" class="product-image" alt="{{ $product->name }}">
                                         @else
-                                            <img src="{{ asset('image/default-image.png') }}" class="product-image" alt="{{ $product->name }}">  <!-- Default obrázok -->
+                                            <img src="{{ asset('image/default-image.png') }}" class="product-image" alt="{{ $product->name }}">
                                         @endif
                                         <p class="product-name">{{ $product->name }}</p>
                                     </a>
@@ -28,14 +27,12 @@
                 @endforeach
             </div>
 
-            <!-- Indikátory pod obrázkami -->
             <div class="carousel-indicators">
                 @foreach($randomProducts->chunk(3) as $chunkIndex => $productsChunk)
                     <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="{{ $chunkIndex }}" class="{{ $chunkIndex == 0 ? 'active' : '' }}"></button>
                 @endforeach
             </div>
 
-            <!-- Šípky -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="left: -60px;">
                 <span class="carousel-control-prev-icon"></span>
             </button>

@@ -10,25 +10,24 @@
     <link rel="icon" type="image/png" href="{{ asset('image/logo.png') }}">
     <title>Objednávka</title>
 </head>
+
 <body>
-<header>
-    @include('components.header')
-</header>
+    <header>
+        @include('components.header')
+    </header>
 
-@include('components.navbar')
+    @include('components.navbar')
 
+    <main class="container d-flex justify-content-center align-items-center text-center" style="min-height: 88vh; padding-top: 86px;">
+        <div class="d-flex flex-column">
+            <h1 class="custom_italiana">ĎAKUJEME ZA VAŠU OBJEDNÁVKU</h1>
+        </div>
+    </main>
 
-<main class="container d-flex justify-content-center align-items-center text-center" style="min-height: 88vh; padding-top: 86px;">
-    <div class="d-flex flex-column">
-        <h1 class="custom_italiana">ĎAKUJEME ZA VAŠU OBJEDNÁVKU</h1>
-    </div>
-</main>
+    <footer>
+        @include('components.footer')
+    </footer>
 
-
-<footer>
-    @include('components.footer')
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

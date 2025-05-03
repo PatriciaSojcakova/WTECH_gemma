@@ -202,7 +202,6 @@ head {
 }
 
 .custom-dropdown {
-    border: 2px solid #E2CBCB;
     border-radius: 0 !important;
     border: none !important;
     background-color: #E2CBCB;
@@ -460,4 +459,3 @@ head {
 .pagination .page-link {
     text-decoration: none;
 }
-

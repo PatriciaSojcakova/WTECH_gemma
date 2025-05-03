@@ -24,7 +24,6 @@
 
     @include('components.navbar')
 
-
     <main>
         <div class="container-fluid d-flex justify-content-center align-items-center custom-container" style="background: linear-gradient(to bottom, #E2CBCB, #F6F7F9);">
             @include('components.carousel')
@@ -48,16 +47,12 @@
                                 @if ($firstImage)
                                     <img src="{{ asset('image/' . $firstImage->path) }}" class="product-image" alt="{{ $product->name }}">
                                 @else
-                                    <img src="{{ asset('image/default-image.png') }}" class="product-image" alt="{{ $product->name }}">  <!-- Default obrázok -->
+                                    <img src="{{ asset('image/default-image.png') }}" class="product-image" alt="{{ $product->name }}">
                                 @endif
                                 <p class="product-name">{{ $product->name }}</p>
                             </a>
                             <h5>{{ $product->price }}€</h5>
                         </div>
-                        <!--
-                        <input type="checkbox" id="favorite-main{{ $product->id }}" class="favorite-checkbox">
-                        <label for="favorite-main{{ $product->id }}" class="favorite-icon material-icons">favorite</label>
-                        -->
                     </div>
                 @endforeach
             </div>
@@ -69,7 +64,6 @@
             </a>
         </div>
     </main>
-
 
     <footer>
         @include('components.footer')

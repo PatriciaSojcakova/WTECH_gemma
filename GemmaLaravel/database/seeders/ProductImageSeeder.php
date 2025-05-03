@@ -669,7 +669,6 @@ class ProductImageSeeder extends Seeder
             $product = Product::where('name', $productName)->first();
 
             if ($product) {
-                // Ak produkt existuje, pridáme obrázky
                 foreach ($imageFiles as $imageFile) {
                     ProductImage::create([
                         'path' => $imageFile, // Pridáme cestu k obrázku
@@ -681,10 +680,5 @@ class ProductImageSeeder extends Seeder
             }
         }
 
-        /*
-        ProductImage::create([
-            'path' => 'public/image/simple_gold_3-removebg-preview.png',
-            'id_product' => Product::where('name','Aurora Shine')->first()->id,
-        ]);*/
     }
 }

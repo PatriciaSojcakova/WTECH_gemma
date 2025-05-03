@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Tests\Integration\Queue\Order;
+
 
 class OrderItem extends Model
 {

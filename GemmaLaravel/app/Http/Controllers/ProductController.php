@@ -19,11 +19,9 @@ class ProductController extends Controller
             });
         }
 
-
         if ($request->filled('subcategory_id')) {
             $query->where('subcategory_id', $request->subcategory_id);
         }
-
 
         if ($request->filled('material')) {
             $query->where('material', $request->material);
@@ -55,10 +53,6 @@ class ProductController extends Controller
                     ->orWhereRaw('description ILIKE ?', ['%' . $request->search . '%']);
             });
         }
-
-
-
-
 
         $products = $query->with('subcategory')->paginate(12)->withQueryString();
 

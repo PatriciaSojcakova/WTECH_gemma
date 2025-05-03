@@ -7,12 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Favorite extends Model
 {
     protected $table = 'favourites';
-
     protected $fillable = [
         'id_user',
         'id_product',
     ];
-
 
 
     public function user(){

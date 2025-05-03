@@ -179,13 +179,16 @@
                     </form>
 
                     @isset($info_product)
-                        <form method="POST">
+                        <form method="POST" action="{{ route('admin.product.update') }}" enctype="multipart/form-data">
                             @csrf
 
-                            <div class="mb-3">
+                           <!-- <div class="mb-3">
                                 <label class="form-label">Kód produktu</label>
                                 <input type="text" class="form-control" name="product_code" value="{{ old('product_code', $info_product->id) }}" required>
-                            </div>
+                            </div> -->
+
+                            <input type="hidden" name="product_id" value="{{ $info_product->id }}">
+
 
                             <div class="mb-3">
                                 <label class="form-label">Názov produktu</label>
@@ -228,7 +231,7 @@
                             <button type="submit" class="btn btn-dark w-100">Upraviť produkt</button>
                         </form>
                     @else
-                        <p>Produkt s týmto ID neexistuje.</p>
+                        <!-- <p>Produkt s týmto ID neexistuje.</p>  -->
                     @endisset
                 </div>
             </div>
@@ -259,6 +262,13 @@
             </div>
 
         </div>
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <div class="d-flex justify-content-center mt-5">
+                <button class="btn btn-dark w-50">Odhlásiť sa</button>
+            </div>
+        </form>
+
     </div>
 </main>
 

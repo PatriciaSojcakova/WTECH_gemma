@@ -92,12 +92,10 @@ class AdminController extends Controller
             'id' => 'required|integer',
         ]);
 
-        $info_product = Product::find($request->input('id'));
+        $info_product = Product::with('image')->find($request->input('id')); // načítaj aj obrázky
 
         if (!$info_product) {
-            return redirect()
-                ->route('admin.dashboard')
-                ->with('error', 'Produkt s týmto ID neexistuje.');
+            return redirect()->back()->with('error', 'Produkt s týmto ID neexistuje.');
         }
 
         $products = Product::all();
@@ -110,6 +108,52 @@ class AdminController extends Controller
 
 
 
+
+    public function updateProduct(Request $request)
+    {
+        $request->validate([
+            'product_id' => 'required|integer|exists:products,id',
+            'product_name' => 'required|string|max:255',
+            'product_description' => 'required|string',
+            'product_price' => 'required|numeric',
+            'delete_images' => 'array',
+            'delete_images.*' => 'integer|exists:product_images,id',
+            'new_images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        $product = Product::find($request->product_id);
+        if (!$product) {
+            return redirect()->back()->with('error', 'Produkt nebol nájdený.');
+        }
+
+        $product->name = $request->product_name;
+        $product->description = $request->product_description;
+        $product->price = $request->product_price;
+        $product->save();
+
+        if ($request->has('delete_images')) {
+            foreach ($request->delete_images as $imageId) {
+                $image = ProductImage::find($imageId);
+                if ($image) {
+                    $image->delete();
+                }
+            }
+        }
+
+        if ($request->hasFile('new_images')) {
+            foreach ($request->file('new_images') as $img) {
+                $imageName = time() . '_' . $img->getClientOriginalName();
+                $img->move(public_path('image/uploads'), $imageName);
+
+                ProductImage::create([
+                    'id_product' => $product->id,
+                    'path' => 'uploads/' . $imageName,
+                ]);
+            }
+        }
+
+        return redirect()->route('admin.dashboard')->with('success', 'Produkt bol úspešne upravený.');
+    }
 
 
 }

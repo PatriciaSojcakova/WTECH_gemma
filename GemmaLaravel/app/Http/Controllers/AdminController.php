@@ -38,12 +38,11 @@ class AdminController extends Controller
             'quantity' => 'nullable|integer|min:0',
             'price' => 'required|numeric',
             'subcategory_id' => 'required|exists:subcategories,id',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'image' => 'required|array|min:2',
+            'image.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
-        $image = $request->file('image');
-        $imageName = time() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('image/uploads'), $imageName);
+
 
         $product = Product::create([
             'name' => $validated['name'],
@@ -56,10 +55,15 @@ class AdminController extends Controller
             'subcategory_id' => $validated['subcategory_id'],
         ]);
 
-        ProductImage::create([
-            'id_product' => $product->id,
-            'path' => 'uploads/' . $imageName,
-        ]);
+        foreach ($validated['image'] as $image) {
+            $imageName = $image->getClientOriginalName();
+            $image->move(public_path('image/uploads'), $imageName);
+
+            ProductImage::create([
+                'id_product' => $product->id,
+                'path' => 'uploads/' . $imageName,
+            ]);
+        }
 
         if ($product) {
             return back()->with('success', 'Produkt bol úspešne pridaný!');

@@ -126,8 +126,22 @@
 
                             <div class="mb-3">
                                 <label for="productImage" class="form-label">Obrázok produktu</label>
-                                <input type="file" class="form-control" id="productImage" name="image" required>
+                                <input type="file"
+                                       class="form-control @error('image') is-invalid @enderror @error('image.*') is-invalid @enderror"
+                                       id="productImage"
+                                       name="image[]"
+                                       multiple
+                                       required>
+
+                                @error('image')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+
+                                @error('image.*')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
+
 
                             <div class="mb-3">
                                 <label for="category" class="form-label">Kategória</label>

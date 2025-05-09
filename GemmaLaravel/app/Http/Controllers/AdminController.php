@@ -64,6 +64,12 @@ class AdminController extends Controller
                 'path' => 'uploads/' . $imageName,
             ]);
         }
+
+        if ($product) {
+            return back();
+        } else {
+            return back()->with('error', 'Produkt sa nepodarilo pridať.');
+        }
     }
 
     public function deleteProduct(Request $request)

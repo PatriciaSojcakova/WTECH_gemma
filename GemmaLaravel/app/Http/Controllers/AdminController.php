@@ -64,12 +64,6 @@ class AdminController extends Controller
                 'path' => 'uploads/' . $imageName,
             ]);
         }
-
-        if ($product) {
-            return back()->with('success', 'Produkt bol úspešne pridaný!');
-        } else {
-            return back()->with('error', 'Produkt sa nepodarilo pridať.');
-        }
     }
 
     public function deleteProduct(Request $request)

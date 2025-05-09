@@ -286,6 +286,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Pôvodný skript na filtrovanie podkategórií
             const categorySelect = document.getElementById('category');
             const subcategorySelect = document.getElementById('subcategory');
             const subcategoryOptions = subcategorySelect.querySelectorAll('option');
@@ -293,7 +294,6 @@
             function filterSubcategories(categoryId) {
                 subcategoryOptions.forEach(option => {
                     const optionCategory = option.getAttribute('data-category');
-
                     if (!optionCategory || option.value === "") {
                         option.hidden = false;
                         option.disabled = false;
@@ -305,7 +305,6 @@
                         option.disabled = true;
                     }
                 });
-
                 subcategorySelect.value = "";
             }
 
@@ -316,8 +315,29 @@
             if (categorySelect.value) {
                 filterSubcategories(categorySelect.value);
             }
+
+
+            const updateForm = document.querySelector('form[action="{{ route('admin.product.update') }}"]');
+            if (updateForm) {
+                updateForm.addEventListener('submit', function (e) {
+                    const checkboxes = updateForm.querySelectorAll('input[name="delete_images[]"]');
+                    const totalImages = checkboxes.length;
+                    const checked = updateForm.querySelectorAll('input[name="delete_images[]"]:checked').length;
+
+                    const newImagesInput = updateForm.querySelector('input[name="new_images[]"]');
+                    const newImages = newImagesInput && newImagesInput.files ? newImagesInput.files.length : 0;
+
+                    const remaining = (totalImages - checked) + newImages;
+
+                    if (remaining < 2) {
+                        e.preventDefault();
+                        alert('Produkt musí mať aspoň 2 obrázky. Pridajte ďalšie alebo neodstraňujte všetky.');
+                    }
+                });
+            }
         });
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -286,7 +286,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Pôvodný skript na filtrovanie podkategórií
             const categorySelect = document.getElementById('category');
             const subcategorySelect = document.getElementById('subcategory');
             const subcategoryOptions = subcategorySelect.querySelectorAll('option');
@@ -294,6 +293,7 @@
             function filterSubcategories(categoryId) {
                 subcategoryOptions.forEach(option => {
                     const optionCategory = option.getAttribute('data-category');
+
                     if (!optionCategory || option.value === "") {
                         option.hidden = false;
                         option.disabled = false;
@@ -305,6 +305,7 @@
                         option.disabled = true;
                     }
                 });
+
                 subcategorySelect.value = "";
             }
 
@@ -337,7 +338,6 @@
             }
         });
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

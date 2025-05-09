@@ -44,9 +44,6 @@ class Product extends Model
         return $this->hasMany(ProductImage::class, 'id_product');
     }
 
-    public function change(){
-        return $this->hasMany(ProductChange::class, 'id_product');
-    }
 
     public function favorites(){
         return $this->hasMany(Favorite::class, 'id_product');

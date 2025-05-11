@@ -59,12 +59,7 @@
                         <form method="POST" action="{{ route('cart.update', $item->id) }}">
                             @csrf
                             @method('PATCH')
-                            <input type="number"
-                                   name="quantity"
-                                   class="form-control text-center w-50 mx-auto"
-                                   value="{{ $item->quantity }}"
-                                   min="1" max="10"
-                                   onchange="this.form.submit()">
+                            <input type="number" name="quantity" class="form-control text-center w-50 mx-auto" value="{{ $item->quantity }}" min="1" step="1" oninput="validity.valid||(value='1')" onchange="this.form.submit()">
                         </form>
                     </div>
 

@@ -71,7 +71,7 @@
                         <form action="{{ route('cart.add') }}" method="POST" class="d-flex align-items-center">
                             @csrf
                             <input type="hidden" name="product_id" value="{{ $product->id }}">
-                            <input type="number" class="form-control text-center me-2" style="width: 80px;" name="quantity" value="1" min="1">
+                            <input type="number" class="form-control text-center me-2" style="width: 80px;" name="quantity" value="1" min="1" step="1" oninput="validity.valid||(value='1')">
                             <button type="submit" class="btn btn-dark">Pridať do košíka</button>
                         </form>
                     </div>

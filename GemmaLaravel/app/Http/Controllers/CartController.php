@@ -11,6 +11,7 @@ class CartController extends Controller
 {
     public function addToCart(Request $request)
     {
+
         $productId = $request->input('product_id');
         $quantity = (int)$request->input('quantity', 1);
 
